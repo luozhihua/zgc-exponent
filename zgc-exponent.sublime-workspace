@@ -1,0 +1,2265 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"ass",
+				"assigned\t(USAGE.md)"
+			],
+			[
+				"root",
+				"rootScope\t(angular-material.js)"
+			],
+			[
+				"appl",
+				"apply\t(angular-material.js)"
+			],
+			[
+				"leg",
+				"legendData"
+			],
+			[
+				"forEa",
+				"forEach\t(angular-material.js)"
+			],
+			[
+				"pie2",
+				"pie2Title"
+			],
+			[
+				"cl",
+				"click"
+			],
+			[
+				"eve",
+				"events\t(angular-material.js)"
+			],
+			[
+				"col",
+				"color"
+			],
+			[
+				"plus",
+				"plusplus"
+			],
+			[
+				"setC",
+				"setComments\t(metadata.js)"
+			],
+			[
+				"ne",
+				"newPath"
+			],
+			[
+				"pic",
+				"pictureData"
+			],
+			[
+				"wri",
+				"writePicture"
+			],
+			[
+				"get",
+				"getData\t(picture.js)"
+			],
+			[
+				"musi",
+				"musicCover"
+			],
+			[
+				"co",
+				"cover"
+			],
+			[
+				"pi",
+				"picture"
+			],
+			[
+				"res",
+				"resolve"
+			],
+			[
+				"wit",
+				"writer"
+			],
+			[
+				"MetaD",
+				"MetaDataBlockPicture\t(Processor.js)"
+			],
+			[
+				"Fl",
+				"FLacMetadata"
+			],
+			[
+				"Pro",
+				"Promise"
+			],
+			[
+				"buf",
+				"buffer"
+			],
+			[
+				"MDB_TYPE_C",
+				"MDB_TYPE_VORBIS_COMMENT\t(Processor.js)"
+			],
+			[
+				"fl",
+				"flac"
+			],
+			[
+				"MDB_TYPE_",
+				"MDB_TYPE_PICTURE\t(Processor.js)"
+			],
+			[
+				"file",
+				"filepath"
+			],
+			[
+				"consol",
+				"console.log\t(metadata.js)"
+			],
+			[
+				"music",
+				"musicmetadata\t(read.js)"
+			],
+			[
+				"mar",
+				"margin"
+			],
+			[
+				"ve",
+				"vertical-align"
+			],
+			[
+				"pa",
+				"padding"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"dis",
+				"display"
+			],
+			[
+				"char",
+				"chartOptions"
+			],
+			[
+				"defa",
+				"defaults"
+			],
+			[
+				"pie",
+				"pie-chart\t(PieChat.vue)"
+			],
+			[
+				"material",
+				"material.min.js\t(package.json)"
+			],
+			[
+				"foma",
+				"formatter"
+			],
+			[
+				"layout",
+				"layout-pages"
+			],
+			[
+				"curr",
+				"curr"
+			],
+			[
+				"type",
+				"typeof"
+			],
+			[
+				"cur",
+				"curr"
+			],
+			[
+				"page",
+				"pageLoader\t(pageloader.js)"
+			],
+			[
+				"Page",
+				"Pageloader"
+			],
+			[
+				"que",
+				"queryParams"
+			],
+			[
+				"par",
+				"params"
+			],
+			[
+				"fil",
+				"filters"
+			],
+			[
+				"ser",
+				"serialize\t(dialog.js)"
+			],
+			[
+				"pars",
+				"parsed"
+			],
+			[
+				"para",
+				"params"
+			],
+			[
+				"me",
+				"method"
+			],
+			[
+				"reg",
+				"regExp"
+			],
+			[
+				"pre",
+				"preventDefault"
+			],
+			[
+				"disa",
+				"disableMultiTools"
+			],
+			[
+				"gene",
+				"generatorApartMenu"
+			],
+			[
+				"new",
+				"newLeft"
+			],
+			[
+				"mou",
+				"mousedown\t(dialog.js)"
+			],
+			[
+				"tra",
+				"transition"
+			],
+			[
+				"bl",
+				"block"
+			],
+			[
+				"text-",
+				"text-overflow"
+			],
+			[
+				"over",
+				"overflow"
+			],
+			[
+				"word",
+				"word-break"
+			],
+			[
+				"wid",
+				"width"
+			],
+			[
+				"white",
+				"white-space\t(dataTables.bootstrap.css)"
+			],
+			[
+				"sty",
+				"style"
+			],
+			[
+				"no",
+				"nowrap"
+			],
+			[
+				"whi",
+				"white-space"
+			],
+			[
+				"wi",
+				"width"
+			],
+			[
+				"Boot",
+				"BootstrapDialog"
+			],
+			[
+				"layou",
+				"layout-pages\t(layout.html)"
+			],
+			[
+				"css",
+				"cssClass"
+			],
+			[
+				"quer",
+				"queryParams"
+			],
+			[
+				"row",
+				"rowid"
+			],
+			[
+				"getR",
+				"getDataByRowId"
+			],
+			[
+				"fo",
+				"formatter"
+			],
+			[
+				"list",
+				"listLength"
+			],
+			[
+				"sele",
+				"selected"
+			],
+			[
+				"conte",
+				"container"
+			],
+			[
+				"dele",
+				"deleteUrl"
+			],
+			[
+				"edit",
+				"editable"
+			],
+			[
+				"check",
+				"checkbox"
+			],
+			[
+				"che",
+				"checkbox"
+			],
+			[
+				"sta",
+				"status"
+			],
+			[
+				"status",
+				"statusContainer\t(jquery.pagination.js)"
+			],
+			[
+				"load",
+				"loadData"
+			],
+			[
+				"pag",
+				"pagination"
+			],
+			[
+				"param",
+				"paramKeys"
+			],
+			[
+				"old",
+				"oldCurrPage"
+			],
+			[
+				"call",
+				"callbacks"
+			],
+			[
+				"inser",
+				"insertLayout"
+			],
+			[
+				"prev",
+				"prevPage"
+			],
+			[
+				"proto",
+				"prototype"
+			],
+			[
+				"total",
+				"totalNum"
+			],
+			[
+				"te",
+				"textStatus"
+			],
+			[
+				"li",
+				"limit2"
+			],
+			[
+				"option",
+				"options"
+			],
+			[
+				"limi",
+				"limit1"
+			],
+			[
+				"ins",
+				"instance"
+			],
+			[
+				"gri",
+				"grid_1_pg"
+			],
+			[
+				"con",
+				"container"
+			],
+			[
+				"ignor",
+				"ignoring_files"
+			],
+			[
+				"th",
+				"thumbs\t(语义化版本2-0-0.md)"
+			],
+			[
+				"thu",
+				"thumbnail\t(语义化版本2-0-0.md)"
+			],
+			[
+				"thum",
+				"thumbs\t(九月的村庄.md)"
+			],
+			[
+				"met",
+				"metro1.jpg"
+			],
+			[
+				"im",
+				"imgs"
+			],
+			[
+				"cons",
+				"console"
+			],
+			[
+				"str",
+				"stringify\tMeteor: EJSON.stringify(val)"
+			],
+			[
+				"back",
+				"backgroung-size"
+			],
+			[
+				"ex",
+				"existsSync"
+			],
+			[
+				"down",
+				"downloadImg"
+			],
+			[
+				"mat",
+				"matchImgs"
+			],
+			[
+				"com",
+				"completeDomain"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"p",
+				"padding"
+			],
+			[
+				"border-sty",
+				"border-style"
+			],
+			[
+				"inl",
+				"inline-block"
+			],
+			[
+				"in",
+				"inline-block"
+			],
+			[
+				"test",
+				"testHeightTicket"
+			],
+			[
+				"fu",
+				"function"
+			],
+			[
+				"z",
+				"z-index"
+			],
+			[
+				"re",
+				"relative"
+			],
+			[
+				"he",
+				"height"
+			],
+			[
+				"pro",
+				"property"
+			],
+			[
+				"do",
+				"document"
+			],
+			[
+				"P",
+				"Projects/"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "client/index.html",
+			"settings":
+			{
+				"buffer_size": 8167,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "client/bower_components/echarts/src/config.js",
+			"settings":
+			{
+				"buffer_size": 8886,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "client/vendors/ngecharts.js",
+			"settings":
+			{
+				"buffer_size": 1311,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "client/app/layout/header.html",
+			"settings":
+			{
+				"buffer_size": 5705,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "client/styles/theme/_customzier-options.scss",
+			"settings":
+			{
+				"buffer_size": 2718,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "client/styles/app.scss",
+			"settings":
+			{
+				"buffer_size": 883,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "client/init.js",
+			"settings":
+			{
+				"buffer_size": 222,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "client/styles/global/_shared.scss",
+			"settings":
+			{
+				"buffer_size": 60,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "client/app/app.module.js",
+			"settings":
+			{
+				"buffer_size": 373,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "client/app/core/core.module.js",
+			"settings":
+			{
+				"buffer_size": 364,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "gulpfile.js",
+			"settings":
+			{
+				"buffer_size": 6521,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "client/styles/global/_var.scss",
+			"settings":
+			{
+				"buffer_size": 32423,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "client/bower_components/angular-material/angular-material.js",
+			"settings":
+			{
+				"buffer_size": 1132364,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "client/styles/ui/components/_material-button.scss",
+			"settings":
+			{
+				"buffer_size": 1219,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "client/styles/global/_var-extra.scss",
+			"settings":
+			{
+				"buffer_size": 1978,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "bower.json",
+			"settings":
+			{
+				"buffer_size": 910,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "client/app/layout/loader.js",
+			"settings":
+			{
+				"buffer_size": 186,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "client/app/layout/customizer.controller.js",
+			"settings":
+			{
+				"buffer_size": 169,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "client/app/core/app.config.js",
+			"settings":
+			{
+				"buffer_size": 2961,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "client/index.backup.html",
+			"settings":
+			{
+				"buffer_size": 8176,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "client/app/layout/sidebar.html",
+			"settings":
+			{
+				"buffer_size": 2155,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "client/app/dashboard/dashboard.html",
+			"settings":
+			{
+				"buffer_size": 10456,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "client/app/dashboard/dashboard.controller.js",
+			"settings":
+			{
+				"buffer_size": 17824,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "client/app/chart/echarts-pie.html",
+			"settings":
+			{
+				"buffer_size": 1356,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "client/app/chart/echarts.controller.js",
+			"settings":
+			{
+				"buffer_size": 48763,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "client/app/ui/components.html",
+			"settings":
+			{
+				"buffer_size": 47386,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "client/app/core/i18n.js",
+			"settings":
+			{
+				"buffer_size": 2007,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "sudo /Volumes/Install\\ macOS\\ Sierra/Install\\ macOS\\ Sierra.app/Contents/Resources/createinstallmedia --volume /Volumes/ABCD --applicationpath /Volumes/Install\\ macOS\\ Sierra/Install\\ macOS\\ Sierra.app --nointeraction",
+			"settings":
+			{
+				"buffer_size": 217,
+				"line_ending": "Unix",
+				"name": "sudo /Volumes/Install\\ macOS\\ Sierra/Install\\ macO"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 400.0,
+		"last_filter": "ip",
+		"selected_items":
+		[
+			[
+				"ip",
+				"Package Control: Install Package"
+			],
+			[
+				"pac",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 718.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/colin/Projects/Outsource/MagicWindow/zgc/demo",
+		"/Users/colin/Projects/Outsource/MagicWindow/zgc/demo/client",
+		"/Users/colin/Projects/Outsource/MagicWindow/zgc/demo/client/app",
+		"/Users/colin/Projects/Outsource/MagicWindow/zgc/demo/client/app/chart",
+		"/Users/colin/Projects/Outsource/MagicWindow/zgc/demo/client/app/dashboard",
+		"/Users/colin/Projects/Outsource/MagicWindow/zgc/demo/client/app/ui",
+		"/Users/colin/Projects/Outsource/MagicWindow/zgc/demo/client/data",
+		"/Users/colin/Projects/Outsource/MagicWindow/zgc/demo/client/vendors"
+	],
+	"file_history":
+	[
+		"/Users/colin/Library/Application Support/Sublime Text 3/Packages/GoSublime/USAGE.md",
+		"/Users/colin/Projects/Outsource/MagicWindow/zgc/demo/client/bower_components/ngECharts/dist/ngecharts.js",
+		"/Users/colin/Projects/Outsource/MagicWindow/zgc/demo/client/assets/i18n/zh-CN.json",
+		"/Users/colin/Projects/Outsource/MagicWindow/zgc/demo/client/app/chart/chart.module.js",
+		"/Users/colin/Projects/Outsource/MagicWindow/zgc/demo/client/bower_components/angular-material/angular-material.js",
+		"/Users/colin/Projects/Outsource/MagicWindow/zgc/demo/client/styles/ui/components/_sprites.scss",
+		"/Users/colin/Projects/Outsource/MagicWindow/zgc/demo/.gitignore",
+		"/Users/colin/Projects/Outsource/MagicWindow/zgc/demo/client/index.html",
+		"/Users/colin/Projects/Outsource/MagicWindow/zgc/demo/client/app/layout/customizer.controller.js",
+		"/Users/colin/Projects/Outsource/MagicWindow/zgc/demo/client/app/layout/layout.module.js",
+		"/Users/colin/Projects/Outsource/MagicWindow/zgc/demo/client/app/core/i18n.js",
+		"/Users/colin/Projects/Outsource/MagicWindow/zgc/demo/client/app/layout/header.html",
+		"/Users/colin/Projects/Outsource/MagicWindow/zgc/demo/client/styles/layout/_header.scss",
+		"/Users/colin/Projects/Outsource/MagicWindow/zgc/demo/client/main.js",
+		"/Users/colin/Projects/Outsource/MagicWindow/zgc/demo/gulpfile.js",
+		"/Users/colin/Projects/Outsource/MagicWindow/zgc/demo/gulp.config.js",
+		"/Users/colin/Projects/Outsource/MagicWindow/zgc/demo/package.json",
+		"/Users/colin/Projects/Outsource/MagicWindow/zgc/demo/client/package.json",
+		"/Users/colin/Projects/Outsource/MagicWindow/zgc/demo/dist/index.html",
+		"/Users/colin/Projects/Outsource/MagicWindow/zgc/demo/dist/assets/i18n/zh-CN.json",
+		"/Users/colin/Projects/Outsource/MagicWindow/zgc/demo/dist/scripts/app.js",
+		"/Users/colin/Projects/musicover/app/src/main/index.dev.js",
+		"/Users/colin/Projects/musicover/webpack.renderer.config.js",
+		"/Users/colin/Projects/musicover/webpack.main.config.js",
+		"/Users/colin/Projects/musicover/musicover.sublime-project",
+		"/Users/colin/Projects/musicover/app/package.json",
+		"/Users/colin/Projects/musicover/app/src/libs/metadata-model.js",
+		"/Users/colin/Projects/musicover/app/src/renderer/components/LandingPageView.vue",
+		"/Users/colin/Projects/musicover/.eslintignore",
+		"/Users/colin/Projects/musicover/app/node_modules/flac-metadata/lib/Processor.js",
+		"/Users/colin/Projects/music-cover/index.html",
+		"/Users/colin/Projects/music-beauty/package.json",
+		"/Users/colin/Projects/music-beauty/app/src/scripts/components/image-search/baidu-image.jsx",
+		"/Users/colin/Projects/music-beauty/app/src/scripts/components/image-engine/baidu-image.jsx",
+		"/Users/colin/yidou/webapp-react/webpack.base.conf.js",
+		"/Users/colin/yidou/yidou-webapp/src/assets/css/material-theme.min.css",
+		"/Users/colin/yidou/yidou-webapp/build/webpack.base.conf.js",
+		"/Users/colin/yidou/yidou-webapp/src/App.vue",
+		"/Users/colin/yidou/yidou-webapp/index.html",
+		"/Users/colin/yidou/yidou-webapp/build/webpack.dev.conf.js",
+		"/Users/colin/yidou/yidou-webapp/dist/index.html",
+		"/Users/colin/yidou/yidou-webapp/build/webpack.prod.conf.js",
+		"/Users/colin/yidou/yidou-webapp/src/components/Dropdown.vue",
+		"/Users/colin/yidou/yidou-webapp/src/components/Hello.vue",
+		"/Users/colin/yidou/yidou-webapp/src/views/Home/index.vue",
+		"/Users/colin/yidou/yidou-webapp/src/views/Home/Jumbotron.vue",
+		"/Users/colin/yidou/backstage/.gitignore",
+		"/Users/colin/yidou/backstage/dist/css/AdminLTE.min.css",
+		"/Users/colin/yidou/backstage/dist/css/AdminLTE.css",
+		"/Users/colin/yidou/backstage/plugins/dialog/bootstrap-dialog.js",
+		"/Users/colin/yidou/backstage/plugins/dialog/bootstrap-dialog.min.js",
+		"/Users/colin/yidou/backstage/plugins/dialog/bootstrap-dialog.css",
+		"/Users/colin/yidou/backstage/plugins/dialog/bootstrap-dialog.min.css",
+		"/Users/colin/yidou/backstage/plugins/dialog/jquery.dialog.js",
+		"/Users/colin/yidou/backstage/index.html",
+		"/Users/colin/yidou/backstage/layout.html",
+		"/Users/colin/yidou/backstage/Gruntfile.js",
+		"/Users/colin/Projects/blog/themes/xhueman/source/css/style.styl",
+		"/Users/colin/Projects/blog/themes/xhueman/source/css/_partial/header.styl",
+		"/Users/colin/Projects/github/hexo-qiniu-sync/README.md",
+		"/Users/colin/Projects/github/hexo-qiniu-sync/.gitignore",
+		"/Users/colin/Projects/blog/package.json",
+		"/Users/colin/Projects/blog/scaffolds/post.md",
+		"/Users/colin/Projects/blog/scaffolds/page.md",
+		"/Users/colin/Projects/blog/scaffolds/draft.md",
+		"/Users/colin/Projects/blog/scaffolds/photo.md",
+		"/Users/colin/Projects/blog/_config.yml",
+		"/Users/colin/Projects/blog/themes/hueman/_config.yml",
+		"/Users/colin/.qiniu",
+		"/Users/colin/Projects/blog/source/_posts/彻底放弃node-sass改用Ruby-Sass.md",
+		"/Users/colin/Projects/blog/source/_posts/Sass.md",
+		"/Users/colin/Projects/blog/source/_posts/列车.md",
+		"/Users/colin/Projects/blog/source/_posts/魔都沦陷.md",
+		"/Users/colin/Projects/blog/source/_posts/网站-Blog支持Gravatar.md",
+		"/Users/colin/Projects/blog/source/_posts/实现修改Actionscript文件后不必重新发布swf.md",
+		"/Users/colin/Projects/blog/source/_posts/语义化版本2-0-0.md",
+		"/Users/colin/Projects/blog/source/_posts/UIDesigner-3-0架构设计总结.md",
+		"/Users/colin/Projects/blog/source/_posts/潇湘大地.md",
+		"/Users/colin/Projects/blog/source/_posts/感谢有你.md",
+		"/Users/colin/Projects/blog/source/_posts/天地荒老.md",
+		"/Users/colin/Projects/blog/source/_posts/夏夜.md",
+		"/Users/colin/Projects/blog/source/_posts/地铁.md",
+		"/Users/colin/Projects/blog/source/_posts/一半.md",
+		"/Users/colin/Library/Application Support/Sublime Text 3/Packages/AutoFileName/autofilename.sublime-settings",
+		"/Users/colin/Projects/blog/source/_posts/移动Web实现摇一摇.md",
+		"/Users/colin/Projects/blog/source/_posts/九月的村庄.md",
+		"/Users/colin/Projects/blog/source/_posts/晚归.md",
+		"/Users/colin/Projects/blog/node_modules/hexo-migrator-wordpressimg/package.json",
+		"/Users/colin/Projects/blog/themes/hueman/languages/zh-CN.yml",
+		"/Users/colin/Projects/blog/source/_posts/廣州日報第6屆【港澳優質誠信商號】推選活動.md",
+		"/Users/colin/Projects/blog/source/_posts/恒江网站.md",
+		"/Users/colin/Projects/blog/source/_posts/档案管理系统-景鸿移民顾问有限公司.md",
+		"/Users/colin/Projects/blog/source/_posts/环球医生门诊系统及门户网站.md",
+		"/Users/colin/Projects/blog/source/_posts/磨碟沙.md",
+		"/Users/colin/Projects/blog/source/_posts/为触摸而设计.md",
+		"/Users/colin/Projects/blog/source/_posts/唯有前行.md",
+		"/Users/colin/Projects/blog/source/_posts/Bower支持Packages多版本共存.md",
+		"/Users/colin/Projects/blog/source/_posts/让Yeoman生成器的默认Grunt预览服务器支持随机端口.md",
+		"/Users/colin/Projects/blog/source/_posts/NodeJS版本的Gitlab-API.md",
+		"/Users/colin/Projects/blog/source/_posts/Metro风格设计指南.md",
+		"/Users/colin/Projects/blog/source/_posts/解决iframe在iPad内不能滚动的问题.md",
+		"/Users/colin/Projects/blog/source/_posts/实验性项目IMIS系统（类WebQQ）.md",
+		"/Users/colin/Projects/blog/source/_posts/三清山初行记.md",
+		"/Users/colin/Projects/blog/node_modules/hexo-migrator-wordpressimg/README.md",
+		"/Users/colin/Projects/blog/node_modules/hexo-migrator-wordpressimg/LICENSE",
+		"/Users/colin/Projects/blog/node_modules/hexo-migrator-wordpressimg/.npmignore",
+		"/Users/colin/Projects/blog/node_modules/hexo-migrator-wordpressimg/.gitignore",
+		"/Users/colin/Projects/blog/source/_posts/Dr-kong客户关系管理系统登录界面.md",
+		"/Users/colin/Projects/blog/source/imgs/恒江网站/hengjing_1-300x218.jpg",
+		"/Users/colin/Projects/blog/node_modules/hexo-migrator-wordpressimg/index.js",
+		"/Users/colin/Projects/blog/node_modules/hexo-migrator-wordpressimg/img-download.js",
+		"/Users/colin/Projects/blog/node_modules/hexo-migrator-wordpressimg/map301.js",
+		"/Users/colin/Projects/blog/node_modules/hexo/lib/hexo/post.js",
+		"/Users/colin/Projects/blog/301.json",
+		"/Users/colin/Projects/blog/db.json",
+		"/Users/colin/Projects/blog/themes/hueman/source/css/_partial/header.styl",
+		"/Users/colin/Projects/blog/themes/hueman/source/css/_variables.styl",
+		"/Users/colin/Projects/blog/themes/hueman/source/css/_partial/nav.styl",
+		"/Users/colin/Projects/blog/themes/icarus/_config.yml",
+		"/Users/colin/Projects/blog/source/_posts/转-–-php5将xml转换成json最简单的办法.md",
+		"/Users/colin/Projects/blog/themes/next/_config.yml",
+		"/Users/colin/Projects/blog/source/_posts/广东省道路信息服务系统.md",
+		"/Users/colin/Projects/blog/source/_posts/互联网用户常见心理特征.md",
+		"/Users/colin/Projects/blog/source/_posts/e5-ae-9e-e9-aa-8c-e6-80-a7-e9-a1-b9-e7-9b-aeimis-e7-b3-bb-e7-bb-9f-1.md",
+		"/Users/colin/Projects/blog/node_modules/moment/moment.d.ts",
+		"/Users/colin/Projects/blog/node_modules/hexo-migrator-wordpress-img/index.js",
+		"/Users/colin/Projects/blog/node_modules/hexo-migrator-wordpress-img/img-download.js",
+		"/Users/colin/Projects/blog/hexo-site.sublime-project"
+	],
+	"find":
+	{
+		"height": 38.0
+	},
+	"find_in_files":
+	{
+		"height": 106.0,
+		"where_history":
+		[
+			"/Users/colin/Projects/Outsource/MagicWindow/zgc/demo/client/",
+			"/Users/colin/Projects/Outsource/MagicWindow/zgc/demo/client/styles",
+			"<project>",
+			"/Users/colin/Projects/blog/source/_posts",
+			"./"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": true,
+		"find_history":
+		[
+			"{val",
+			"lue:",
+			"e:",
+			"lue:",
+			"Search",
+			"Video Ads",
+			"Affiliate",
+			"Email",
+			"p",
+			"echarts",
+			"data",
+			"#e53935",
+			".md-button",
+			"raised",
+			"btn",
+			"warn",
+			"NAV",
+			"honekong",
+			"flags",
+			"材料",
+			"應用",
+			"特點",
+			"介紹",
+			"登陸",
+			"編輯",
+			"忘記密碼",
+			"聯繫",
+			"服務",
+			"地圖",
+			"時間",
+			"郵件",
+			"單個郵件",
+			"撰寫",
+			"發票",
+			"鎖定",
+			"實時",
+			"實時数据",
+			"菜單",
+			"數據",
+			"驗證",
+			"響應",
+			"個人資料",
+			"註冊",
+			"註銷",
+			"登錄",
+			"頁面",
+			"圖表",
+			"任務",
+			"佈局",
+			"表單",
+			"選項",
+			"LangCtrl",
+			"nodeRequire",
+			"global",
+			"window",
+			"require",
+			"assetsLazyLoad",
+			"})\n",
+			"mocha",
+			"sass-watcher",
+			"watch",
+			"browserSync",
+			"conter",
+			"newFile",
+			"var",
+			"publish",
+			"debugger",
+			"const",
+			"de",
+			"debugger",
+			"fs",
+			"Transform",
+			"cover",
+			"FLacMetadata",
+			",",
+			"mdbVorbis",
+			"\"source.flac\"",
+			"var",
+			"music",
+			"MDB_TYPE_PICTURE",
+			"Processor",
+			"Transform",
+			"_validateMarker",
+			"isFlac",
+			"_validateMDBHeader",
+			"_validateMarker",
+			"STATE_MDB",
+			"_validateMDBHeader",
+			"MetaDataBlockPicture",
+			"mdb",
+			"reader",
+			"var",
+			"Processor",
+			"_transform",
+			"mdb",
+			"emit",
+			"isChunkProcessed",
+			"STATE_IDLE",
+			"const",
+			"var",
+			"store",
+			"settings",
+			"lint",
+			"extensions",
+			"babel-plugin-component",
+			"extensions",
+			"no-empty-label   ",
+			"7",
+			"vue",
+			"this.props.onSelectImg(img)",
+			"this.props.onSelectImg(img);",
+			"utils.assetsPath",
+			"10",
+			"percent",
+			"pieChart",
+			"pie",
+			"-c",
+			"filter",
+			"Filter",
+			"pagination",
+			"dialog",
+			"categoryId",
+			"catogoryId",
+			"debugger",
+			"redirect",
+			"this.container",
+			"redirect",
+			"renderF"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": true,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 21,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "client/index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 8167,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								6063,
+								6063
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/glacier.tmTheme",
+							"editorconfig": true,
+							"ensure_newline_at_eof_on_save": true,
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true,
+							"trim_trailing_white_space_on_save": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 13,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "client/bower_components/echarts/src/config.js",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 8886,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/glacier.tmTheme",
+							"editorconfig": true,
+							"ensure_newline_at_eof_on_save": true,
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/JavaScriptNext - ES6 Syntax/JavaScriptNext.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true,
+							"trim_trailing_white_space_on_save": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 3284.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 14,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "client/vendors/ngecharts.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1311,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1268,
+								1268
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/glacier.tmTheme",
+							"editorconfig": true,
+							"ensure_newline_at_eof_on_save": true,
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/JavaScriptNext - ES6 Syntax/JavaScriptNext.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true,
+							"trim_trailing_white_space_on_save": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 396.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "client/app/layout/header.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5705,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								794,
+								794
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/glacier.tmTheme",
+							"editorconfig": true,
+							"ensure_newline_at_eof_on_save": true,
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true,
+							"trim_trailing_white_space_on_save": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 10,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "client/styles/theme/_customzier-options.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2718,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								524,
+								524
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/glacier.tmTheme",
+							"editorconfig": true,
+							"ensure_newline_at_eof_on_save": true,
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true,
+							"trim_trailing_white_space_on_save": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1460.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 24,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "client/styles/app.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 883,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/glacier.tmTheme",
+							"editorconfig": true,
+							"ensure_newline_at_eof_on_save": true,
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true,
+							"trim_trailing_white_space_on_save": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 18,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "client/init.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 222,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								220,
+								220
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/glacier.tmTheme",
+							"editorconfig": true,
+							"ensure_newline_at_eof_on_save": true,
+							"incomplete_sync": null,
+							"open_with_edit": true,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/JavaScriptNext - ES6 Syntax/JavaScriptNext.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true,
+							"trim_trailing_white_space_on_save": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 11,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "client/styles/global/_shared.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 60,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/glacier.tmTheme",
+							"editorconfig": true,
+							"ensure_newline_at_eof_on_save": true,
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true,
+							"trim_trailing_white_space_on_save": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 21,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "client/app/app.module.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 373,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/glacier.tmTheme",
+							"editorconfig": true,
+							"ensure_newline_at_eof_on_save": true,
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/JavaScriptNext - ES6 Syntax/JavaScriptNext.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true,
+							"trim_trailing_white_space_on_save": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 12,
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "client/app/core/core.module.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 364,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/glacier.tmTheme",
+							"editorconfig": true,
+							"ensure_newline_at_eof_on_save": true,
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/JavaScriptNext - ES6 Syntax/JavaScriptNext.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true,
+							"trim_trailing_white_space_on_save": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 20,
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "gulpfile.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 6521,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3179,
+								3179
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/glacier.tmTheme",
+							"editorconfig": true,
+							"ensure_newline_at_eof_on_save": true,
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/JavaScriptNext - ES6 Syntax/JavaScriptNext.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true,
+							"trim_trailing_white_space_on_save": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 2105.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 19,
+					"type": "text"
+				},
+				{
+					"buffer": 11,
+					"file": "client/styles/global/_var.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 32423,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1246,
+								1246
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/glacier.tmTheme",
+							"editorconfig": true,
+							"ensure_newline_at_eof_on_save": true,
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true,
+							"trim_trailing_white_space_on_save": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 61.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"type": "text"
+				},
+				{
+					"buffer": 12,
+					"file": "client/bower_components/angular-material/angular-material.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1132364,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								156118,
+								156118
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/glacier.tmTheme",
+							"editorconfig": true,
+							"ensure_newline_at_eof_on_save": true,
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/JavaScriptNext - ES6 Syntax/JavaScriptNext.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true,
+							"trim_trailing_white_space_on_save": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 94476.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 22,
+					"type": "text"
+				},
+				{
+					"buffer": 13,
+					"file": "client/styles/ui/components/_material-button.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1219,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								38,
+								38
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/glacier.tmTheme",
+							"editorconfig": true,
+							"ensure_newline_at_eof_on_save": true,
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true,
+							"trim_trailing_white_space_on_save": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 23,
+					"type": "text"
+				},
+				{
+					"buffer": 14,
+					"file": "client/styles/global/_var-extra.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1978,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1083,
+								1083
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/glacier.tmTheme",
+							"editorconfig": true,
+							"ensure_newline_at_eof_on_save": true,
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true,
+							"trim_trailing_white_space_on_save": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 9,
+					"type": "text"
+				},
+				{
+					"buffer": 15,
+					"file": "bower.json",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 910,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								722,
+								731
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/glacier.tmTheme",
+							"editorconfig": true,
+							"ensure_newline_at_eof_on_save": true,
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/JavaScriptNext - ES6 Syntax/JSON (JavaScriptNext).tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true,
+							"trim_trailing_white_space_on_save": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 16,
+					"file": "client/app/layout/loader.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 186,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/glacier.tmTheme",
+							"editorconfig": true,
+							"ensure_newline_at_eof_on_save": true,
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/JavaScriptNext - ES6 Syntax/JavaScriptNext.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true,
+							"trim_trailing_white_space_on_save": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 27,
+					"type": "text"
+				},
+				{
+					"buffer": 17,
+					"file": "client/app/layout/customizer.controller.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 169,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/glacier.tmTheme",
+							"editorconfig": true,
+							"ensure_newline_at_eof_on_save": true,
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/JavaScriptNext - ES6 Syntax/JavaScriptNext.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true,
+							"trim_trailing_white_space_on_save": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 18,
+					"file": "client/app/core/app.config.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2961,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								837,
+								837
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/glacier.tmTheme",
+							"editorconfig": true,
+							"ensure_newline_at_eof_on_save": true,
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/JavaScriptNext - ES6 Syntax/JavaScriptNext.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true,
+							"trim_trailing_white_space_on_save": true
+						},
+						"translation.x": 5.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 26,
+					"type": "text"
+				},
+				{
+					"buffer": 19,
+					"file": "client/index.backup.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 8176,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								770,
+								770
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/glacier.tmTheme",
+							"editorconfig": true,
+							"ensure_newline_at_eof_on_save": true,
+							"incomplete_sync": null,
+							"open_with_edit": true,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true,
+							"trim_trailing_white_space_on_save": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 25,
+					"type": "text"
+				},
+				{
+					"buffer": 20,
+					"file": "client/app/layout/sidebar.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2155,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								202,
+								202
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/glacier.tmTheme",
+							"editorconfig": true,
+							"ensure_newline_at_eof_on_save": true,
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true,
+							"trim_trailing_white_space_on_save": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 16,
+					"type": "text"
+				},
+				{
+					"buffer": 21,
+					"file": "client/app/dashboard/dashboard.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 10456,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3602,
+								3602
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/glacier.tmTheme",
+							"editorconfig": true,
+							"ensure_newline_at_eof_on_save": true,
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true,
+							"trim_trailing_white_space_on_save": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 968.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 22,
+					"file": "client/app/dashboard/dashboard.controller.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 17824,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2032,
+								2032
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/glacier.tmTheme",
+							"editorconfig": true,
+							"ensure_newline_at_eof_on_save": true,
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/JavaScriptNext - ES6 Syntax/JavaScriptNext.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true,
+							"trim_trailing_white_space_on_save": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 747.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 23,
+					"file": "client/app/chart/echarts-pie.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1356,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								355,
+								343
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/glacier.tmTheme",
+							"editorconfig": true,
+							"ensure_newline_at_eof_on_save": true,
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true,
+							"trim_trailing_white_space_on_save": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 15,
+					"type": "text"
+				},
+				{
+					"buffer": 24,
+					"file": "client/app/chart/echarts.controller.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 48763,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								585,
+								507
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/glacier.tmTheme",
+							"editorconfig": true,
+							"ensure_newline_at_eof_on_save": true,
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/JavaScriptNext - ES6 Syntax/JavaScriptNext.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true,
+							"trim_trailing_white_space_on_save": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 25,
+					"file": "client/app/ui/components.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 47386,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								12251,
+								12122
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/glacier.tmTheme",
+							"editorconfig": true,
+							"ensure_newline_at_eof_on_save": true,
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true,
+							"trim_trailing_white_space_on_save": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 4084.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 26,
+					"file": "client/app/core/i18n.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2007,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								450,
+								455
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/glacier.tmTheme",
+							"editorconfig": true,
+							"ensure_newline_at_eof_on_save": true,
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/JavaScriptNext - ES6 Syntax/JavaScriptNext.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true,
+							"trim_trailing_white_space_on_save": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 415.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 17,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 27,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 217,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								217
+							]
+						],
+						"settings":
+						{
+							"auto_name": "sudo /Volumes/Install\\ macOS\\ Sierra/Install\\ macO",
+							"default_dir": "/Users/colin/Projects/Outsource/MagicWindow/zgc/demo",
+							"incomplete_sync": null,
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 27.0
+	},
+	"input":
+	{
+		"height": 38.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			],
+			[
+				0,
+				1,
+				1,
+				2
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			0.678740284974,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.MarGo-output":
+	{
+		"height": 122.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.sftp":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "zgc-exponent.sublime-project",
+	"replace":
+	{
+		"height": 50.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"/app/",
+				"~/Projects/musicover/app/node_modules/flac-metadata/lib/Processor.js"
+			],
+			[
+				"sass",
+				"source/_posts/彻底放弃node-sass改用Ruby-Sass.md"
+			],
+			[
+				"列车",
+				"source/_posts/列车.md"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "yidou",
+		"selected_items":
+		[
+			[
+				"yidou",
+				"~/Projects/Outsource/yidou/yidou-webapp/yidou-webapp.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 1,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 349.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

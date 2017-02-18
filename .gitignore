@@ -1,0 +1,11 @@
+node_modules
+dist
+.tmp
+.sass-cache
+/app/
+/dist/
+
+.DS_Store
+npm-debug.log
+/preview/preview.zip
+*.sublime-project

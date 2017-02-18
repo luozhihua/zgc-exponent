@@ -1,0 +1,19 @@
+{
+  "name": "zgc-exponent",
+  "description": "中电信息指数",
+  "version": "1.0.0",
+  "author": "Colin(mail@luozhihua.com)",
+  "main": "main.js",
+  "engines": {
+    "node": ">=0.10.20"
+  },
+  "scripts": {
+    "postinstall": "install-app-deps"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "del": "^2.2.0",
+    "electron": "^1.4.15",
+    "yargs": "^6.0.0"
+  }
+}
