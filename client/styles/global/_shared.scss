@@ -4,3 +4,31 @@
     }
 }
 
+.titlebar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999999999;
+    background-color: transparent;
+
+    .titlebar-close, .titlebar-minimize, .titlebar-fullscreen {
+        width: 12px;
+        height: 12px;
+    }
+}
+
+// Mac, osx 最小化、最大化、关闭按钮靠左显示
+.is-macos, .is-osx, .is-linux {
+    .titlebar-stoplight,
+    .titlebar-close, .titlebar-minimize, .titlebar-fullscreen{
+        float: left;
+    }
+}
+
+// Mac, osx 最小化、最大化、关闭按钮靠左显示
+.is-windows {
+    .titlebar-stoplight,
+    .titlebar-close, .titlebar-minimize, .titlebar-fullscreen{
+        float: right;
+    }
+}

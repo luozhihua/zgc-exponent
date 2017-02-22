@@ -45,9 +45,9 @@ html {
             z-index: $zindex-navbar-fixed;
 
             & + .main-container {
-                padding-top: $header_height * 2;
+                margin-top: $header_height * 2;
                 @media (min-width:$screen-sm) {
-                    padding-top: $header_height;
+                    margin-top: $header_height;
                 }
             }
 
@@ -58,8 +58,13 @@ html {
 
     > .main-container {
         position: relative;
-        min-height: 100%; // important!
+        // min-height: 100%; // important!
+        height: calc(100% - #{$header_height+10px});
+        margin-top: $header_height;
+        padding-top: 0;
         padding-bottom: 0;
+        overflow: auto;
+
         &:before { // content container background for boxed layout
             content: " ";
             line-height: 0;

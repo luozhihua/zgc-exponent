@@ -4,8 +4,10 @@ dist
 .sass-cache
 /app/
 /dist/
+bower_components
 
 .DS_Store
 npm-debug.log
 /preview/preview.zip
 *.sublime-project
+*.zip

@@ -134,7 +134,7 @@ gulp.task('optimize', ['inject', 'sass-min'], function() {
         .src(config.index)
         .pipe($.plumber({errorHandler: swallowError}))
         .pipe($.useref())
-        .pipe($.if('scripts/app.js', $.uglify()))
+        // .pipe($.if('scripts/app.js', $.uglify()))
         .pipe(gulp.dest( config.dist ));
 
 });
@@ -157,7 +157,7 @@ gulp.task('serve-docs', ['jade-docs'], function() {
 })
 
 gulp.task('start', ['optimize', 'copy'], function () {
-    childProcess.spawn(electron, ['./dist'], {
+    childProcess.spawn(electron, ['./'+ config.dist], {
         stdio: 'inherit'
     })
     .on('close', function () {
@@ -167,7 +167,10 @@ gulp.task('start', ['optimize', 'copy'], function () {
 });
 
 gulp.task('dist', ['optimize', 'copy'], function () {
+});
 
+gulp.task('dist-watch', ['optimize', 'copy'], function () {
+    gulp.watch([config.client+'/**/*.*'], ['dist']);
 });
 
 

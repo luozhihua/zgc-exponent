@@ -7,13 +7,12 @@
   "engines": {
     "node": ">=0.10.20"
   },
-  "scripts": {
-    "postinstall": "install-app-deps"
+  "dependencies": {
+    "electron-is": "^2.4.0",
+    "excel": "^0.1.7",
+    "lowdb": "^0.15.5",
+    "titlebar": "^1.4.0",
+    "xlsx2json": "^1.0.0"
   },
-  "dependencies": {},
-  "devDependencies": {
-    "del": "^2.2.0",
-    "electron": "^1.4.15",
-    "yargs": "^6.0.0"
-  }
+  "devDependencies": {}
 }

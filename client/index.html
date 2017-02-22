@@ -18,6 +18,7 @@
             delete window.require;
             delete window.exports;
             delete window.module;
+
         </script>
 
         <!-- google fonts -->
@@ -57,7 +58,10 @@
           data-custom-page
           data-ng-controller="AppCtrl"
           data-ng-class=" { 'layout-boxed': main.layout === 'boxed',
-                            'nav-collapsed-min': main.isMenuCollapsed
+                            'nav-collapsed-min': main.isMenuCollapsed,
+                            'is-macos is-osx': eis.osx,
+                            'is-windows': eis.windows,
+                            'is-linux': eis.linux
           } ">
         <!--[if lt IE 9]>
             <div class="lt-ie9-bg">
@@ -137,10 +141,10 @@
         <script src="app/app.module.js"></script>
         <script src="app/chart/chart.module.js"></script>
         <script src="app/core/core.module.js"></script>
-        <script src="app/layout/layout.module.js"></script>
-        <script src="app/page/page.module.js"></script>
         <script src="app/form/form.module.js"></script>
         <script src="app/form/formValidation.module.js"></script>
+        <script src="app/layout/layout.module.js"></script>
+        <script src="app/page/page.module.js"></script>
         <script src="app/table/table.module.js"></script>
         <script src="app/ui/ui.module.js"></script>
         <script src="app/chart/echarts.controller.js"></script>
@@ -149,16 +153,16 @@
         <script src="app/core/config.lazyload.js"></script>
         <script src="app/core/config.route.js"></script>
         <script src="app/core/i18n.js"></script>
+        <script src="app/dashboard/dashboard.controller.js"></script>
+        <script src="app/form/form.controller.js"></script>
+        <script src="app/form/formValidation.controller.js"></script>
+        <script src="app/form/wizard.controller.js"></script>
         <script src="app/layout/customizer.controller.js"></script>
         <script src="app/layout/layout.diretive.js"></script>
         <script src="app/layout/loader.js"></script>
         <script src="app/layout/sidebar.directive.js"></script>
-        <script src="app/dashboard/dashboard.controller.js"></script>
         <script src="app/page/page.controller.js"></script>
         <script src="app/page/page.directive.js"></script>
-        <script src="app/form/form.controller.js"></script>
-        <script src="app/form/formValidation.controller.js"></script>
-        <script src="app/form/wizard.controller.js"></script>
         <script src="app/table/table.controller.js"></script>
         <script src="app/ui/material.controller.js"></script>
         <script src="app/ui/ui.controller.js"></script>
@@ -166,4 +170,45 @@
         <!-- endinject -->
         <!-- endbuild -->
     </body>
+
+    <script>
+        window.require = nodeRequire;
+
+        // const is = require('electron-is');
+        // const $body = $('body');
+        // if (is.osx) { $body.addClass('is-osx is-macos'); }
+        // if (is.windows) { $body.addClass('is-windows'); }
+        // if (is.linux) { $body.addClass('is-linux'); }
+
+        (function(window) {
+            var remote = nodeRequire('electron').remote;
+            var nativeWin = remote.getCurrentWindow();
+            var titlebar = nodeRequire('titlebar');
+            var t = titlebar();
+
+            t.appendTo(document.body);
+
+            t.on('close', function(e) {
+                nativeWin.close();
+            });
+
+            t.on('minimize', function(e) {
+                nativeWin.minimize();
+            });
+
+            t.on('maximize', function(e) {
+               if (!nativeWin.isMaximized()) {
+                   nativeWin.maximize();
+               } else {
+                   nativeWin.unmaximize();
+               }
+            });
+
+            // t.element exposes the root dom element
+            t.element.appendChild(document.createElement('div'));
+
+            // Clean up after usage
+            // t.destroy();
+        }(this));
+    </script>
 </html>

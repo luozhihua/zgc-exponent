@@ -1,5 +1,6 @@
 body {
     background: $main_container_bg;
+    overflow: hidden;
 }
 
 
@@ -38,7 +39,7 @@ body {
             .page-err {
                 margin-right: 0;
             }
-        }          
+        }
     }
 }
 
@@ -69,7 +70,7 @@ body {
         // padding-bottom: 50px;
     }
 
-    // 
+    //
     &.on-canvas .main-container #content {
         margin-left: 0;
         margin-right: 0;

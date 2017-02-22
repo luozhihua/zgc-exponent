@@ -58,6 +58,7 @@
     "node": ">=0.10.20"
   },
   "dependencies": {
+    "excel": "^0.1.7",
     "lowdb": "^0.15.5"
   },
   "build": {
@@ -65,8 +66,6 @@
     "mac": {
       "category": "com.colin.zgcclient"
     },
-    "win": {
-
-    }
+    "win": {}
   }
 }

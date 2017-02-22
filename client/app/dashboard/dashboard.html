@@ -4,8 +4,8 @@
     <div class="callout callout-danger">
         <h4><i class="fa fa-exclamation-triangle"></i>警告</h4>
         <div>
-            系统检测到当前有100款产品的<b>本地采购价</b>高于<b>指数价格</b> <span class="badge badge-danger">50%</span> 请您即时跟进处理。
-            <md-button class="md-primary">查看...</md-button>
+            系统检测到当前有<b>100款</b>产品的<b>本地采购价</b>高于<b>指数价格</b> <span class="badge badge-danger">50%</span> 请您即时跟进处理。
+            <md-button class="md-raised md-warn"  ng-click="showTableDialog($event)">查看...</md-button>
         </div>
     </div>
 <!--
@@ -16,6 +16,121 @@
             <md-button class="md-primary">查看...</md-button>
         </div>
     </div> -->
+
+
+    <div class="row">
+        <div class="col-md-12">
+
+            <div class="panel panel-default panel-minimal">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="divider divider-md"></div>
+                        <div class="panel-heading">本地采购商品价格监测</div>
+                        <div class="panel-body">
+                            <div data-echarts data-options="pie1.options" data-events="pie1.events" style="height: 350px;"></div>
+                        </div>
+                    </div>
+                    <!-- <div class="col-md-6">
+                        <div class="divider divider-md"></div>
+                        <div class="panel-heading"><b>{{pie2Title}}</b> 的商品</div>
+                        <div class="panel-body">
+                            <div data-echarts data-options="pie2.options" data-events="pie2.events" style="height: 350px;"></div>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row ">
+        <div class="col-lg-8 clearfix">
+            <h2 class="section-header">采购价格严重高于指数价的商品</h2>
+        </div>
+        <div class="col-md-12">
+            <div class="panel panel-default">
+                <div class="panel-body padding-lg-h">
+
+                    <div class="row">
+                        <div class="col-md-4">
+
+                            <div class="ih-item ih-material ui-ribbon-container ui-ribbon-danger">
+                                <div class="ui-ribbon-wrapper">
+                                    <div class="ui-ribbon">
+                                        高于80%
+                                    </div>
+                                </div>
+                                <a href="javascript:;">
+                                    <div class="img">
+                                        <img src="assets/images/goods/1.jpg" alt="">
+                                    </div>
+                                    <div class="info">
+                                        <div class="info-mask bg-dark"></div>
+                                        <div class="info-content">
+                                            <div class="info-inner">
+                                                <h3>高于指数价格 <span class="badge badge-danger">80%</span></h3>
+                                                <p>惠普 HP M226DW（自动双面打印/250页/黑白激光）多功能一体机</p>
+                                                <md-button md-no-ink class="md-primary md-raised">详情...</md-button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+
+                            <div class="ih-item ih-material ui-ribbon-container ui-ribbon-danger">
+                                <div class="ui-ribbon-wrapper">
+                                    <div class="ui-ribbon">
+                                        高于73%
+                                    </div>
+                                </div>
+                                <a href="javascript:;">
+                                    <div class="img">
+                                        <img src="assets/images/goods/2.jpg" alt="">
+                                    </div>
+                                    <div class="info">
+                                        <div class="info-mask bg-dark"></div>
+                                        <div class="info-content">
+                                            <div class="info-inner">
+                                                <h3>高于指数价格 <span class="badge badge-danger md-display-1">73%</span></h3>
+                                                <p>佳能 CANON EOS 5D MARK III 单反机身</p>
+                                                <md-button md-no-ink class="md-primary md-raised">详情...</md-button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="ih-item ih-material ui-ribbon-container ui-ribbon-danger">
+                                <div class="ui-ribbon-wrapper">
+                                    <div class="ui-ribbon">
+                                        高于67%
+                                    </div>
+                                </div>
+                                <a href="javascript:;">
+                                    <div class="img">
+                                        <img src="assets/images/goods/3.jpg" alt="">
+                                    </div>
+                                    <div class="info">
+                                        <div class="info-mask bg-dark"></div>
+                                        <div class="info-content">
+                                            <div class="info-inner">
+                                                <h3>高于指数价格 <span class="badge badge-danger">67%</span></h3>
+                                                <p>佳能 CANON EOS 5D MARK III 单反机身</p>
+                                                <md-button md-no-ink class="md-primary md-raised">详情...</md-button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
     <div class="row">
@@ -52,160 +167,6 @@
                 </div>
             </div>
         </div>
-    </div>
-
-
-    <div class="row">
-        <div class="col-md-12">
-
-            <div class="panel panel-default panel-minimal">
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="divider divider-md"></div>
-                        <div class="panel-heading">本地采购商品价格监测</div>
-                        <div class="panel-body">
-                            <div data-echarts data-options="pie1.options" data-events="pie1.events" style="height: 350px;"></div>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="divider divider-md"></div>
-                        <div class="panel-heading"><b>{{pie2Title}}</b> 的商品</div>
-                        <div class="panel-body">
-                            <div data-echarts data-options="pie2.options" style="height: 350px;"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-    <div class="row">
-        <div class="col-md-12">
-            <div class="panel panel-default">
-                <div class="panel-body padding-lg">
-                    <div class="row">
-                        <div class="col-lg-8">
-                            <div class="panel">
-                                <div class="panel-heading text-center">Engagement</div>
-                                <div class="divider divider-lg"></div>
-                                <div class="panel-body">
-                                    <div class="row text-center metrics">
-                                        <div class="col-xs-6 col-md-3">
-                                            <span class="metric">5.6M</span>
-                                            <span class="metric-info">Session</span>
-                                        </div>
-                                        <div class="col-xs-6 col-md-3">
-                                            <span class="metric">4.8M</span>
-                                            <span class="metric-info">Users</span>
-                                        </div>
-                                        <div class="col-xs-6 col-md-3">
-                                            <span class="metric">5:06</span>
-                                            <span class="metric-info">Session Duration</span>
-                                        </div>
-                                        <div class="col-xs-6 col-md-3">
-                                            <span class="metric">6.24</span>
-                                            <span class="metric-info">Page Views</span>
-                                        </div>
-                                    </div>
-
-                                    <div class="row">
-                                        <div data-echarts data-options="pie.options" style="height: 180px;"></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4">
-                            <section class="panel">
-                                <div class="panel-heading">Statistics</div>
-                                <div class="divider divider-md"></div>
-                                <div class="panel-body">
-                                    <div class="divider divider-md"></div>
-                                    <div class="progressbar-container">
-                                        <md-progress-linear md-mode="determinate" value="34" class="md-progressbar brand-success"></md-progress-linear>
-                                        <p class="desc">Bounce Rate <span class="pull-right color-success">34%</span></p>
-                                    </div>
-                                    <div class="progressbar-container">
-                                        <md-progress-linear md-mode="determinate" value="68" class="md-progressbar brand-info"></md-progress-linear>
-                                        <p class="desc">New Visists <span class="pull-right color-info">68%</span></p>
-                                    </div>
-                                    <div class="progressbar-container">
-                                        <md-progress-linear md-mode="determinate" value="48" class="md-progressbar brand-danger"></md-progress-linear>
-                                        <p class="desc">Search Traffic <span class="pull-right color-danger">48%</span></p>
-                                    </div>
-                                    <div class="progressbar-container">
-                                        <md-progress-linear md-mode="determinate" value="77" class="md-progressbar brand-warning"></md-progress-linear>
-                                        <p class="desc">Modern Browsers <span class="pull-right color-warning">77%</span></p>
-                                    </div>
-                                    <div class="progressbar-container">
-                                        <md-progress-linear md-mode="determinate" value="55" class="md-progressbar brand-primary"></md-progress-linear>
-                                        <p class="desc">Returning <span class="pull-right color-primary">55%</span></p>
-                                    </div>
-                                </div>
-                            </section>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-    <div class="row">
-       <!-- Stats -->
-        <div class="col-lg-3 col-xsm-6">
-            <div class="panel panel-box">
-                <div class="panel-top">
-                    <i class="material-icons color-success">airplanemode_active</i>
-                </div>
-                <div class="panel-info">
-                    <span data-translate="GROWTH"></span>
-                </div>
-                <div class="panel-bottom bg-light">
-                    <span>36 <span class="size-h4">%</span></span>
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-3 col-xsm-6">
-            <div class="panel panel-box">
-                <div class="panel-top">
-                    <i class="material-icons color-info">supervisor_account</i>
-                </div>
-                <div class="panel-info">
-                    <span data-translate="NEW_USERS"></span>
-                </div>
-                <div class="panel-bottom bg-light">
-                    <span>22 <span class="size-h4">%</span></span>
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-3 col-xsm-6">
-            <div class="panel panel-box">
-                <div class="panel-top">
-                    <i class="material-icons color-warning">attach_money</i>
-                </div>
-                <div class="panel-info">
-                    <span data-translate="PROFIT"></span>
-                </div>
-                <div class="panel-bottom bg-light">
-                    <span>37 <span class="size-h4">k</span></span>
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-3 col-xsm-6">
-            <div class="panel panel-box">
-                <div class="panel-top">
-                    <i class="material-icons color-danger">shopping_cart</i>
-                </div>
-                <div class="panel-info">
-                    <span data-translate="SALES"></span>
-                </div>
-                <div class="panel-bottom bg-light">
-                    <span>21 <span class="size-h4">k</span></span>
-                </div>
-            </div>
-        </div>
-        <!-- end stats -->
     </div>
 
 </div>

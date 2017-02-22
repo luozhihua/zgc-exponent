@@ -5,6 +5,7 @@ $customizer_bg:            #fafafa;
 #quickview-customizer {
     width: 410px;
     right: -410px;
+    top: $header_height;
 }
 .quickview-open-customizer {
     #quickview-customizer {

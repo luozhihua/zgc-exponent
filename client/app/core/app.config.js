@@ -1,6 +1,8 @@
 (function() {
     'use strict';
 
+    const is = nodeRequire('electron-is');
+
     angular.module('app.core')
         .factory('appConfig', [appConfig])
         .config(['$mdThemingProvider', mdConfig]);
@@ -33,8 +35,8 @@
             fixedHeader: true,                              // Boolean: true, false
             fixedSidebar: true,                             // Boolean: true, false
             pageTransition: pageTransitionOpts[0],          // Object: 0, 1, 2, 3 and build your own
-            skin: '12',                                     // String: 11,12,13,14,15,16; 21,22,23,24,25,26; 31,32,33,34,35,36
-            link: 'https://themeforest.net/item/material-design-admin-with-angularjs/13582227'
+            skin: '31',                                     // String: 11,12,13,14,15,16; 21,22,23,24,25,26; 31,32,33,34,35,36
+            link: '/'
         };
         var color = {
             primary:    '#009688',
@@ -48,6 +50,7 @@
         };
 
         return {
+            eis: is,
             pageTransitionOpts: pageTransitionOpts,
             main: main,
             color: color
