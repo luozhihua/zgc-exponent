@@ -9,6 +9,7 @@ let win
 function createWindow () {
   // Create the browser window.
   win = new BrowserWindow({
+    autoHideMenuBar: true,
     // resizable: false,
     width: 500,
     // transparent: true,
