@@ -2,21 +2,22 @@
 
 
     <div class="callout callout-danger">
-        <h4><i class="fa fa-exclamation-triangle"></i>警告</h4>
+        <h4><i class="fa fa-exclamation-triangle"></i>预警</h4>
         <div>
-            系统检测到当前有<b>100款</b>产品的<b>本地采购价</b>高于<b>指数价格</b> <span class="badge badge-danger">50%</span> 请您即时跟进处理。
+            系统监测到当前有<b>100款</b>产品的<b>本地采购价</b>高于<b>指数价格</b> <span class="badge badge-danger">50%</span> 请您即时跟进处理。
             <md-button class="md-raised md-warn"  ng-click="showTableDialog($event)">查看...</md-button>
         </div>
     </div>
-<!--
+
+    <!--
     <div class="callout callout-warning">
         <h4><i class="fa fa-info-circle"></i>注意</h4>
         <div>
             系统检测到当前有200款产品的<b>本地采购价</b>高于<b>指数价格</b> <span class="badge badge-warnning">25%</span> 请您保持关注。
             <md-button class="md-primary">查看...</md-button>
         </div>
-    </div> -->
-
+    </div>
+    -->
 
     <div class="row">
         <div class="col-md-12">
@@ -27,16 +28,18 @@
                         <div class="divider divider-md"></div>
                         <div class="panel-heading">本地采购商品价格监测</div>
                         <div class="panel-body">
-                            <div data-echarts data-options="pie1.options" data-events="pie1.events" style="height: 350px;"></div>
+                            <div data-echarts data-options="pie1.options" data-events="pie1.events" style="height: 400px;"></div>
                         </div>
                     </div>
-                    <!-- <div class="col-md-6">
+                    <!--
+                    <div class="col-md-6">
                         <div class="divider divider-md"></div>
                         <div class="panel-heading"><b>{{pie2Title}}</b> 的商品</div>
                         <div class="panel-body">
                             <div data-echarts data-options="pie2.options" data-events="pie2.events" style="height: 350px;"></div>
                         </div>
-                    </div> -->
+                    </div>
+                    -->
                 </div>
             </div>
         </div>
@@ -51,7 +54,7 @@
                 <div class="panel-body padding-lg-h">
 
                     <div class="row">
-                        <div class="col-md-4">
+                        <div class="col-sm-6 col-md-3 col-lg-2">
 
                             <div class="ih-item ih-material ui-ribbon-container ui-ribbon-danger">
                                 <div class="ui-ribbon-wrapper">
@@ -76,7 +79,7 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="col-md-4">
+                        <div class="col-sm-6 col-md-3 col-lg-2">
 
                             <div class="ih-item ih-material ui-ribbon-container ui-ribbon-danger">
                                 <div class="ui-ribbon-wrapper">
@@ -101,7 +104,7 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="col-md-4">
+                        <div class="col-sm-6 col-md-3 col-lg-2">
                             <div class="ih-item ih-material ui-ribbon-container ui-ribbon-danger">
                                 <div class="ui-ribbon-wrapper">
                                     <div class="ui-ribbon">
@@ -117,6 +120,31 @@
                                         <div class="info-content">
                                             <div class="info-inner">
                                                 <h3>高于指数价格 <span class="badge badge-danger">67%</span></h3>
+                                                <p>佳能 CANON EOS 5D MARK III 单反机身</p>
+                                                <md-button md-no-ink class="md-primary md-raised">详情...</md-button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-3 col-lg-2">
+
+                            <div class="ih-item ih-material ui-ribbon-container ui-ribbon-danger">
+                                <div class="ui-ribbon-wrapper">
+                                    <div class="ui-ribbon">
+                                        高于73%
+                                    </div>
+                                </div>
+                                <a href="javascript:;">
+                                    <div class="img">
+                                        <img src="assets/images/goods/2.jpg" alt="">
+                                    </div>
+                                    <div class="info">
+                                        <div class="info-mask bg-dark"></div>
+                                        <div class="info-content">
+                                            <div class="info-inner">
+                                                <h3>高于指数价格 <span class="badge badge-danger md-display-1">73%</span></h3>
                                                 <p>佳能 CANON EOS 5D MARK III 单反机身</p>
                                                 <md-button md-no-ink class="md-primary md-raised">详情...</md-button>
                                             </div>

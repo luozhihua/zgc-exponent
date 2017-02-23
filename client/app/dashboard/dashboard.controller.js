@@ -1,10 +1,17 @@
 (function () {
     'use strict';
 
+    const {BrowserWindow} = nodeRequire('electron').remote;
     angular.module('app')
         .controller('DashboardCtrl', ['$mdDialog', '$rootScope', '$scope', DashboardCtrl])
 
     function DashboardCtrl($mdDialog, $root, $scope) {
+
+        const win = BrowserWindow.getFocusedWindow();
+        win.setSize(1200, 800, true);
+        win.maximize();
+        win.setPosition(0, 0, true);
+
         // success: #8BC34A 139,195,74
         // info: #00BCD4 0,188,212
         // gray: #EDF0F1 237,240,241
@@ -480,7 +487,6 @@
                 }
             ]
         };
-
 
         // Engagment pie charts
         var labelTop = {

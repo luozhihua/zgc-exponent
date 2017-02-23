@@ -26,7 +26,7 @@
         var date = new Date();
         var year = date.getFullYear();
         var main = {
-            brand: '中电信息指数',
+            brand: '中电指数',
             name: '管理员',
             year: year,
             layout: 'wide',                                 // String: 'boxed', 'wide'

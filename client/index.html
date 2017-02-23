@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-        <title>中电信息指数</title>
+        <title>新华·中电指数数据终端</title>
         <meta name="description" content="Responsive Admin Web App with Bootstrap and AngularJS">
         <meta name="keywords" content="angularjs admin, admin templates, admin themes, bootstrap admin">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
@@ -181,34 +181,30 @@
         // if (is.linux) { $body.addClass('is-linux'); }
 
         (function(window) {
-            var remote = nodeRequire('electron').remote;
-            var nativeWin = remote.getCurrentWindow();
-            var titlebar = nodeRequire('titlebar');
-            var t = titlebar();
+            // var remote = nodeRequire('electron').remote;
+            // var nativeWin = remote.getCurrentWindow();
+            // var titlebar = nodeRequire('titlebar');
+            // var t = titlebar();
 
-            t.appendTo(document.body);
+            // t.appendTo(document.body);
 
-            t.on('close', function(e) {
-                nativeWin.close();
-            });
+            // t.on('close', function(e) {
+            //     nativeWin.close();
+            // });
 
-            t.on('minimize', function(e) {
-                nativeWin.minimize();
-            });
+            // t.on('minimize', function(e) {
+            //     nativeWin.minimize();
+            // });
 
-            t.on('maximize', function(e) {
-               if (!nativeWin.isMaximized()) {
-                   nativeWin.maximize();
-               } else {
-                   nativeWin.unmaximize();
-               }
-            });
+            // t.on('maximize', function(e) {
+            //    if (!nativeWin.isMaximized()) {
+            //        nativeWin.maximize();
+            //    } else {
+            //        nativeWin.unmaximize();
+            //    }
+            // });
 
-            // t.element exposes the root dom element
-            t.element.appendChild(document.createElement('div'));
-
-            // Clean up after usage
-            // t.destroy();
-        }(this));
+            // t.element.appendChild(document.createElement('div'));
+       }(this));
     </script>
 </html>

@@ -7,10 +7,10 @@
 
     function invoiceCtrl($scope, $window) {
         var printContents, originalContents, popupWin;
-        
+
         $scope.printInvoice = function() {
             printContents = document.getElementById('invoice').innerHTML;
-            originalContents = document.body.innerHTML;        
+            originalContents = document.body.innerHTML;
             popupWin = window.open();
             popupWin.document.open();
             popupWin.document.write('<html><head><link rel="stylesheet" type="text/css" href="styles/main.css" /></head><body onload="window.print()">' + printContents + '</html>');
@@ -19,6 +19,12 @@
     }
 
     function authCtrl($scope, $window, $location) {
+
+        const {BrowserWindow} = nodeRequire('electron').remote;
+        const win = BrowserWindow.getFocusedWindow();
+        win.setSize(640, 540, true);
+        win.setPosition(200, 200, true);
+
         $scope.login = function() {
             $location.url('/')
         }
@@ -33,10 +39,10 @@
 
         $scope.unlock =    function() {
             $location.url('/')
-        }     
+        }
     }
 
-})(); 
+})();
 
 
 

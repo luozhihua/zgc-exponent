@@ -1,9 +1,24 @@
+
 body {
     background: $main_container_bg;
     overflow: hidden;
+
+    text-rendering: optimizeLegibility;
+    font-feature-settings: "kern" 1;
+    -webkit-font-feature-settings: "kern";
+    -moz-font-feature-settings: "kern";
+    -moz-font-feature-settings: "kern=1";
+    font-kerning: normal;
+    font-family: 'PingFang', '微软雅黑 Regular', '微软雅黑', 'Microsoft Yahei', Helvetica Neue,sans-serif;
 }
 
 
+.app.body-auth>.header-container.header-fixed+.main-container {
+    margin-top: 30px;
+}
+.page-signin .wrapper, .page-signup .wrapper, .page-forgot .wrapper {
+    margin-top: 0 !important;
+}
 .body-auth,
 .body-err {
     &.app > .main-container:before {
@@ -42,6 +57,16 @@ body {
         }
     }
 }
+
+
+.body-auth {
+    background: transparent;
+
+    &.app>.main-container {
+        height: 100%;
+    }
+}
+
 
 // fullscreen, hide header and sidebar
 .body-wide {
