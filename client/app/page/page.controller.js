@@ -22,8 +22,12 @@
 
         const {BrowserWindow} = nodeRequire('electron').remote;
         const win = BrowserWindow.getFocusedWindow();
-        win.setSize(640, 540, true);
-        win.setPosition(200, 200, true);
+
+        win.setSize(640, 560, true);
+        if (window.firstLogin === false) {
+            win.setPosition(200, 200, true);
+        }
+        window.firstLogin = false;
 
         $scope.login = function() {
             $location.url('/')
