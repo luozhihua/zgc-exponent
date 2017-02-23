@@ -6,7 +6,8 @@
   "scripts": {
     "init": "npm install",
     "postinstall": "install-app-deps",
-    "build": "gulp dist && build"
+    "build": "gulp dist && build",
+    "build-win32": "gulp dist && build --win --ia32"
   },
   "devDependencies": {
     "browser-sync": "^2.12.10",
