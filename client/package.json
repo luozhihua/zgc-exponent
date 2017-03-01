@@ -1,7 +1,7 @@
 {
   "name": "zgcindex",
   "description": "中电信息指数",
-  "version": "1.2.0",
+  "version": "1.3.0",
   "author": "Colin(mail@luozhihua.com)",
   "main": "main.js",
   "engines": {
