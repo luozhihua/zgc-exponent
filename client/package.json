@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "electron-is": "^2.4.0",
+    "lodash": "^4.17.4",
     "lowdb": "^0.15.5",
     "titlebar": "^1.4.0",
     "xlsx2json": "^1.0.0"

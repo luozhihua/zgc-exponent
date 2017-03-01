@@ -1,0 +1,188 @@
+<div class="page page-product-details" data-ng-controller="detailsController">
+
+    <h2 class="section-header">{{productProps.name}}</h2>
+<!--
+    <div class="panel panel-default">
+        <div class="panel-body">
+ -->
+            <div class="divider divider-lg"></div>
+            <div class="row">
+                <div class="col-sm-4">
+
+                    <div class="panel mini-box bg-info">
+                        <!-- <div class="card"> -->
+                            <div class="text-center" style="padding: 2.1em 1em;">
+                                <h2 class="card-title">中电指数EPI</h2>
+                                <p>2017-01-22 至 2017-03-14</p>
+                            </div>
+                        <!-- </div> -->
+                    </div>
+                </div>
+                <div class="col-sm-2">
+                    <div class="panel mini-box">
+                        <span class="btn-icon btn-icon-round btn-icon-lg-alt bg-danger">
+                            <span class="size-h2">
+                                <i class="material-icons">trending_up</i>
+                            </span>
+                        </span>
+                        <div class="text-center">
+                            <h2>{{zhishu}}</h2>
+                            <small>指数价</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-2">
+                    <div class="panel mini-box">
+                        <span class="btn-icon btn-icon-round btn-icon-lg-alt bg-warning">
+                            <span class="size-h2">
+                                <i ng-if="ecOffset>0" class="material-icons">vertical_align_top</i>
+                                <i ng-if="ecOffset==0" class="material-icons">vertical_align_center</i>
+                                <i ng-if="ecOffset<0" class="material-icons">vertical_align_bottom</i>
+                            </span>
+                        </span>
+                        <div class="text-center">
+                            <h2>{{ecOffset}}</h2>
+                            <small>电商平均价</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-2">
+                    <div class="panel mini-box">
+                        <span class="btn-icon btn-icon-round btn-icon-lg-alt bg-primary">
+                            <span class="size-h2">
+                                <i ng-if="marketOffset>0" class="material-icons">vertical_align_top</i>
+                                <i ng-if="marketOffset==0" class="material-icons">vertical_align_center</i>
+                                <i ng-if="marketOffset<0" class="material-icons">vertical_align_bottom</i>
+                            </span>
+                        </span>
+                        <div class="text-center">
+                            <h2>{{marketOffset}}</h2>
+                            <small>市场平均价</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-2">
+                    <div class="panel mini-box">
+                        <span class="btn-icon btn-icon-round btn-icon-lg-alt bg-success">
+                            <span class="size-h2">
+                                <i ng-if="govOffset>0" class="material-icons">vertical_align_top</i>
+                                <i ng-if="govOffset==0" class="material-icons">vertical_align_center</i>
+                                <i ng-if="govOffset<0" class="material-icons">vertical_align_bottom</i>
+                            </span>
+                        </span>
+                        <div class="text-center">
+                            <h2>{{govOffset}}</h2>
+                            <small>政采平均价</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <!-- </div>
+    </div> -->
+
+    <div class="panel panel-default">
+        <div class="panel-body">
+
+            <div class="divider divider-lg"></div>
+            <div class="row">
+                <div class="col-sm-4">
+
+
+                    <div class="card bg-white">
+                        <div class="card-image">
+                            <img  ng-src="{{productImg}}">
+                            <!-- <span class="card-title">{{productProps.name}}</span> -->
+                        </div>
+                        <!--
+                        <div class="card-content">
+                            <a class="card-button pull-right" href="javascript:;">
+                                <button class="btn btn-icon btn-icon-round btn-floating btn-danger"><i class="fa fa-heart"></i></button>
+                            </a>
+                            <p>I am a very simple card. I am good at containing small bits of information.
+                                I am quite convenient because I require little markup to use effectively.</p>
+                        </div>
+                        <div class="card-action">
+                            <a href="javascript:;">A link</a>
+                            <a href="javascript:;">A link</a>
+                        </div>
+                        -->
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <dl class="dl-horizontal">
+                        <dt>指数畅销价</dt><dd>{{zhishu}}</dd>
+                        <dt>实体市场价</dt><dd>{{productProps.market_productPrice}}</dd>
+                        <dt>电商平均价</dt><dd>{{avergeEc}}</dd>
+                        <dt>政采平均价</dt><dd>{{avergeGov}}</dd>
+                        <dt>增值服务</dt><dd>{{  }}</dd>
+                    </dl>
+                </div>
+                <div class="col-sm-3">
+                    <ul class="price-list ec-prices">
+                        <li ng-repeat="ec in ecList" class="text-nowrap">
+                            {{ ec.ecName }}: {{ec.price}} 点击查看
+                        </li>
+                    </ul>
+
+                    <ul class="price-list gov-prices">
+                        <li ng-repeat="gov in govList" class="text-nowrap">
+                            {{ gov.govName }}: {{gov.price}} 点击查看
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <md-content>
+                <md-tabs md-dynamic-height md-border-bottom>
+                    <md-tab label="中标信息">
+                        <md-content class="md-padding">
+                            <div class="media-list media-divider-inset">
+                                <div class="media" ng-repeat="bid in productBid">
+                                    <div class="media-body">
+                                        <h4 class="media-heading"><a ng-href="{{bid.H}}">{{bid.C}}</a></h4>
+                                        <p><small>{{bid.D}}</small></p>
+                                        <p>
+                                            <span class="label label-default">{{bid.G}}</span>
+                                            <span class="label label-default">{{bid.F}}</span>
+                                        </p>
+                                        <p><small style="color: #ccc;">{{bid.E}}</small></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </md-content>
+                    </md-tab>
+                    <md-tab label="商品参数">
+                        <md-content class="md-padding">
+                            <h3 class="md-display-1">商品参数</h3>
+                            <md-table-container>
+                                <table md-table class="table table-striped" md-row-select="options.rowSelection"  md-progress="promise">
+                                    <thead ng-if="!options.decapitate" md-head md-order="query.order" md-on-reorder="logOrder">
+                                        <tr md-row>
+                                            <th md-column width="200"><span>参数名</span></th>
+                                            <th md-column><span>内容</span></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody md-body>
+                                        <tr md-row ng-repeat="dessert in productDetails">
+                                            <td md-cell>{{dessert.B}}</td>
+                                            <td md-cell>
+                                                {{dessert.C}}
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </md-table-container>
+                        </md-content>
+                    </md-tab>
+                    <md-tab label="商品详情">
+                        <md-content class="md-padding">
+                            <h3 class="md-display-1">此商品暂无详情.</h3>
+                            <p></p>
+                        </md-content>
+                    </md-tab>
+                </md-tabs>
+            </md-content>
+
+        </div>
+    </div>
+</div>

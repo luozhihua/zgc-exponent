@@ -2,6 +2,7 @@ var gulp = require('gulp');
 var childProcess = require('child_process');
 var electron = require('electron');
 var args = require('yargs').argv;
+var sourcemaps = require('gulp-sourcemaps');
 var browserSync = require('browser-sync');
 var config = require('./gulp.config')();
 var del = require('del');
@@ -120,6 +121,7 @@ gulp.task('copy', function() {
         config.client + '/main.js',
         config.client + '/package.json',
         config.client + '/data/**/*.*',
+        config.client + '/libs/**/*.js',
     ].concat(config.assetsLazyLoad, config.assetsToCopy);
 
     return gulp

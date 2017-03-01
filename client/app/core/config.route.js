@@ -30,11 +30,25 @@
                     return setRoutes(route);
                 });
 
-
                 $stateProvider
                     .state('dashboard', {
                         url: '/dashboard',
                         templateUrl: 'app/dashboard/dashboard.html'
+                    })
+                    .state('product/details', {
+                        url: '/product/details/:id',
+                        templateUrl: 'app/product/details.html',
+                        controller: 'detailsController'
+                    })
+                    .state('product/quanguo', {
+                        url: '/product/quanguo',
+                        templateUrl: 'app/product/quanguo.html',
+                        controller: 'quanguoController'
+                    })
+                    .state('product/local', {
+                        url: '/product/local/:gov',
+                        templateUrl: 'app/product/quanguo.html',
+                        controller: 'quanguoController'
                     })
                     .state('form/editor', {
                         url: '/form/editor',
@@ -73,6 +87,8 @@
                 $urlRouterProvider
                     .when('/', '/dashboard')
                     .otherwise('/dashboard');
+                    // .when('/', '/dashboard')
+                    // .otherwise('/dashboard');
             }
         ]);
 

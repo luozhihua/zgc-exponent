@@ -1,15 +1,15 @@
 
 // Shared variables and mixins
-@import 
+@import
     "global/var"                        // global variables
 ,   "global/var-extra"                  // extra global variables
 ,   "bootstrap/bootstrap/mixins"        // Bootstrap mixins
 ;
 
 
-@import 
+@import
     "global/shared"
-    
+
 // overrides 3rd party libs' style
 ,   "libs/angular-material"
 ,   "libs/angular-material-data-table"
@@ -26,6 +26,7 @@
 ,   "pages/features"
 ,   "pages/demo"
 ,   "pages/demo-material"
+,   "pages/product"
 
 // sections
 ,   "layout/layouts"

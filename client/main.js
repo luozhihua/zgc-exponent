@@ -10,6 +10,7 @@ function createWindow () {
   // Create the browser window.
   win = new BrowserWindow({
     autoHideMenuBar: true,
+    center: true,
     // resizable: false,
     width: 500,
     // transparent: true,

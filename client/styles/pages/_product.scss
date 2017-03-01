@@ -1,0 +1,24 @@
+.page-product-details {
+    .price-list  {
+        display: block;
+        height: 200px;
+        max-width: 200px;
+        width: 100%;
+        overflow: auto;
+        margin: 0px;
+        padding: 0px;
+        border: 1px solid #eee;
+
+        li {
+            list-style: none;
+            display: block;
+            padding: 10px;
+            margin: 0px;
+            cursor: pointer;
+
+            &:hover {
+                background-color: #eee;
+            }
+        }
+    }
+}

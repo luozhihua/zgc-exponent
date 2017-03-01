@@ -1,0 +1,90 @@
+<div class="page page-product-details" data-ng-controller="quanguoController">
+
+    <h2 class="section-header">{{productProps.name}}</h2>
+
+    <div class="panel panel-default">
+        <div class="panel-body">
+
+            <div class="divider divider-lg"></div>
+            <div class="row">
+                <div class="col-sm-4">
+                    <h1>中电指数EPI</h1>
+                </div>
+                <div class="col-sm-2">
+                    <div class="panel mini-box">
+                        <span class="btn-icon btn-icon-round btn-icon-lg-alt bg-danger">
+                            <span class="size-h2">{{zhishu}}</span>
+                        </span>
+                    </div>
+                </div>
+                <div class="col-sm-2">
+                    <div class="panel mini-box">
+                        <span class="btn-icon btn-icon-round btn-icon-lg-alt bg-warning">
+                            <span class="size-h2">{{ecOffset}}</span>
+                        </span>
+                    </div>
+                </div>
+                <div class="col-sm-2">
+                    <div class="panel mini-box">
+                        <span class="btn-icon btn-icon-round btn-icon-lg-alt bg-primary">
+                            <span class="size-h2">{{marketOffset}}</span>
+                        </span>
+                    </div>
+                </div>
+                <div class="col-sm-2">
+                    <div class="panel mini-box">
+                        <span class="btn-icon btn-icon-round btn-icon-lg-alt bg-success">
+                            <span class="size-h2">{{govOffset}}</span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="panel panel-default">
+        <div class="panel-body">
+
+
+            <div class="row">
+                <div class="col col-sm-3 col-md-2 col-lg-1">
+
+                </div>
+            </div>
+
+            <div class="divider divider-lg"></div>
+            <div class="row">
+                <div class="col-sm-4 col-md-3 col-lg-2">
+                    <div class="card bg-white">
+                        <div class="card-image">
+                            <img  ng-src="{{productImg}}">
+                            <!-- <span class="card-title">{{productProps.name}}</span> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <dl class="dl-horizontal">
+                        <dt>指数畅销价</dt><dd>{{zscxj}}</dd>
+                        <dt>实体市场价</dt><dd>{{product.market_productPrice}}</dd>
+                        <dt>电商平均价</dt><dd>{{avergeEc}}</dd>
+                        <dt>政采平均价</dt><dd>{{avergeGov}}</dd>
+                        <dt>增值服务</dt><dd>{{}}</dd>
+                    </dl>
+                </div>
+                <div class="col-sm-3">
+                    <ul class="price-list ec-prices">
+                        <li ng-repeat="ec in ecList" class="text-nowrap">
+                            {{ ec.ecName }}: {{ec.price}} 点击查看
+                        </li>
+                    </ul>
+
+                    <ul class="price-list gov-prices">
+                        <li ng-repeat="gov in govList" class="text-nowrap">
+                            {{ gov.govName }}: {{gov.price}} 点击查看
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

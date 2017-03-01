@@ -25,7 +25,7 @@
 
         win.setSize(640, 560, true);
         if (window.firstLogin === false) {
-            win.setPosition(200, 200, true);
+            // win.setPosition(200, 200, true);
         }
         window.firstLogin = false;
 
