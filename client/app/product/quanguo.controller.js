@@ -10,56 +10,91 @@
     const LOCAL_GOV = 'sichuan';
 
     angular.module('app')
-        .controller('quanguoController', ['$mdDialog', '$rootScope', '$scope', '$stateParams', detailsController]);
+        .controller('quanguoController', ['$mdDialog', '$rootScope', '$scope', '$stateParams', quanguoController]);
 
-    function detailsController($mdDialog, $root, $scope, $stateParams) {
+    function quanguoController($mdDialog, $root, $scope, $stateParams) {
 
+        let IMGS;
         let product;
         let id = $stateParams.id;
         let nationwide = window.db = new ProductsNationwide() || window.db;
 
         nationwide.open().then(function() {
 
-            $scope.productProps = nationwide.getProductById(id);
-            $scope.zhishu = nationwide.zscxj(id);
+            $scope.tree = nationwide.getCategoryFlatTree();
 
-            $scope.avergeEc = nationwide.avergeEcQuanzhong(id);
-            $scope.avergeGov = nationwide.avergeGovQuanzhong(id);
-
-            $scope.govOffset = nationwide.govOffset(id);
-            $scope.ecOffset = nationwide.ecOffset(id);
-            $scope.marketOffset = nationwide.marketOffset(id);
-
-            $scope.avergeModelOfMarket = nationwide.getModelAvergeOfMarket(id);
-            $scope.avergeModelOfEc = nationwide.getModelAvergeOfEc(id);
-            $scope.avergeModelOfGov = nationwide.getModelAvergeOfGov(id);
-            $scope.avergeModel = nationwide.getModelAverge(id);
-
-            $scope.offsetModelOfMarket = nationwide.getModelOffsetOfMarket(id);
-            $scope.offsetModelOfEc = nationwide.getModelOffsetOfEc(id);
-            $scope.offsetModelOfGov = nationwide.getModelOffsetOfGov(id);
-
-            // $scope.ecList = nationwide.getProductsOfAllEcoms(id);
-            // $scope.govList = nationwide.getProductsOfAllGovs(id);
-
-            $scope.ecList = _.filter(nationwide.getProductsOfAllEcoms(id), function(o){return o.price!==0; });
-            $scope.govList = _.filter(nationwide.getProductsOfAllGovs(id), function(o){return o.price!==0; });
+            // 读取商品图片
+            getImgs().then(function(map) {
+                IMGS = map;
+                $scope.update();
+            });
         });
 
-        // 读取商品图片
-        getImgs().then(function(map) {
-            $scope.productImg = map[id];
-        });
 
-        // 读取中标信息
-        getBidInfo().then(function(map) {
-            $scope.productBid = map[id];
-        });
+        $scope.getZhishu = function(id) {
+            return {
+                productProps : nationwide.getProductById(id),
+                zhishu : nationwide.zscxj(id),
 
-        // 读取单品参数
-        getDetails().then(function(details) {
-            $scope.productDetails = details[id];
-        });
+                avergeEc : nationwide.avergeEcQuanzhong(id),
+                avergeGov : nationwide.avergeGovQuanzhong(id),
+
+                govOffset : nationwide.govOffset(id),
+                ecOffset : nationwide.ecOffset(id),
+                marketOffset : nationwide.marketOffset(id),
+
+                avergeModelOfMarket : nationwide.getModelAvergeOfMarket(id),
+                avergeModelOfEc : nationwide.getModelAvergeOfEc(id),
+                avergeModelOfGov : nationwide.getModelAvergeOfGov(id),
+                avergeModel : nationwide.getModelAverge(id),
+
+                offsetModelOfMarket : nationwide.getModelOffsetOfMarket(id),
+                offsetModelOfEc : nationwide.getModelOffsetOfEc(id),
+                offsetModelOfGov : nationwide.getModelOffsetOfGov(id),
+
+                ecList : _.filter(nationwide.getProductsOfAllEcoms(id), function(o){return o.price!==0; }),
+                govList : _.filter(nationwide.getProductsOfAllGovs(id), function(o){return o.price!==0; })
+            }
+        }
+
+        $scope.update = function(catelog) {
+            let productList;
+            let cateName;
+
+            if (!catelog) {
+                productList = nationwide.tables[0];
+            } else if (catelog.type == 'category') {
+                productList = nationwide.getProductByCategory(catelog.name);
+            } else {
+                productList = nationwide.getProductByModel(catelog.name);
+                cateName = catelog.name
+            }
+
+            cateName = cateName || productList.length>0 ? productList[0].model : null;
+            $scope.categoryName = cateName;
+
+            if (cateName) {
+
+                $scope.averge = nationwide.getModelAverge(cateName);
+                $scope.avergeOfMarket = nationwide.getModelAvergeOfMarket(cateName);
+                $scope.avergeOfEc = nationwide.getModelAvergeOfEc(cateName);
+                $scope.avergeOfGov = nationwide.getModelAvergeOfGov(cateName);
+
+                $scope.offsetOfMarket = nationwide.getModelOffsetOfMarket(cateName);
+                $scope.offsetOfEc = nationwide.getModelOffsetOfEc(cateName);
+                $scope.offsetOfGov = nationwide.getModelOffsetOfGov(cateName);
+            }
+
+            productList = _.slice(productList, 0, 5);
+
+            productList = _.map(productList, function(prod) {
+                prod.zhishuDetails =  $scope.getZhishu(prod.id);
+                prod.img = IMGS[prod.id];
+                return prod;
+            });
+
+            $scope.productList = productList;
+        }
 
     }
 

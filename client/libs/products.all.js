@@ -220,7 +220,7 @@ module.exports = class PruductsAll extends ExcelDb {
 
         cache[id] = (market * 0.7) + (ecAverge * 0.2) + (govAverge * 0.1);
 
-        return cache[id].toFixed(2);
+        return parseFloat(cache[id].toFixed(2));
     }
 
     /**
@@ -240,7 +240,7 @@ module.exports = class PruductsAll extends ExcelDb {
 
         cache[id] = (govAverge-zscxj) / zscxj;
 
-        return cache[id].toFixed(2);
+        return parseFloat(cache[id].toFixed(2));
     }
 
     /**
@@ -260,7 +260,7 @@ module.exports = class PruductsAll extends ExcelDb {
 
         cache[id] = (ecAverge-zscxj) / zscxj;
 
-        return cache[id].toFixed(2);
+        return parseFloat(cache[id].toFixed(2));
     }
 
     /**
@@ -282,7 +282,7 @@ module.exports = class PruductsAll extends ExcelDb {
 
         cache[id] = (market-zscxj) / zscxj;
 
-        return cache[id].toFixed(2);
+        return parseFloat(cache[id].toFixed(2));
     }
 
     /**
@@ -301,10 +301,10 @@ module.exports = class PruductsAll extends ExcelDb {
         let totalPrice = 0;
 
         prodsOfModel.forEach((prod) => {
-            totalPrice += this.zscxj(prod);
+            totalPrice += parseFloat(this.zscxj(prod));
         });
 
-        return cache[modelName] = (totalPrice/prodsOfModel.length).toFixed(2);
+        return cache[modelName] = parseFloat((totalPrice/prodsOfModel.length).toFixed(2));
     }
 
     /**
@@ -323,10 +323,10 @@ module.exports = class PruductsAll extends ExcelDb {
         let totalPrice = 0;
 
         prodsOfModel.forEach((prod) => {
-            totalPrice += prod.market_productPrice;
+            totalPrice += parseFloat(prod.market_productPrice);
         });
 
-        return cache[modelName] = (totalPrice/prodsOfModel.length).toFixed(2);
+        return cache[modelName] = parseFloat((totalPrice/prodsOfModel.length).toFixed(2));
     }
 
     /**
@@ -345,10 +345,10 @@ module.exports = class PruductsAll extends ExcelDb {
         let totalPrice = 0;
 
         prodsOfModel.forEach((prod) => {
-            totalPrice += this.avergeEcQuanzhong(prod);
+            totalPrice += parseFloat(this.avergeEcQuanzhong(prod));
         });
 
-        return cache[modelName] = (totalPrice/prodsOfModel.length).toFixed(2);
+        return cache[modelName] = parseFloat((totalPrice/prodsOfModel.length).toFixed(2));
     }
 
     /**
@@ -367,10 +367,10 @@ module.exports = class PruductsAll extends ExcelDb {
         let totalPrice = 0;
 
         prodsOfModel.forEach((prod) => {
-            totalPrice += this.avergeEcQuanzhong(prod);
+            totalPrice += parseFloat(this.avergeEcQuanzhong(prod));
         });
 
-        return cache[modelName] = (totalPrice/prodsOfModel.length).toFixed(2);
+        return cache[modelName] = parseFloat((totalPrice/prodsOfModel.length).toFixed(2));
     }
 
     /**
@@ -386,7 +386,7 @@ module.exports = class PruductsAll extends ExcelDb {
         let avergeModal = this.getModelAverge(modelName);
         let avergeModalOfMarket = this.getModelAvergeOfMarket(modelName);
 
-        return cache[modelName] = ((avergeModalOfMarket - avergeModal) / avergeModal).toFixed(2);
+        return cache[modelName] = parseFloat(((avergeModalOfMarket - avergeModal) / avergeModal).toFixed(2));
     }
 
     /**
@@ -402,7 +402,7 @@ module.exports = class PruductsAll extends ExcelDb {
         let avergeModal = this.getModelAverge(modelName);
         let avergeModalOfEc = this.getModelAvergeOfEc(modelName);
 
-        return cache[modelName] = ((avergeModalOfEc - avergeModal) / avergeModal).toFixed(2);
+        return cache[modelName] = parseFloat(((avergeModalOfEc - avergeModal) / avergeModal).toFixed(2));
     }
 
     /**
@@ -418,7 +418,7 @@ module.exports = class PruductsAll extends ExcelDb {
         let avergeModal = this.getModelAverge(modelName);
         let avergeModalOfGov = this.getModelAvergeOfGov(modelName);
 
-        return cache[modelName] = ((avergeModalOfGov - avergeModal) / avergeModal).toFixed(2);
+        return cache[modelName] = parseFloat(((avergeModalOfGov - avergeModal) / avergeModal).toFixed(2));
     }
 
     /**
@@ -491,6 +491,72 @@ module.exports = class PruductsAll extends ExcelDb {
         } else {
             return id;
         }
+    }
+
+    getProductByCategory(category) {
+        return _.filter(this.tables[0], {category: category});
+    }
+
+    getProductByModel(model) {
+        return _.filter(this.tables[0], {model: model});
+    }
+
+    getCategoryTree() {
+
+        let tree = [];
+        let category = _.groupBy(this.tables[0], 'category');
+        let cate;
+        let childList;
+        let childItem;
+
+        for (let k in category) {
+            cate = category[k];
+            childItem = _.toArray(_.groupBy(_.toArray(cate), 'model'));
+            childList = [];
+            childItem.forEach(function(sub) {
+                childList.push({
+                    name: sub[0].model,
+                    type: 'model'
+                });
+            });
+
+            tree.push({
+                name: k,
+                type: 'category',
+                children: childList
+            });
+        }
+
+        return tree;
+    }
+
+    getCategoryFlatTree() {
+
+        let tree = [];
+        let category = _.groupBy(this.tables[0], 'category');
+        let cate;
+        let childList;
+        let childItem;
+
+        for (let k in category) {
+            cate = category[k];
+            childItem = _.toArray(_.groupBy(_.toArray(cate), 'model'));
+            childList = [];
+
+            tree.push({
+                name: k,
+                type: 'category'
+            });
+
+            childItem.forEach(function(sub) {
+                tree.push({
+                    name: sub[0].model,
+                    type: 'model'
+                });
+            });
+        }
+
+        return tree;
     }
 
 }

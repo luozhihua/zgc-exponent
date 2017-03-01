@@ -19,7 +19,7 @@
                     </div>
                 </div>
                 <div class="col-sm-2">
-                    <div class="panel mini-box">
+                    <div class="panel mini-box text-center">
                         <span class="btn-icon btn-icon-round btn-icon-lg-alt bg-danger">
                             <span class="size-h2">
                                 <i class="material-icons">trending_up</i>
@@ -32,7 +32,7 @@
                     </div>
                 </div>
                 <div class="col-sm-2">
-                    <div class="panel mini-box">
+                    <div class="panel mini-box text-center">
                         <span class="btn-icon btn-icon-round btn-icon-lg-alt bg-warning">
                             <span class="size-h2">
                                 <i ng-if="ecOffset>0" class="material-icons">vertical_align_top</i>
@@ -47,7 +47,7 @@
                     </div>
                 </div>
                 <div class="col-sm-2">
-                    <div class="panel mini-box">
+                    <div class="panel mini-box text-center">
                         <span class="btn-icon btn-icon-round btn-icon-lg-alt bg-primary">
                             <span class="size-h2">
                                 <i ng-if="marketOffset>0" class="material-icons">vertical_align_top</i>
@@ -62,7 +62,7 @@
                     </div>
                 </div>
                 <div class="col-sm-2">
-                    <div class="panel mini-box">
+                    <div class="panel mini-box text-center">
                         <span class="btn-icon btn-icon-round btn-icon-lg-alt bg-success">
                             <span class="size-h2">
                                 <i ng-if="govOffset>0" class="material-icons">vertical_align_top</i>
@@ -86,29 +86,50 @@
             <div class="divider divider-lg"></div>
             <div class="row">
                 <div class="col-sm-4">
-
-
-                    <div class="card bg-white">
+                    <!-- <div class="panel panel-default no-margin"> -->
+                    <div class="card card-default bg-white">
                         <div class="card-image">
                             <img  ng-src="{{productImg}}">
-                            <!-- <span class="card-title">{{productProps.name}}</span> -->
                         </div>
-                        <!--
-                        <div class="card-content">
-                            <a class="card-button pull-right" href="javascript:;">
-                                <button class="btn btn-icon btn-icon-round btn-floating btn-danger"><i class="fa fa-heart"></i></button>
-                            </a>
-                            <p>I am a very simple card. I am good at containing small bits of information.
-                                I am quite convenient because I require little markup to use effectively.</p>
-                        </div>
-                        <div class="card-action">
-                            <a href="javascript:;">A link</a>
-                            <a href="javascript:;">A link</a>
-                        </div>
-                        -->
                     </div>
                 </div>
-                <div class="col-sm-3">
+
+                <div class="col-sm-4">
+
+                    <div class="panel panel-default no-margin">
+                        <ul class="list-group">
+                            <li class="list-group-item">
+                                指数畅销价
+                                <span class="badge badge-danger">￥{{zhishu}}</span>
+                            </li>
+                            <li class="list-group-item">
+                                实体市场价
+                                <span class="badge badge-info">￥{{productProps.market_productPrice}}</span>
+                            </li>
+                            <li class="list-group-item" ng-click="showOtherPrice = 'ec'">
+                                电商平均价
+                                <span class="badge badge-info">￥{{avergeEc}}</span>
+                                <md-button class="md-icon-button btn-xs" aria-label="headphones"><i class="material-icons">keyboard_arrow_right</i></md-button>
+                            </li>
+                            <li class="list-group-item" ng-click="showOtherPrice = 'gov'">
+                                政采平均价
+                                <span class="badge badge-info">￥{{avergeGov}}</span>
+                                <md-button class="md-icon-button btn-xs" aria-label="headphones"><i class="material-icons">keyboard_arrow_right</i></md-button>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="panel panel-default no-margin">
+                        <md-subheader class="md-no-sticky"> 增值服务</md-subheader>
+                        <ul class="list-group">
+                            <li class="list-group-item">
+                                售后服务
+                                <span class="badge">￥ 200</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!--
                     <dl class="dl-horizontal">
                         <dt>指数畅销价</dt><dd>{{zhishu}}</dd>
                         <dt>实体市场价</dt><dd>{{productProps.market_productPrice}}</dd>
@@ -116,19 +137,31 @@
                         <dt>政采平均价</dt><dd>{{avergeGov}}</dd>
                         <dt>增值服务</dt><dd>{{  }}</dd>
                     </dl>
+                    -->
                 </div>
-                <div class="col-sm-3">
-                    <ul class="price-list ec-prices">
-                        <li ng-repeat="ec in ecList" class="text-nowrap">
-                            {{ ec.ecName }}: {{ec.price}} 点击查看
-                        </li>
-                    </ul>
+                <div class="col-sm-4">
 
-                    <ul class="price-list gov-prices">
-                        <li ng-repeat="gov in govList" class="text-nowrap">
-                            {{ gov.govName }}: {{gov.price}} 点击查看
-                        </li>
-                    </ul>
+                    <div class="panel panel-default no-margin" ng-show="showOtherPrice=='ec'">
+                        <md-subheader class="md-no-sticky">电商单品价格</md-subheader>
+                        <md-list class="ui-material-list">
+                            <md-list-item ng-click="navigateTo(ec, $event)" ng-repeat="ec in ecList">
+                                <!-- <md-icon class="material-icons">{{ec.icon}}</md-icon> -->
+                                <p> {{ ec.ecName }} </p>
+                                <span class="badge badge-warning">{{ec.price}}</span>
+                            </md-list-item>
+                        </md-list>
+                    </div>
+
+                    <div class="panel panel-default no-margin" ng-show="showOtherPrice=='gov'">
+                        <md-subheader class="md-no-sticky">全国政采单品价格</md-subheader>
+                        <md-list class="ui-material-list" style="height: 240px; overflow: auto; ">
+                            <md-list-item ng-click="navigateTo(gov, $event)" ng-repeat="gov in govList">
+                                <!-- <md-icon class="material-icons">{{gov.icon}}</md-icon> -->
+                                <p> {{ gov.govName }} </p>
+                                <span class="badge badge-warning">{{gov.price}}</span>
+                            </md-list-item>
+                        </md-list>
+                    </div>
                 </div>
             </div>
 

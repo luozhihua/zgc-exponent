@@ -6,36 +6,73 @@
         <div class="panel-body">
 
             <div class="divider divider-lg"></div>
+
             <div class="row">
                 <div class="col-sm-4">
-                    <h1>中电指数EPI</h1>
+
+                    <div class="panel mini-box bg-info">
+                        <!-- <div class="card"> -->
+                            <div class="text-center" style="padding: .1em 1em;">
+                                <h4 class="card-title">中电指数EPI</h4>
+                                <h2 class="card-title">{{categoryName}}</h2>
+                                <p>2017-01-22 至 2017-03-14</p>
+                            </div>
+                        <!-- </div> -->
+                    </div>
                 </div>
                 <div class="col-sm-2">
-                    <div class="panel mini-box">
+                    <div class="panel mini-box text-center">
                         <span class="btn-icon btn-icon-round btn-icon-lg-alt bg-danger">
-                            <span class="size-h2">{{zhishu}}</span>
+                            <span class="size-h2">
+                                <i class="material-icons">trending_up</i>
+                            </span>
                         </span>
+                        <div class="text-center">
+                            <h2>{{averge}}</h2>
+                            <small>配型指数价</small>
+                        </div>
                     </div>
                 </div>
                 <div class="col-sm-2">
-                    <div class="panel mini-box">
+                    <div class="panel mini-box text-center">
                         <span class="btn-icon btn-icon-round btn-icon-lg-alt bg-warning">
-                            <span class="size-h2">{{ecOffset}}</span>
+                            <span class="size-h2">
+                                <i class="fa fa-cubes"></i>
+                            </span>
                         </span>
+                        <div class="text-center">
+                            <h2>{{avergeOfEc}}</h2>
+                            <h5>{{offsetOfEc}}</h5>
+                            <small>电商平均价</small>
+                        </div>
                     </div>
                 </div>
                 <div class="col-sm-2">
-                    <div class="panel mini-box">
+                    <div class="panel mini-box text-center">
                         <span class="btn-icon btn-icon-round btn-icon-lg-alt bg-primary">
-                            <span class="size-h2">{{marketOffset}}</span>
+                            <span class="size-h2">
+                                <i class="fa fa-cart-plus"></i>
+                            </span>
                         </span>
+                        <div class="text-center">
+                            <h2>{{avergeOfMarket}}</h2>
+                            <h5>{{offsetOfMarket}}</h5>
+                            <small>市场平均价</small>
+                        </div>
                     </div>
                 </div>
                 <div class="col-sm-2">
-                    <div class="panel mini-box">
+                    <div class="panel mini-box text-center">
                         <span class="btn-icon btn-icon-round btn-icon-lg-alt bg-success">
-                            <span class="size-h2">{{govOffset}}</span>
+                            <span class="size-h2">
+                                <i class="fa fa-hospital-o"></i>
+                            </span>
                         </span>
+                        <div class="text-center">
+                            <h2>{{avergeOfGov}}</h2>
+                            <h5>{{offsetOfGov}}</h5>
+                            <small>政采平均价</small>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -45,44 +82,65 @@
     <div class="panel panel-default">
         <div class="panel-body">
 
-
             <div class="row">
-                <div class="col col-sm-3 col-md-2 col-lg-1">
+                <div class="col col-sm-4 col-md-4 col-lg-3">
+                    <div class="panel panel-default no-margin">
+                        <md-subheader class="md-no-sticky">类别</md-subheader>
 
-                </div>
-            </div>
-
-            <div class="divider divider-lg"></div>
-            <div class="row">
-                <div class="col-sm-4 col-md-3 col-lg-2">
-                    <div class="card bg-white">
-                        <div class="card-image">
-                            <img  ng-src="{{productImg}}">
-                            <!-- <span class="card-title">{{productProps.name}}</span> -->
+                        <div class="list-group no-margin" style="max-height: 600px; overflow: auto; ">
+                            <a ui-wave href="javascript:;" ng-click="update(tr)" ng-repeat="tr in tree" class="list-group-item ui-wave"> <span ng-if="tr.type=='model'">- &nbsp;&nbsp;&nbsp;&nbsp;</span>{{ tr.name }} </a>
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-3">
-                    <dl class="dl-horizontal">
-                        <dt>指数畅销价</dt><dd>{{zscxj}}</dd>
-                        <dt>实体市场价</dt><dd>{{product.market_productPrice}}</dd>
-                        <dt>电商平均价</dt><dd>{{avergeEc}}</dd>
-                        <dt>政采平均价</dt><dd>{{avergeGov}}</dd>
-                        <dt>增值服务</dt><dd>{{}}</dd>
-                    </dl>
-                </div>
-                <div class="col-sm-3">
-                    <ul class="price-list ec-prices">
-                        <li ng-repeat="ec in ecList" class="text-nowrap">
-                            {{ ec.ecName }}: {{ec.price}} 点击查看
-                        </li>
-                    </ul>
+                <div class="col col-sm-8 col-md-8 col-lg-9">
 
-                    <ul class="price-list gov-prices">
-                        <li ng-repeat="gov in govList" class="text-nowrap">
-                            {{ gov.govName }}: {{gov.price}} 点击查看
-                        </li>
-                    </ul>
+                    <div class="panel panel-default no-margin" ng-repeat="product in productList">
+                        <md-subheader class="md-no-sticky">产品：{{product.name}}</md-subheader>
+                        <div class="row">
+
+                            <div class="col-sm-4 col-md-3 col-lg-2">
+                                <div class="card bg-white">
+                                    <div class="card-image">
+                                        <img  ng-src="{{product.img}}">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <dl class="dl-horizontal">
+                                    <dt>指数畅销价</dt><dd>{{product.zhishuDetails.zscxj}}</dd>
+                                    <dt>实体市场价</dt><dd>{{product.market_productPrice}}</dd>
+                                    <dt>电商平均价</dt><dd>{{product.zhishuDetails.avergeEc}}</dd>
+                                    <dt>政采平均价</dt><dd>{{product.zhishuDetails.avergeGov}}</dd>
+                                    <dt>增值服务</dt><dd>{{}}</dd>
+                                </dl>
+                            </div>
+                            <div class="col-sm-4">
+
+                                <div class="panel panel-default no-margin" ng-show="showOtherPrice!='gov'">
+                                    <md-subheader class="md-no-sticky">电商单品价格</md-subheader>
+                                    <md-list class="ui-material-list" style="height: 100px; overflow: auto; ">
+                                        <md-list-item ng-click="navigateTo(ec, $event)" ng-repeat="ec in product.ecList">
+                                            <!-- <md-icon class="material-icons">{{ec.icon}}</md-icon> -->
+                                            <p> {{ ec.ecName }} </p>
+                                            <span class="badge badge-warning">{{ec.price}}</span>
+                                        </md-list-item>
+                                    </md-list>
+                                </div>
+
+                                <div class="panel panel-default no-margin" ng-show="showOtherPrice=='gov'">
+                                    <md-subheader class="md-no-sticky">全国政采单品价格</md-subheader>
+                                    <md-list class="ui-material-list" style="height: 140px; overflow: auto; ">
+                                        <md-list-item ng-click="navigateTo(gov, $event)" ng-repeat="gov in product.govList">
+                                            <!-- <md-icon class="material-icons">{{gov.icon}}</md-icon> -->
+                                            <p> {{ gov.govName }} </p>
+                                            <span class="badge badge-warning">{{gov.price}}</span>
+                                        </md-list-item>
+                                    </md-list>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>

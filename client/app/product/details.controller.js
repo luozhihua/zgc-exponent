@@ -20,6 +20,7 @@
 
         nationwide.open().then(function() {
 
+            $scope.showOtherPrice = 'ec';
             $scope.productProps = nationwide.getProductById(id);
             $scope.zhishu = nationwide.zscxj(id);
 
@@ -38,9 +39,6 @@
             $scope.offsetModelOfMarket = nationwide.getModelOffsetOfMarket(id);
             $scope.offsetModelOfEc = nationwide.getModelOffsetOfEc(id);
             $scope.offsetModelOfGov = nationwide.getModelOffsetOfGov(id);
-
-            // $scope.ecList = nationwide.getProductsOfAllEcoms(id);
-            // $scope.govList = nationwide.getProductsOfAllGovs(id);
 
             $scope.ecList = _.filter(nationwide.getProductsOfAllEcoms(id), function(o){return o.price!==0; });
             $scope.govList = _.filter(nationwide.getProductsOfAllGovs(id), function(o){return o.price!==0; });
