@@ -1,6 +1,6 @@
 <div class="page-signin" ng-controller="authCtrl">
 
-    <div class="wrapper">
+    <div class="wrapper" ng-hide="hide">
         <div class="main-body">
             <div class="body-inner">
                 <div class="card bg-white">
@@ -30,14 +30,14 @@
                         </form>
                     </div>
                     <div class="card-action no-border text-right">
-                        <a href="#!/dashboard" class="color-primary">登录</a>
+                        <a xhref="#!/dashboard" ng-click="login()" class="color-primary">登录</a>
                     </div>
                 </div>
 
                 <div class="additional-info">
-                    <a href="#!/page/signup">注册</a>
-                    <span class="divider-h"></span>
-                    <a href="#!/page/forgot-password">忘记密码了?</a>
+                    <!-- <a href="#!/page/signup">注册</a> -->
+                    <!-- <span class="divider-h"></span> -->
+                    <!-- <a href="#!/page/forgot-password">忘记密码了?</a> -->
                 </div>
 
             </div>

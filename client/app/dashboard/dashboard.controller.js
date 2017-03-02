@@ -28,6 +28,7 @@
         groups['overtop_20_50'] = _.groupBy(overtop_20_50, 'category');
         groups['overtop_50'] = _.groupBy(overtop_50, 'category');
     });
+
     let getPie2Data = function(groupName) {
         var categorys = groups[groupName];
         var legendData = [];
@@ -49,15 +50,14 @@
         return [data, legendData];
     }
 
-
     angular.module('app')
         .controller('DashboardCtrl', ['$mdDialog', '$rootScope', '$scope', DashboardCtrl])
 
     function DashboardCtrl($mdDialog, $root, $scope) {
 
-        const win = BrowserWindow.getFocusedWindow();
-        win.setSize(1200, 800, true);
-        win.maximize();
+        // const win = BrowserWindow.getFocusedWindow();
+        // win.setSize(1200, 800, true);
+        // win.maximize();
         // win.setPosition(0, 0, true);
 
         // success: #8BC34A 139,195,74
@@ -65,7 +65,6 @@
         // gray: #EDF0F1 237,240,241
 
         _.map(overtop_50, function(prod) {
-
             var id = prod.id;
             var productProps = nationwide.getProductById(id);
             var zhishu = nationwide.zscxj(id);
@@ -76,8 +75,8 @@
             });
             return prod;
         });
+        $scope.overtop_50 = overtop_50;
         $scope.warningProducts50 = _.slice(overtop_50, 0, 5);
-
 
 
         $scope.pie1 = {};
@@ -88,6 +87,7 @@
 
                 var groupName = event.data.alias;
                 var data = getPie2Data(groupName);
+
                 $scope.pie2.options.series[0].data = data[0];
                 $scope.pie2.options.legend.data = data[1];
 
@@ -99,32 +99,18 @@
         };
         $scope.pie1.options = {
             color: [
-                '#F43333',
-                '#FF7A00',
-                '#FFE000',
-                '#28E229',
-                '#00E0F6'
+                '#385b8c',
+                '#3a75c7',
+                '#427dd8',
+                '#74b0ff',
+                '#98ba1c',
 
-                // "#ff6347",
-                // "#ff7f50",
-                // "#ffa500",
-                // "#cd5c5c",
-                // "#da70d6",
-                // "#32cd32",
-                // "#87cefa",
-                // "#6495ed",
-                // "#ff69b4",
-                // "#ba55d3",
-                // "#40e0d0",
-                // "#1e90ff",
-                // "#7b68ee",
-                // "#00fa9a",
-                // "#ffd700",
-                // "#6699FF",
-                // "#ff6666",
-                // "#3cb371",
-                // "#b8860b",
-                // "#30e0e0"
+                '#ff6347',
+                '#ff7f50',
+                '#C2BE38',
+                '#61B360',
+                "#00BCB0",
+                '#32cd32'
             ],
 
             selectedMode: 'single',
@@ -162,10 +148,10 @@
                     type:'pie',
                     selectedMode: 'single',
                     selectedOffset: 0,
-                    // radius : [0, 70],
+                    radius : [0, 140],
                     center: ['50%', '50%'],
                     data:[
-                        {value:overtop_50.length, name:'高于指数价格50%', alias: 'overtop_50'},
+                        {value:overtop_50.length,    name:'高于指数价格50%', alias: 'overtop_50'},
                         {value:overtop_20_50.length, name:'高于指数价格20%至50%', alias: 'overtop_20_50'},
                         {value:overtop_10_20.length, name:'高于指数价格10%至20%', alias: 'overtop_10_20'},
                         {value:overtop_0_10.length, name:'高于指数价格0%至10%', alias: 'overtop_0_10'},
@@ -175,10 +161,14 @@
             ]
         };
 
-
         $scope.pie2 = {defaultData: getPie2Data('overtop_50'), title: '高于指数价格50%'};
         $scope.pie2.events = {
             click: function(event, chart) {
+                var data = event.data;
+                var grp = _.groupBy(data, 'category');
+
+                // debugger;
+
                 $scope.showTableDialog(event.data);
             }
         };
@@ -193,8 +183,9 @@
             //     // position:['100', '100']
             // },
             legend: {
-                orient : 'vertical',
-                x : 'left',
+                // orient : 'vertical',
+                x : 'center',
+                y : 'bottom',
                 data: $scope.pie2.defaultData[1]
             },
             toolbox: {
@@ -210,7 +201,7 @@
                     name: 'Traffic source',
                     type:'pie',
                     radius : [50, 90],
-                    center: ['50%', '50%'],
+                    center: ['50%', '40%'],
                     selectedMode: 'single',
                     selectedOffset: 0,
                     itemStyle : {
@@ -478,7 +469,7 @@
         $scope.showWarningProducts = function(ev) {
             $mdDialog.show({
               controller: ['$scope', warningProductsController],
-              templateUrl: 'app/dashboard/dialog/dialog.template.html',
+              templateUrl: 'app/dashboard/dialog/warning.template.html',
               parent: angular.element(document.body),
               targetEvent: ev,
               clickOutsideToClose:true
@@ -531,42 +522,22 @@
                 page: 1
             };
 
-            var tableData = [
-                {"name": "佳能 CANON IP7280 喷墨打印机", "price": 879 , "price2": 999},
-                {"name": "联想 LENOVO M7450F（双面器/250页/黑白激光）多功能一体机", "price": 1546 , "price2": 1819},
-                {"name": "佳能 CANON D1380（双面器/双面输稿器/250页/黑白激光）多功能一体机", "price": 4591 , "price2": 5268},
-                {"name": "联想（LENOVO）M7675DXF 黑白激光一体机(打印 复印 扫描 传真)", "price": 1797 , "price2": 3199},
-                {"name": "惠普（HP）LASERJETM226DW激光多功能一体机（打印、复印、扫描、传真）", "price": 2369 , "price2": 2599},
-                {"name": "惠普 HP M128FP（双面器/150页/黑白激光）多功能一体机", "price": 1741 , "price2": 2049},
-                {"name": "佳能 CANON CANOSCAN 9000F MARKII 扫描仪", "price": 2604 , "price2": 2085},
-                {"name": "爱普生 EPSON V39 高效型 照片与文档扫描仪", "price": 586 , "price2": 599},
-                {"name": "索尼 SONY VPL-CH378 投影仪", "price": 19999 , "price2": 17999},
-                {"name": "松下 PANASONIC PT-X330C（3LCD/3300流明/1024×768DPI）投影机", "price": 3241 , "price2": 3999},
-                {"name": "爱普生 EPSON EB-C301MN（3LCD/3000流明/1280×800DPI）投影机", "price": 5269 , "price2": 5999},
-                {"name": "尼康 NIKON D610（单机）数码相机", "price": 7854 , "price2": 7599},
-                {"name": "尼康（NIKON） D810 单反机身", "price": 16071 , "price2": 15799},
-                {"name": "佳能（CANON）EOS 760D 单反套机 （EF-S 17-85mm f/4-5.6 IS USM 镜头）", "price": 6299 , "price2": 6000},
-                {"name": "佳能（CANON） EOS 5D MARK III 单反机身", "price": 16112 , "price2": 16499},
-                {"name": "索尼 SONY DSC-HX90 数码便携照相机", "price": 2485 , "price2": 2599},
-                {"name": "ILCE-6000", "price": 3689 , "price2": 3599},
-                {"name": "尼康 NIKON COOLPIX P340 数码相机", "price": 2280 , "price2": 3112},
-                {"name": "尼康 NIKON D7000（18-300MM）数码相机", "price": 6730 , "price2": 6500},
-                {"name": "索尼（SONY）ILCE-7S 微单相机 黑色 (机身A7S/α7S)", "price": 13088 , "price2": 11599},
-                {"name": "佳能（CANON） EOS 70D 单反机身", "price": 5437 , "price2": 5499},
-                {"name": "索尼 SONY DSC-RX100M3 数码便携照相机", "price": 4345 , "price2": 4599},
-                {"name": "柯尼卡美能达 KONICA MINOLTA BIZHUB 235（双面器 网络打印卡 500页）复印机", "price": 4676 , "price2": 12299}
-            ];
 
-            tableData.map(function(dessert) {
-                dessert.chajia = (dessert.price/dessert.price2*100)['toFixed'](1);
+
+            overtop_50.map(function(dessert) {
+                var price = dessert['gov_'+LOCAL_GOV+'_productPrice'];
+                var zscxj = nationwide.zscxj(dessert);
+
+                dessert.localPrice = price;
+                dessert.price2 = zscxj;
+                dessert.chajia = (dessert.price/dessert.price2*100)['toFixed'](2);
                 return dessert;
             });
 
             $scope.desserts = {
                 "count": 9,
-                "data": tableData
+                "data": overtop_50
             };
-
 
             $scope.toggleLimitOptions = function () {
                 $scope.limitOptions = $scope.limitOptions ? undefined : [5, 10, 15];

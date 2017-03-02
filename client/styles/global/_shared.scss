@@ -37,3 +37,17 @@
 .md-select-menu-container {
     z-index:9999;
 }
+
+
+#nav-container ul {
+    background-color:#ececec;
+}
+.nav-container.bg-white .nav>li>a:hover{
+    background-color: rgba(0,0,0,0.1);
+}
+.nav-container.bg-white .nav>li.active>a:hover,
+.nav-container.bg-white .nav>li.active>a:focus,
+.nav-container.bg-white .nav>li.active>a {
+    color: #fff !important;
+    background-color: #0B5477;
+}

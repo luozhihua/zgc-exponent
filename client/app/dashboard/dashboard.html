@@ -5,7 +5,7 @@
         <h4><i class="fa fa-exclamation-triangle"></i>预警</h4>
         <div>
             系统监测到当前有 <b>{{overtop_50.length}}款</b> 产品的<b>本地采购价</b>高于<b>指数价格</b> <span class="badge badge-danger">50%</span> 请您即时跟进处理。
-            <md-button class="md-raised md-warn"  ng-click="showWarningProducts($event)">查看...</md-button>
+            <md-button class="md-raised md-primary"  ng-click="showWarningProducts($event)">查看...</md-button>
         </div>
     </div>
 
@@ -46,13 +46,12 @@
     </div>
 
     <div class="row ">
-        <div class="col-lg-8 clearfix">
-            <h2 class="section-header">采购价格严重高于指数价的商品</h2>
-        </div>
         <div class="col-md-12">
-            <div class="panel panel-default">
+            <div class="panel panel-default panel-minimal">
+                <div class="divider divider-lg"></div>
+                <div class="panel-heading">采购价格严重高于指数价的商品</div>
+                <div class="divider divider-lg"></div>
                 <div class="panel-body padding-lg-h">
-
                     <div class="row">
 
                         <div ng-repeat="prod in warningProducts50" class="col-sm-6 col-md-3 col-lg-2">
@@ -60,7 +59,7 @@
                             <div class="ih-item ih-material ui-ribbon-container ui-ribbon-danger">
                                 <div class="ui-ribbon-wrapper">
                                     <div class="ui-ribbon">
-                                        高于 {{prod.offset}}%
+                                        高于 {{ (prod.offset*100).toFixed(2) }}%
                                     </div>
                                 </div>
                                 <a ng-href="#!/product/details/{{prod.id}}">

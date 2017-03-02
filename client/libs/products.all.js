@@ -438,7 +438,10 @@ module.exports = class PruductsAll extends ExcelDb {
         if (cache[cacheKey]) { return cache[cacheKey]; }
 
         let results = [];
-        this.tables[0].forEach((prod) => {
+        _.filter(this.tables[0], function(o) {
+            return o['gov_'+ govAlias +'_productPrice'] !== 0;
+        })
+        .forEach((prod) => {
             let avergePrice = this.zscxj(prod);
             let govPriceKey = 'gov_' + govAlias + '_productPrice'
             let govPrice = parseFloat(prod[govPriceKey]);

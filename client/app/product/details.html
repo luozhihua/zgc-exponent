@@ -1,101 +1,85 @@
 <div class="page page-product-details" data-ng-controller="detailsController">
 
-    <h2 class="section-header">{{productProps.name}}</h2>
-<!--
-    <div class="panel panel-default">
-        <div class="panel-body">
- -->
-            <div class="divider divider-lg"></div>
-            <div class="row">
-                <div class="col-sm-4">
+    <!-- <div class="divider divider-lg"></div> -->
 
-                    <div class="panel mini-box bg-info">
-                        <!-- <div class="card"> -->
-                            <div class="text-center" style="padding: 2.1em 1em;">
-                                <h2 class="card-title">中电指数EPI</h2>
-                                <p>2017-01-22 至 2017-03-14</p>
-                            </div>
-                        <!-- </div> -->
-                    </div>
-                </div>
-                <div class="col-sm-2">
-                    <div class="panel mini-box text-center">
-                        <span class="btn-icon btn-icon-round btn-icon-lg-alt bg-danger">
-                            <span class="size-h2">
-                                <i class="material-icons">trending_up</i>
-                            </span>
-                        </span>
-                        <div class="text-center">
-                            <h2>{{zhishu}}</h2>
-                            <small>指数价</small>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-2">
-                    <div class="panel mini-box text-center">
-                        <span class="btn-icon btn-icon-round btn-icon-lg-alt bg-warning">
-                            <span class="size-h2">
-                                <i ng-if="ecOffset>0" class="material-icons">vertical_align_top</i>
-                                <i ng-if="ecOffset==0" class="material-icons">vertical_align_center</i>
-                                <i ng-if="ecOffset<0" class="material-icons">vertical_align_bottom</i>
-                            </span>
-                        </span>
-                        <div class="text-center">
-                            <h2>{{ecOffset}}</h2>
-                            <small>电商平均价</small>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-2">
-                    <div class="panel mini-box text-center">
-                        <span class="btn-icon btn-icon-round btn-icon-lg-alt bg-primary">
-                            <span class="size-h2">
-                                <i ng-if="marketOffset>0" class="material-icons">vertical_align_top</i>
-                                <i ng-if="marketOffset==0" class="material-icons">vertical_align_center</i>
-                                <i ng-if="marketOffset<0" class="material-icons">vertical_align_bottom</i>
-                            </span>
-                        </span>
-                        <div class="text-center">
-                            <h2>{{marketOffset}}</h2>
-                            <small>市场平均价</small>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-2">
-                    <div class="panel mini-box text-center">
-                        <span class="btn-icon btn-icon-round btn-icon-lg-alt bg-success">
-                            <span class="size-h2">
-                                <i ng-if="govOffset>0" class="material-icons">vertical_align_top</i>
-                                <i ng-if="govOffset==0" class="material-icons">vertical_align_center</i>
-                                <i ng-if="govOffset<0" class="material-icons">vertical_align_bottom</i>
-                            </span>
-                        </span>
-                        <div class="text-center">
-                            <h2>{{govOffset}}</h2>
-                            <small>政采平均价</small>
-                        </div>
-                    </div>
-                </div>
+    <div layout="row">
+        <div flex="40" class="text-center bg-danger">
+            <h4 class="card-title">中电指数EPI</h4>
+            <p>2017-01-22 至 2017-03-14</p>
+        </div>
+        <div flex="10" class="text-center">
+            <span class="btn-icon btn-icon-round btn-icon-md-alt bg-danger">
+                <span class="size-h2">
+                    <i class="material-icons">trending_up</i>
+                </span>
+            </span>
+            <div class="text-center">
+                <div class="size-h5">{{zhishu}}</div>
+                <small>指数畅销价</small>
             </div>
-        <!-- </div>
-    </div> -->
+        </div>
+        <div flex="10" class="text-center">
+            <span class="btn-icon btn-icon-round btn-icon-md-alt bg-warning">
+                <span class="size-h5">
+                    <i ng-if="ecOffset>0" class="material-icons">vertical_align_top</i>
+                    <i ng-if="ecOffset==0" class="material-icons">vertical_align_center</i>
+                    <i ng-if="ecOffset<0" class="material-icons">vertical_align_bottom</i>
+                </span>
+            </span>
+            <div class="text-center">
+                <div class="size-h5">{{ecOffset}}</div>
+                <small>电商平均价</small>
+            </div>
+        </div>
+        <div flex="10" class="text-center">
+            <span class="btn-icon btn-icon-round btn-icon-md-alt bg-primary">
+                <span class="size-h5">
+                    <i ng-if="marketOffset>0" class="material-icons">vertical_align_top</i>
+                    <i ng-if="marketOffset==0" class="material-icons">vertical_align_center</i>
+                    <i ng-if="marketOffset<0" class="material-icons">vertical_align_bottom</i>
+                </span>
+            </span>
+            <div class="text-center">
+                <div class="size-h5">{{marketOffset}}</div>
+                <small>市场平均价</small>
+            </div>
+        </div>
+        <div flex="10" class="text-center">
+            <span class="btn-icon btn-icon-round btn-icon-md-alt bg-success">
+                <span class="size-h5">
+                    <i ng-if="govOffset>0" class="material-icons">vertical_align_top</i>
+                    <i ng-if="govOffset==0" class="material-icons">vertical_align_center</i>
+                    <i ng-if="govOffset<0" class="material-icons">vertical_align_bottom</i>
+                </span>
+            </span>
+            <div class="text-center">
+                <div class="size-h5">{{govOffset}}</div>
+                <small>政采平均价</small>
+            </div>
+        </div>
+    </div>
+
+    <div class="divider"></div>
 
     <div class="panel panel-default">
         <div class="panel-body">
 
             <div class="divider divider-lg"></div>
+            <h4>{{productProps.name}}</h4>
+            <div class="divider divider-lg"></div>
+
+            <div class="divider bg-info"></div>
+
             <div class="row">
                 <div class="col-sm-4">
                     <!-- <div class="panel panel-default no-margin"> -->
-                    <div class="card card-default bg-white">
+                    <div class="card card-default bg-white" style="box-shadow: none;">
                         <div class="card-image">
-                            <img  ng-src="{{productImg}}">
+                            <img ng-src="{{productImg}}"  style="max-height: 340px;">
                         </div>
                     </div>
                 </div>
-
                 <div class="col-sm-4">
-
                     <div class="panel panel-default no-margin">
                         <ul class="list-group">
                             <li class="list-group-item">
@@ -118,7 +102,6 @@
                             </li>
                         </ul>
                     </div>
-
                     <div class="panel panel-default no-margin">
                         <md-subheader class="md-no-sticky"> 增值服务</md-subheader>
                         <ul class="list-group">
@@ -128,7 +111,6 @@
                             </li>
                         </ul>
                     </div>
-
                     <!--
                     <dl class="dl-horizontal">
                         <dt>指数畅销价</dt><dd>{{zhishu}}</dd>
@@ -140,30 +122,30 @@
                     -->
                 </div>
                 <div class="col-sm-4">
-
                     <div class="panel panel-default no-margin" ng-show="showOtherPrice=='ec'">
                         <md-subheader class="md-no-sticky">电商单品价格</md-subheader>
-                        <md-list class="ui-material-list">
+                        <md-list class="ui-material-list" style="height: 300px; overflow: auto; ">
                             <md-list-item ng-click="navigateTo(ec, $event)" ng-repeat="ec in ecList">
                                 <!-- <md-icon class="material-icons">{{ec.icon}}</md-icon> -->
                                 <p> {{ ec.ecName }} </p>
-                                <span class="badge badge-warning">{{ec.price}}</span>
+                                <span class="badge badge-warning">￥{{ec.price}}</span>
                             </md-list-item>
                         </md-list>
                     </div>
-
                     <div class="panel panel-default no-margin" ng-show="showOtherPrice=='gov'">
                         <md-subheader class="md-no-sticky">全国政采单品价格</md-subheader>
-                        <md-list class="ui-material-list" style="height: 240px; overflow: auto; ">
+                        <md-list class="ui-material-list" style="height: 300px; overflow: auto; ">
                             <md-list-item ng-click="navigateTo(gov, $event)" ng-repeat="gov in govList">
                                 <!-- <md-icon class="material-icons">{{gov.icon}}</md-icon> -->
                                 <p> {{ gov.govName }} </p>
-                                <span class="badge badge-warning">{{gov.price}}</span>
+                                <span class="badge badge-warning">￥{{gov.price}}</span>
                             </md-list-item>
                         </md-list>
                     </div>
                 </div>
             </div>
+
+            <div class="divider bg-info divider-lg"></div>
 
             <md-content>
                 <md-tabs md-dynamic-height md-border-bottom>
@@ -172,13 +154,15 @@
                             <div class="media-list media-divider-inset">
                                 <div class="media" ng-repeat="bid in productBid">
                                     <div class="media-body">
-                                        <h4 class="media-heading"><a ng-href="{{bid.H}}">{{bid.C}}</a></h4>
-                                        <p><small>{{bid.D}}</small></p>
+                                        <h5 class="media-heading" style="max-width: 90%; width: 400px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;" title="{{bid.C}}"><a ng-href="{{bid.H}}">{{bid.C}}</a></h5>
+                                        <p style="max-width: 600px;"><small>{{bid.D}}</small></p>
+
                                         <p>
-                                            <span class="label label-default">{{bid.G}}</span>
-                                            <span class="label label-default">{{bid.F}}</span>
+
+                                            <small style="color: #ccc;">{{bid.E}} </small>
+                                            <small style="color: #ccc;">采购人：{{bid.E}} |</small>
+                                            <small style="color: #ccc;">代理机构：{{bid.G}}</small>
                                         </p>
-                                        <p><small style="color: #ccc;">{{bid.E}}</small></p>
                                     </div>
                                 </div>
                             </div>
@@ -186,9 +170,8 @@
                     </md-tab>
                     <md-tab label="商品参数">
                         <md-content class="md-padding">
-                            <h3 class="md-display-1">商品参数</h3>
                             <md-table-container>
-                                <table md-table class="table table-striped" md-row-select="options.rowSelection"  md-progress="promise">
+                                <table md-table class="table table-striped" md-row-select="options.rowSelection" md-progress="promise">
                                     <thead ng-if="!options.decapitate" md-head md-order="query.order" md-on-reorder="logOrder">
                                         <tr md-row>
                                             <th md-column width="200"><span>参数名</span></th>
@@ -207,15 +190,13 @@
                             </md-table-container>
                         </md-content>
                     </md-tab>
-                    <md-tab label="商品详情">
+                    <!-- <md-tab label="商品详情">
                         <md-content class="md-padding">
-                            <h3 class="md-display-1">此商品暂无详情.</h3>
-                            <p></p>
+                            <p>此商品暂无详情.</p>
                         </md-content>
-                    </md-tab>
+                    </md-tab> -->
                 </md-tabs>
             </md-content>
-
         </div>
     </div>
 </div>

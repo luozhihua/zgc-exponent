@@ -23,14 +23,22 @@
         const {BrowserWindow} = nodeRequire('electron').remote;
         const win = BrowserWindow.getFocusedWindow();
 
-        win.setSize(640, 560, true);
+        // win.setSize(640, 560, true);
         if (window.firstLogin === false) {
             // win.setPosition(200, 200, true);
         }
         window.firstLogin = false;
 
         $scope.login = function() {
-            $location.url('/')
+            $scope.hide = true;
+             $('.page-signin').hide();
+            // win.maximize();
+
+             setTimeout(function() {
+
+                $location.url('/')
+                $scope.$apply();
+             }, 500);
         }
 
         $scope.signup = function() {
@@ -44,6 +52,13 @@
         $scope.unlock =    function() {
             $location.url('/')
         }
+
+        $scope.$on('$stateChangeStart', function(event, toState, toParams, fromState, fromParams) {
+            $scope.hide = true;
+// alert(9)
+            $('.page-signin').hide();
+        });
+
     }
 
 })();

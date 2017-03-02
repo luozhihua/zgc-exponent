@@ -11,11 +11,12 @@ function createWindow () {
   win = new BrowserWindow({
     autoHideMenuBar: true,
     center: true,
+    maximize: true,
     // resizable: false,
-    width: 500,
+    // width: 500,
     // transparent: true,
     // frame: false,
-    height: 480
+    // height: 480
   })
 
   // win.maximize()
