@@ -4,6 +4,110 @@
 		"selected_items":
 		[
 			[
+				"foma",
+				"format\t(main.js)"
+			],
+			[
+				"dow",
+				"downloads"
+			],
+			[
+				"divider",
+				"divider-lg\t(details.html)"
+			],
+			[
+				"bg-",
+				"badge-warning\t(lists.html)"
+			],
+			[
+				"mar",
+				"margin-bottom"
+			],
+			[
+				"list",
+				"list-group"
+			],
+			[
+				"cate",
+				"category\t(products.sc.js)"
+			],
+			[
+				"marg",
+				"margin-left\t(_product.scss)"
+			],
+			[
+				"cache",
+				"cacheKey"
+			],
+			[
+				"LO",
+				"LOCAL"
+			],
+			[
+				"avergeGo",
+				"avergeGovProductByWeight"
+			],
+			[
+				"avergeEc",
+				"avergeEcQuanzhong"
+			],
+			[
+				"mart",
+				"marketPrice"
+			],
+			[
+				"gov_sichuan_",
+				"gov_sichuan_productPrice\t(products.all.feild.alias.js)"
+			],
+			[
+				"getProdu",
+				"getProductById"
+			],
+			[
+				"avergeMa",
+				"avergeOfMarket\t(quanguo.controller.js)"
+			],
+			[
+				"govP",
+				"govPriceKey"
+			],
+			[
+				"ma",
+				"margin-bottom"
+			],
+			[
+				"pr",
+				"priceKey"
+			],
+			[
+				"name",
+				"nameKey"
+			],
+			[
+				"LOC",
+				"LOCAL_GOV"
+			],
+			[
+				"qua",
+				"quanguo\t(config.route.js)"
+			],
+			[
+				"inl",
+				"inline-block"
+			],
+			[
+				"cl",
+				"class\t(products.sc.js)"
+			],
+			[
+				"grou",
+				"groupBy"
+			],
+			[
+				"back",
+				"background-color"
+			],
+			[
 				"dialo",
 				"dialogScope"
 			],
@@ -78,14 +182,6 @@
 			[
 				"over",
 				"overtop_50"
-			],
-			[
-				"cate",
-				"categorys"
-			],
-			[
-				"grou",
-				"groupName"
 			],
 			[
 				"cac",
@@ -208,10 +304,6 @@
 				"padding-top"
 			],
 			[
-				"mar",
-				"margin-top\t(_header.scss)"
-			],
-			[
 				"border",
 				"border-radius"
 			],
@@ -246,10 +338,6 @@
 			[
 				"pie2",
 				"pie2Title"
-			],
-			[
-				"cl",
-				"click"
 			],
 			[
 				"eve",
@@ -368,10 +456,6 @@
 				"material.min.js\t(package.json)"
 			],
 			[
-				"foma",
-				"formatter"
-			],
-			[
 				"layout",
 				"layout-pages"
 			],
@@ -430,162 +514,17 @@
 			[
 				"pre",
 				"preventDefault"
-			],
-			[
-				"disa",
-				"disableMultiTools"
-			],
-			[
-				"gene",
-				"generatorApartMenu"
-			],
-			[
-				"new",
-				"newLeft"
-			],
-			[
-				"mou",
-				"mousedown\t(dialog.js)"
-			],
-			[
-				"tra",
-				"transition"
-			],
-			[
-				"bl",
-				"block"
-			],
-			[
-				"text-",
-				"text-overflow"
-			],
-			[
-				"word",
-				"word-break"
-			],
-			[
-				"wid",
-				"width"
-			],
-			[
-				"white",
-				"white-space\t(dataTables.bootstrap.css)"
-			],
-			[
-				"sty",
-				"style"
-			],
-			[
-				"no",
-				"nowrap"
-			],
-			[
-				"whi",
-				"white-space"
-			],
-			[
-				"Boot",
-				"BootstrapDialog"
-			],
-			[
-				"layou",
-				"layout-pages\t(layout.html)"
-			],
-			[
-				"css",
-				"cssClass"
-			],
-			[
-				"quer",
-				"queryParams"
-			],
-			[
-				"row",
-				"rowid"
-			],
-			[
-				"getR",
-				"getDataByRowId"
-			],
-			[
-				"fo",
-				"formatter"
-			],
-			[
-				"list",
-				"listLength"
 			]
 		]
 	},
 	"buffers":
 	[
 		{
-			"file": "client/app/product/details.html",
+			"file": "client/libs/products.sc.js",
 			"settings":
 			{
-				"buffer_size": 10357,
+				"buffer_size": 15770,
 				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "package.json",
-			"settings":
-			{
-				"buffer_size": 1819,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "client/index.html",
-			"settings":
-			{
-				"buffer_size": 9623,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "bower.json",
-			"settings":
-			{
-				"buffer_size": 910,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "client/app/ui/icons.html",
-			"settings":
-			{
-				"buffer_size": 35485,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "client/app/product/quanguo.html",
-			"settings":
-			{
-				"buffer_size": 7470,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "client/app/ui/components.html",
-			"settings":
-			{
-				"buffer_size": 47386,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "client/app/ui/buttons.html",
-			"settings":
-			{
-				"buffer_size": 12947,
 				"line_ending": "Unix"
 			}
 		},
@@ -598,36 +537,20 @@
 			}
 		},
 		{
-			"file": "client/app/ui/typography.html",
+			"file": "client/app/product/details.html",
 			"settings":
 			{
-				"buffer_size": 24709,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "client/app/product/details.controller.js",
-			"settings":
-			{
-				"buffer_size": 2376,
+				"buffer_size": 12689,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "client/app/product/quanguo.controller.js",
+			"file": "client/app/complaints/complaints.html",
 			"settings":
 			{
-				"buffer_size": 3759,
+				"buffer_size": 2321,
 				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "client/app/table/responsive.html",
-			"settings":
-			{
-				"buffer_size": 10124,
 				"line_ending": "Unix"
 			}
 		},
@@ -635,23 +558,7 @@
 			"file": "client/app/table/static.html",
 			"settings":
 			{
-				"buffer_size": 19294,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "client/app/table/data.html",
-			"settings":
-			{
-				"buffer_size": 6001,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "client/libs/products.all.feild.alias.js",
-			"settings":
-			{
-				"buffer_size": 4507,
+				"buffer_size": 19199,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -665,19 +572,88 @@
 			}
 		},
 		{
-			"file": "client/app/core/app.config.js",
+			"file": "client/app/api-support/api-support.html",
 			"settings":
 			{
-				"buffer_size": 2951,
+				"buffer_size": 571,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "client/styles/pages/_product.scss",
+			"file": "client/app/layout/customizer.html",
 			"settings":
 			{
-				"buffer_size": 484,
+				"buffer_size": 2812,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "client/app/api-support/api-support.ctrl.js",
+			"settings":
+			{
+				"buffer_size": 239,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "client/app/complaints/complaints.ctrl.js",
+			"settings":
+			{
+				"buffer_size": 422,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "index.html",
+			"settings":
+			{
+				"buffer_size": 612,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "client/main.js",
+			"settings":
+			{
+				"buffer_size": 1939,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "client/init.js",
+			"settings":
+			{
+				"buffer_size": 222,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "client/index.html",
+			"settings":
+			{
+				"buffer_size": 9819,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "gulp.config.js",
+			"settings":
+			{
+				"buffer_size": 2336,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "client/app/app.module.js",
+			"settings":
+			{
+				"buffer_size": 382,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -686,61 +662,7 @@
 			"file": "client/app/dashboard/dashboard.html",
 			"settings":
 			{
-				"buffer_size": 4270,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "client/app/page/profile.html",
-			"settings":
-			{
-				"buffer_size": 6617,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "client/app/dashboard/dashboard.controller.js",
-			"settings":
-			{
-				"buffer_size": 18779,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "client/app/page/signin.html",
-			"settings":
-			{
-				"buffer_size": 2056,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "client/app/page/page.controller.js",
-			"settings":
-			{
-				"buffer_size": 1869,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "client/app/layout/sidebar.html",
-			"settings":
-			{
-				"buffer_size": 2138,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "client/app/core/config.route.js",
-			"settings":
-			{
-				"buffer_size": 4107,
+				"buffer_size": 4616,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -749,33 +671,25 @@
 			"file": "client/app/dashboard/dialog/dialog.template.html",
 			"settings":
 			{
-				"buffer_size": 2927,
+				"buffer_size": 2932,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "client/app/dashboard/dialog/warning.template.html",
+			"file": "client/libs/products.all.feild.alias.js",
 			"settings":
 			{
-				"buffer_size": 2852,
+				"buffer_size": 4507,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "client/styles/ui.scss",
+			"file": "client/app/product/details.controller.js",
 			"settings":
 			{
-				"buffer_size": 110,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "client/styles/global/_shared.scss",
-			"settings":
-			{
-				"buffer_size": 688,
+				"buffer_size": 3511,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -784,63 +698,115 @@
 			"file": "client/libs/products.all.js",
 			"settings":
 			{
-				"buffer_size": 15772,
+				"buffer_size": 19037,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "client/libs/details.js",
+			"file": "client/app/core/config.route.js",
 			"settings":
 			{
-				"buffer_size": 594,
+				"buffer_size": 5075,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "client/libs/bid-info.js",
+			"file": "client/app/product/quanguo.controller.js",
 			"settings":
 			{
-				"buffer_size": 707,
+				"buffer_size": 6610,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "client/libs/img.js",
+			"file": "client/app/product/quanguo.html",
 			"settings":
 			{
-				"buffer_size": 708,
+				"buffer_size": 8026,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "client/libs/excel-db.js",
+			"file": "client/app/layout/sidebar.html",
 			"settings":
 			{
-				"buffer_size": 946,
+				"buffer_size": 2171,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"contents": "(\n\t  AR8  ×  权重表::表格 1::$I$56\n\t+ AU8  ×  权重表::表格 1::$I$57\n\t+ AX8  ×  权重表::表格 1::$I$58\n\t+ BA8  ×  权重表::表格 1::$I$59\n\t+ BD8  ×  权重表::表格 1::$I$60\n\t+ BG8  ×  权重表::表格 1::$I$61\n\t+ BJ8  ×  权重表::表格 1::$I$62\n\t+ BM8  ×  权重表::表格 1::$I$63\n\t+ BP8  ×  权重表::表格 1::$I$64\n\t+ BS8  ×  权重表::表格 1::$I$65\n\t+ BV8  ×  权重表::表格 1::$I$66\n\t+ BY8  ×  权重表::表格 1::$I$67\n\t+ CB8  ×  权重表::表格 1::$I$68\n\t+ CE8  ×  权重表::表格 1::$I$69\n\t+ CH8  ×  权重表::表格 1::$I$70\n\t+ CK8  ×  权重表::表格 1::$I$71\n\t+ CN8  ×  权重表::表格 1::$I$72\n\t+ CQ8  ×  权重表::表格 1::$I$73\n\t+ CT8  ×  权重表::表格 1::$I$74\n\t+ CW8  ×  权重表::表格 1::$I$75\n\t+ CZ8  ×  权重表::表格 1::$I$76\n\t+ DC8  ×  权重表::表格 1::$I$77\n\t+ DF8  ×  权重表::表格 1::$I$78\n\t+ DI8  ×  权重表::表格 1::$I$79\n\t+ DL8  ×  权重表::表格 1::$I$80\n\t+ DO8  ×  权重表::表格 1::$I$81\n\t+ DR8  ×  权重表::表格 1::$I$82\n\t+ DU8  ×  权重表::表格 1::$I$83\n\t+ DX8  ×  权重表::表格 1::$I$84\n\t+ EA8  ×  权重表::表格 1::$I$85\n\t+ ED8  ×  权重表::表格 1::$I$86\n\t+ EG8  ×  权重表::表格 1::$I$87\n)",
+			"file": "client/app/analysis/analysis.ctrl.js",
 			"settings":
 			{
-				"buffer_size": 899,
-				"line_ending": "Unix",
-				"name": "("
+				"buffer_size": 573,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
 			}
 		},
 		{
-			"contents": "(\n\t      1 × 权重表::表格 1::$I$56\n\t+     1 × 权重表::表格 1::$I$57\n\t+     1 × 权重表::表格 1::$I$58\n\t+     1 × 权重表::表格 1::$I$59\n\t+     1 × 权重表::表格 1::$I$60\n\t+     1 × 权重表::表格 1::$I$61\n\t+     1 × 权重表::表格 1::$I$62\n\t+     1 × 权重表::表格 1::$I$63\n\t+     1 × 权重表::表格 1::$I$64\n\t+     1 × 权重表::表格 1::$I$65\n\t+     1 × 权重表::表格 1::$I$66\n\t+     1 × 权重表::表格 1::$I$67\n\t+     1 × 权重表::表格 1::$I$68\n\t+     1 × 权重表::表格 1::$I$69\n\t+     1 × 权重表::表格 1::$I$70\n\t+     1 × 权重表::表格 1::$I$71\n\t+     1 × 权重表::表格 1::$I$72\n\t+     1 × 权重表::表格 1::$I$73\n\t+     1 × 权重表::表格 1::$I$74\n\t+     1 × 权重表::表格 1::$I$75\n\t+     1 × 权重表::表格 1::$I$76\n\t+     1 × 权重表::表格 1::$I$77\n\t+     1 × 权重表::表格 1::$I$78\n\t+     1 × 权重表::表格 1::$I$79\n\t+     1 × 权重表::表格 1::$I$80\n\t+     1 × 权重表::表格 1::$I$81\n\t+     1 × 权重表::表格 1::$I$82\n\t+     1 × 权重表::表格 1::$I$83\n\t+     1 × 权重表::表格 1::$I$84\n\t+     1 × 权重表::表格 1::$I$85\n\t+     1 × 权重表::表格 1::$I$86\n\t+     1 × 权重表::表格 1::$I$87\n)",
+			"file": "client/app/analysis/analysis.html",
 			"settings":
 			{
-				"buffer_size": 899,
-				"line_ending": "Unix",
-				"name": "("
+				"buffer_size": 162,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "client/app/product/details-originpage.html",
+			"settings":
+			{
+				"buffer_size": 1990,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "client/app/dashboard/dashboard.controller.js",
+			"settings":
+			{
+				"buffer_size": 18501,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "client/app/ui/buttons.html",
+			"settings":
+			{
+				"buffer_size": 12947,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "client/styles/pages/_product.scss",
+			"settings":
+			{
+				"buffer_size": 836,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "client/styles/global/_shared.scss",
+			"settings":
+			{
+				"buffer_size": 1540,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "client/styles/global/_var.scss",
+			"settings":
+			{
+				"buffer_size": 32423,
+				"line_ending": "Unix"
 			}
 		}
 	],
@@ -895,6 +861,10 @@
 		"/Users/colin/Projects/Outsource/MagicWindow/zgc/demo",
 		"/Users/colin/Projects/Outsource/MagicWindow/zgc/demo/client",
 		"/Users/colin/Projects/Outsource/MagicWindow/zgc/demo/client/app",
+		"/Users/colin/Projects/Outsource/MagicWindow/zgc/demo/client/app/analysis",
+		"/Users/colin/Projects/Outsource/MagicWindow/zgc/demo/client/app/api-support",
+		"/Users/colin/Projects/Outsource/MagicWindow/zgc/demo/client/app/chart",
+		"/Users/colin/Projects/Outsource/MagicWindow/zgc/demo/client/app/complaints",
 		"/Users/colin/Projects/Outsource/MagicWindow/zgc/demo/client/app/core",
 		"/Users/colin/Projects/Outsource/MagicWindow/zgc/demo/client/app/dashboard",
 		"/Users/colin/Projects/Outsource/MagicWindow/zgc/demo/client/app/dashboard/dialog",
@@ -903,21 +873,61 @@
 		"/Users/colin/Projects/Outsource/MagicWindow/zgc/demo/client/app/product",
 		"/Users/colin/Projects/Outsource/MagicWindow/zgc/demo/client/app/table",
 		"/Users/colin/Projects/Outsource/MagicWindow/zgc/demo/client/app/ui",
+		"/Users/colin/Projects/Outsource/MagicWindow/zgc/demo/client/assets",
+		"/Users/colin/Projects/Outsource/MagicWindow/zgc/demo/client/assets/images",
+		"/Users/colin/Projects/Outsource/MagicWindow/zgc/demo/client/bower_components",
+		"/Users/colin/Projects/Outsource/MagicWindow/zgc/demo/client/bower_components/moment",
 		"/Users/colin/Projects/Outsource/MagicWindow/zgc/demo/client/data",
-		"/Users/colin/Projects/Outsource/MagicWindow/zgc/demo/client/libs",
-		"/Users/colin/Projects/Outsource/MagicWindow/zgc/demo/client/styles",
-		"/Users/colin/Projects/Outsource/MagicWindow/zgc/demo/client/styles/global",
-		"/Users/colin/Projects/Outsource/MagicWindow/zgc/demo/client/styles/pages"
+		"/Users/colin/Projects/Outsource/MagicWindow/zgc/demo/client/libs"
 	],
 	"file_history":
 	[
+		"/Users/colin/Projects/Outsource/MagicWindow/zgc/demo/client/libs/products.all.js",
+		"/Users/colin/Projects/Outsource/MagicWindow/zgc/demo/client/libs/quanzhong.js",
+		"/Users/colin/Projects/Outsource/MagicWindow/zgc/demo/client/libs/details.js",
+		"/Users/colin/Projects/Outsource/MagicWindow/zgc/demo/client/libs/bid-info.js",
+		"/Users/colin/Projects/Outsource/MagicWindow/zgc/demo/client/libs/img.js",
+		"/Users/colin/Projects/Outsource/MagicWindow/zgc/demo/client/libs/excel-db.js",
+		"/Users/colin/Projects/Outsource/MagicWindow/zgc/demo/client/app/product/details.html",
+		"/Users/colin/Projects/Outsource/MagicWindow/zgc/demo/client/index.html",
+		"/Users/colin/Projects/Outsource/MagicWindow/zgc/demo/bower.json",
+		"/Users/colin/Projects/Outsource/MagicWindow/zgc/demo/client/app/ui/icons.html",
+		"/Users/colin/Projects/Outsource/MagicWindow/zgc/demo/client/app/product/quanguo.html",
+		"/Users/colin/Projects/Outsource/MagicWindow/zgc/demo/client/app/page/page.module.js",
+		"/Users/colin/Projects/Outsource/MagicWindow/zgc/demo/client/app/ui/components.html",
+		"/Users/colin/Projects/Outsource/MagicWindow/zgc/demo/client/app/ui/buttons.html",
+		"/Users/colin/Projects/Outsource/MagicWindow/zgc/demo/client/app/ui/lists.html",
+		"/Users/colin/Projects/Outsource/MagicWindow/zgc/demo/client/app/ui/typography.html",
+		"/Users/colin/Projects/Outsource/MagicWindow/zgc/demo/client/app/product/details.controller.js",
+		"/Users/colin/Projects/Outsource/MagicWindow/zgc/demo/client/app/product/quanguo.controller.js",
+		"/Users/colin/Projects/Outsource/MagicWindow/zgc/demo/client/app/table/responsive.html",
+		"/Users/colin/Projects/Outsource/MagicWindow/zgc/demo/client/app/table/static.html",
+		"/Users/colin/Projects/Outsource/MagicWindow/zgc/demo/client/app/table/data.html",
+		"/Users/colin/Projects/Outsource/MagicWindow/zgc/demo/client/libs/products.all.feild.alias.js",
+		"/Users/colin/Projects/Outsource/MagicWindow/zgc/demo/client/libs/products.sc.feild.alias.js",
+		"/Users/colin/Projects/Outsource/MagicWindow/zgc/demo/client/app/ui/cards.html",
+		"/Users/colin/Projects/Outsource/MagicWindow/zgc/demo/client/app/core/app.config.js",
+		"/Users/colin/Projects/Outsource/MagicWindow/zgc/demo/client/styles/pages/_product.scss",
+		"/Users/colin/Projects/Outsource/MagicWindow/zgc/demo/client/app/dashboard/dashboard.html",
+		"/Users/colin/Projects/Outsource/MagicWindow/zgc/demo/client/app/page/profile.html",
+		"/Users/colin/Projects/Outsource/MagicWindow/zgc/demo/client/app/dashboard/dashboard.controller.js",
+		"/Users/colin/Projects/Outsource/MagicWindow/zgc/demo/client/app/page/signin.html",
 		"/Users/colin/Projects/Outsource/MagicWindow/zgc/demo/client/package.json",
+		"/Users/colin/Projects/Outsource/MagicWindow/zgc/demo/client/app/page/page.controller.js",
+		"/Users/colin/Projects/Outsource/MagicWindow/zgc/demo/client/app/layout/sidebar.html",
+		"/Users/colin/Projects/Outsource/MagicWindow/zgc/demo/client/app/core/config.route.js",
+		"/Users/colin/Projects/Outsource/MagicWindow/zgc/demo/client/app/dashboard/dialog/dialog.template.html",
+		"/Users/colin/Projects/Outsource/MagicWindow/zgc/demo/client/app/dashboard/dialog/warning.template.html",
+		"/Users/colin/Projects/Outsource/MagicWindow/zgc/demo/client/styles/ui.scss",
+		"/Users/colin/Projects/Outsource/MagicWindow/zgc/demo/client/styles/global/_shared.scss",
+		"/Users/colin/Projects/Outsource/MagicWindow/zgc/demo/package.json",
+		"/Users/colin/Projects/Outsource/MagicWindow/zgc/demo/client/libs/products.sc.js",
+		"/Users/colin/Projects/Outsource/MagicWindow/zgc/demo/client/main.js",
 		"/Users/colin/Projects/Outsource/MagicWindow/zgc/demo/client/data/4 各商品中标信息.xlsx",
 		"/Users/colin/Projects/Outsource/MagicWindow/zgc/demo/client/styles/pages/_profile.scss",
 		"/Users/colin/Projects/Outsource/MagicWindow/zgc/demo/client/styles/app.scss",
 		"/Users/colin/Projects/Outsource/MagicWindow/zgc/demo/client/app/form/form.controller.js",
 		"/Users/colin/Projects/Outsource/MagicWindow/zgc/demo/client/app/form/elements.html",
-		"/Users/colin/Projects/Outsource/MagicWindow/zgc/demo/client/app/core/app.config.js",
 		"/Users/colin/Projects/Outsource/MagicWindow/zgc/demo/gulpfile.js",
 		"/Users/colin/Projects/Outsource/MagicWindow/zgc/demo/gulp.config.js",
 		"/Users/colin/Projects/Outsource/MagicWindow/zgc/demo/client/app/core/config.lazyload.js",
@@ -925,48 +935,30 @@
 		"/Users/colin/Projects/Outsource/MagicWindow/zgc/demo/client/app/table/table.module.js",
 		"/Users/colin/Projects/Outsource/MagicWindow/zgc/demo/client/app/table/table.controller.js",
 		"/Users/colin/Projects/Outsource/MagicWindow/zgc/demo/client/app/page/blank.html",
-		"/Users/colin/Projects/Outsource/MagicWindow/zgc/demo/bower.json",
-		"/Users/colin/Projects/Outsource/MagicWindow/zgc/demo/client/app/page/page.controller.js",
 		"/Users/colin/Projects/Outsource/MagicWindow/zgc/demo/client/app/core/core.module.js",
 		"/Users/colin/Library/Application Support/Sublime Text 3/Packages/GoSublime/USAGE.md",
 		"/Users/colin/Projects/Outsource/MagicWindow/zgc/demo/client/app/page/invoice.html",
-		"/Users/colin/Projects/Outsource/MagicWindow/zgc/demo/client/index.html",
 		"/Users/colin/Projects/Outsource/MagicWindow/zgc/demo/client/app/ui/ui.module.js",
 		"/Users/colin/Projects/Outsource/MagicWindow/zgc/demo/client/app/ui/ui.controller.js",
-		"/Users/colin/Projects/Outsource/MagicWindow/zgc/demo/client/app/dashboard/dashboard.controller.js",
-		"/Users/colin/Projects/Outsource/MagicWindow/zgc/demo/client/app/product/details.controller.js",
-		"/Users/colin/Projects/Outsource/MagicWindow/zgc/demo/client/libs/excel-db.js",
-		"/Users/colin/Projects/Outsource/MagicWindow/zgc/demo/client/libs/products.all.js",
-		"/Users/colin/Projects/Outsource/MagicWindow/zgc/demo/client/libs/products.all.feild.alias.js",
-		"/Users/colin/Projects/Outsource/MagicWindow/zgc/demo/client/libs/quanzhong.js",
 		"/Users/colin/Projects/Outsource/MagicWindow/zgc/demo/client/libs/govs.js",
 		"/Users/colin/Projects/Outsource/MagicWindow/zgc/demo/client/libs/ec.js",
-		"/Users/colin/Projects/Outsource/MagicWindow/zgc/demo/client/main.js",
 		"/Users/colin/Projects/Outsource/MagicWindow/zgc/demo/client/init.js",
 		"/Users/colin/Projects/Outsource/MagicWindow/zgc/demo/client/app/app.module.js",
-		"/Users/colin/Projects/Outsource/MagicWindow/zgc/demo/client/app/core/config.route.js",
 		"/Users/colin/Projects/Outsource/MagicWindow/zgc/demo/client/styles/layout/_body.scss",
 		"/Users/colin/Projects/Outsource/MagicWindow/zgc/demo/client/styles/pages/_auth.scss",
-		"/Users/colin/Projects/Outsource/MagicWindow/zgc/demo/client/app/page/signin.html",
 		"/Users/colin/Projects/Outsource/MagicWindow/zgc/demo/client/app/page/signup.html",
-		"/Users/colin/Projects/Outsource/MagicWindow/zgc/demo/client/styles/global/_shared.scss",
 		"/Users/colin/Projects/Outsource/MagicWindow/zgc/demo/client/app/layout/header.html",
 		"/Users/colin/Projects/Outsource/MagicWindow/zgc/demo/client/styles/global/_var.scss",
-		"/Users/colin/Projects/Outsource/MagicWindow/zgc/demo/client/app/dashboard/dashboard.html",
-		"/Users/colin/Projects/Outsource/MagicWindow/zgc/demo/client/app/dashboard/dialog/dialog.template.html",
 		"/Users/colin/Projects/Outsource/MagicWindow/zgc/demo/client/app/layout/sidebar.directive.js",
-		"/Users/colin/Projects/Outsource/MagicWindow/zgc/demo/client/app/layout/sidebar.html",
 		"/Users/colin/Library/Application Support/Sublime Text 3/Packages/Alignment/Default (OSX).sublime-keymap",
 		"/Users/colin/Projects/Outsource/MagicWindow/zgc/demo/client/data/details.xlsx",
 		"/Users/colin/Projects/Outsource/MagicWindow/zgc/demo/client/libs/product.all.js",
-		"/Users/colin/Projects/Outsource/MagicWindow/zgc/demo/package.json",
 		"/Users/colin/Projects/Outsource/MagicWindow/zgc/demo/client/login.html",
 		"/Users/colin/Projects/Outsource/MagicWindow/zgc/demo/client/styles/layout/_nav.scss",
 		"/Users/colin/Projects/Outsource/MagicWindow/zgc/demo/.gitignore",
 		"/Users/colin/Projects/Outsource/MagicWindow/zgc/demo/client/app/layout/customizer.controller.js",
 		"/Users/colin/Projects/Outsource/MagicWindow/zgc/demo/client/app/layout/customizer.html",
 		"/Users/colin/Projects/Outsource/MagicWindow/zgc/demo/client/app/layout/customizer-color.html",
-		"/Users/colin/Projects/Outsource/MagicWindow/zgc/demo/client/styles/ui.scss",
 		"/Users/colin/Projects/Outsource/MagicWindow/zgc/demo/app/package.json",
 		"/Users/colin/Projects/Outsource/MagicWindow/zgc/demo/app/app/dashboard/dashboard.html",
 		"/Users/colin/Projects/Outsource/MagicWindow/zgc/demo/client/styles/layout/_header.scss",
@@ -985,10 +977,8 @@
 		"/Users/colin/Projects/Outsource/MagicWindow/zgc/demo/client/app/layout/loader.js",
 		"/Users/colin/Projects/Outsource/MagicWindow/zgc/demo/client/index.backup.html",
 		"/Users/colin/Projects/Outsource/MagicWindow/zgc/demo/client/assets/i18n/zh-CN.json",
-		"/Users/colin/Projects/Outsource/MagicWindow/zgc/demo/client/app/table/data.html",
 		"/Users/colin/Projects/Outsource/MagicWindow/zgc/demo/client/app/chart/echarts-pie.html",
 		"/Users/colin/Projects/Outsource/MagicWindow/zgc/demo/client/app/chart/echarts.controller.js",
-		"/Users/colin/Projects/Outsource/MagicWindow/zgc/demo/client/app/ui/components.html",
 		"/Users/colin/Projects/Outsource/MagicWindow/zgc/demo/client/app/core/i18n.js",
 		"/Users/colin/Projects/Outsource/MagicWindow/zgc/demo/client/app/dashboard/dialog/dialog.controller.js",
 		"/Users/colin/Projects/Outsource/MagicWindow/zgc/demo/appveyor.yml",
@@ -1019,26 +1009,7 @@
 		"/Users/colin/yidou/yidou-webapp/src/App.vue",
 		"/Users/colin/yidou/yidou-webapp/index.html",
 		"/Users/colin/yidou/yidou-webapp/build/webpack.dev.conf.js",
-		"/Users/colin/yidou/yidou-webapp/dist/index.html",
-		"/Users/colin/yidou/yidou-webapp/build/webpack.prod.conf.js",
-		"/Users/colin/yidou/yidou-webapp/src/components/Dropdown.vue",
-		"/Users/colin/yidou/yidou-webapp/src/components/Hello.vue",
-		"/Users/colin/yidou/yidou-webapp/src/views/Home/index.vue",
-		"/Users/colin/yidou/yidou-webapp/src/views/Home/Jumbotron.vue",
-		"/Users/colin/yidou/backstage/.gitignore",
-		"/Users/colin/yidou/backstage/dist/css/AdminLTE.min.css",
-		"/Users/colin/yidou/backstage/dist/css/AdminLTE.css",
-		"/Users/colin/yidou/backstage/plugins/dialog/bootstrap-dialog.js",
-		"/Users/colin/yidou/backstage/plugins/dialog/bootstrap-dialog.min.js",
-		"/Users/colin/yidou/backstage/plugins/dialog/bootstrap-dialog.css",
-		"/Users/colin/yidou/backstage/plugins/dialog/bootstrap-dialog.min.css",
-		"/Users/colin/yidou/backstage/plugins/dialog/jquery.dialog.js",
-		"/Users/colin/yidou/backstage/index.html",
-		"/Users/colin/yidou/backstage/layout.html",
-		"/Users/colin/yidou/backstage/Gruntfile.js",
-		"/Users/colin/Projects/blog/themes/xhueman/source/css/style.styl",
-		"/Users/colin/Projects/blog/themes/xhueman/source/css/_partial/header.styl",
-		"/Users/colin/Projects/github/hexo-qiniu-sync/README.md"
+		"/Users/colin/yidou/yidou-webapp/dist/index.html"
 	],
 	"find":
 	{
@@ -1064,6 +1035,65 @@
 		"case_sensitive": true,
 		"find_history":
 		[
+			"span",
+			"api-support",
+			"ApiSupport",
+			"complaints",
+			"ComplaintsCtrl",
+			"Dashboard",
+			"LOCAL",
+			"dialogScope",
+			"warning",
+			"offset",
+			"fa-long-arrow",
+			"govOffset",
+			"id",
+			"product",
+			"warning",
+			"danger",
+			"bown",
+			"ecOffset",
+			"marketOffset",
+			"h2",
+			"md-alt",
+			"<div class=\"size-h2\">",
+			"primary",
+			"marketOffset",
+			"h5",
+			"getGovProductAvergeByWeight",
+			"getEcProductAvergeByWeight",
+			"ByQuanzhong",
+			"getGovProductAvergeByQuanzhong",
+			"avergeGovQuanzhong",
+			"product",
+			"getEcProductAvergeByWeight",
+			"avergeEcQuanzhong",
+			"modelName",
+			"4",
+			"getProductAverge",
+			"配型",
+			"getModelAverge",
+			"modelName",
+			"avergeModal",
+			"getModelAvergeOfMarket",
+			"配型",
+			"getModelOffset",
+			"getModel",
+			"gov",
+			"getZhishu",
+			"LOCAL_GOV",
+			"LOCAL",
+			"details",
+			"AREA",
+			"webview",
+			"${",
+			"span",
+			"overtop_50",
+			"',\n",
+			"showTableDialog",
+			"getPie2Data",
+			"label",
+			"F43333",
 			" </",
 			"}}",
 			"h4",
@@ -1132,66 +1162,7 @@
 			"getPie2Data",
 			":",
 			"sichuan",
-			",'",
-			",",
-			"['",
-			"pie1",
-			"0_10",
-			"less",
-			"overtop",
-			"\n\n    /**\n     * 获取本地采购价格高于中电指数价格的产品\n     * @param  {String} gov    政府单位别名\n     * @param  { Number} min 参照百分比，例（50：表示高于50%， 30：表示高于30%）；\n     * @param  { Number} max 参照百分比，例（50：表示低于50%， 30：表示低于30%）；\n     * @return {Array}\n     */\n    getProducrsOvertop(govAlias, min, max) {\n        let cache = this.cache.overtop = this.cache.overtop || {};\n        let cacheKey = 'overtop_' + govAlias + '_min:' + (min||0) + '_max:' + (max||'all');\n        if (cache[cacheKey]) { return cache[cacheKey]; }\n\n        let results = [];\n        this.tables[0].forEach((prod) => {\n            let avergePrice = this.zscxj(prod);\n            let govPriceKey = 'gov_' + govAlias + '_productPrice'\n            let govPrice = parseFloat(prod[govPriceKey]);\n            let offset = (govPrice-avergePrice)/avergePrice*100;\n\n            if (offset > min && (!max || offset < max)) {\n                results.push(prod);\n            }\n        });\n\n        return cache[cacheKey] = results;\n    }",
-			"number",
-			"govOffsetOfModel",
-			"avergeModalOfEc",
-			"govOffsetOfModel",
-			"ecOffsetOfModel",
-			"avergeModalOfMarket",
-			"marketOffsetOfModel",
-			"govPriceOfModel",
-			"ProdOf",
-			"ec",
-			"marketProdOfModel",
-			"ec",
-			"Ec",
-			"prodOfModel",
-			"prices",
-			"zscxj",
-			"marketOffset",
-			"getEcProducts",
-			"getGovProducts",
-			"isFeildEmpty",
-			"ecOffset",
-			"govAverge",
-			"govOffset",
-			"zccxj",
-			"zscxj",
-			"avergeGov",
-			"esName",
-			"esAlias",
-			"es.",
-			"e.es",
-			"es",
-			"es_",
-			"getEcProducts",
-			"ECS",
-			"avergeGov",
-			"avergeGovQuanzhong",
-			"totalPrice",
-			"totalGovPricesByQuanzhong",
-			"return (prices / total).toFixed",
-			"return (prices / total).toFixed(",
-			"return prices / total;",
-			"esPrices",
-			"esTotal",
-			"esName",
-			"govName",
-			"govProd",
-			"govProducts",
-			"getEcProducts",
-			"Es",
-			"getEcProducts",
-			"getEsProducts",
-			"×"
+			",'"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1209,24 +1180,24 @@
 	"groups":
 	[
 		{
-			"selected": 5,
+			"selected": 7,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "client/app/product/details.html",
+					"file": "client/libs/products.sc.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 10357,
+						"buffer_size": 15770,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								6455,
-								6455
+								646,
+								646
 							]
 						],
 						"settings":
@@ -1235,7 +1206,118 @@
 							"editorconfig": true,
 							"ensure_newline_at_eof_on_save": true,
 							"incomplete_sync": null,
-							"is_init_dirty_state": false,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/JavaScriptNext - ES6 Syntax/JavaScriptNext.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true,
+							"trim_trailing_white_space_on_save": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 9,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "client/app/ui/lists.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 14779,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4581,
+								5071
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/glacier.tmTheme",
+							"editorconfig": true,
+							"ensure_newline_at_eof_on_save": true,
+							"incomplete_sync": null,
+							"origin_encoding": "ASCII",
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true,
+							"trim_trailing_white_space_on_save": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1322.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 12,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "client/app/product/details.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 12689,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4120,
+								4120
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/glacier.tmTheme",
+							"editorconfig": true,
+							"ensure_newline_at_eof_on_save": true,
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true,
+							"trim_trailing_white_space_on_save": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1412.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 23,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "client/app/complaints/complaints.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2321,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								2321
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/glacier.tmTheme",
+							"editorconfig": true,
+							"ensure_newline_at_eof_on_save": true,
+							"incomplete_sync": null,
 							"open_with_edit": true,
 							"remote_loading": false,
 							"synced": false,
@@ -1245,27 +1327,27 @@
 							"trim_trailing_white_space_on_save": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 2090.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 3,
 					"type": "text"
 				},
 				{
-					"buffer": 1,
-					"file": "package.json",
+					"buffer": 4,
+					"file": "client/app/table/static.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1819,
+						"buffer_size": 19199,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								45,
-								45
+								6256,
+								8244
 							]
 						],
 						"settings":
@@ -1274,9 +1356,86 @@
 							"editorconfig": true,
 							"ensure_newline_at_eof_on_save": true,
 							"incomplete_sync": null,
+							"origin_encoding": "ASCII",
 							"remote_loading": false,
 							"synced": false,
-							"syntax": "Packages/JavaScriptNext - ES6 Syntax/JSON (JavaScriptNext).tmLanguage",
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true,
+							"trim_trailing_white_space_on_save": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 2314.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 11,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "client/app/ui/cards.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 6562,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								5455,
+								5673
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/glacier.tmTheme",
+							"editorconfig": true,
+							"ensure_newline_at_eof_on_save": true,
+							"incomplete_sync": null,
+							"origin_encoding": "ASCII",
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true,
+							"trim_trailing_white_space_on_save": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1746.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 10,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "client/app/api-support/api-support.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 571,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								571,
+								571
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/glacier.tmTheme",
+							"editorconfig": true,
+							"ensure_newline_at_eof_on_save": true,
+							"incomplete_sync": null,
+							"origin_encoding": "ASCII",
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
 							"tab_size": 4,
 							"translate_tabs_to_spaces": true,
 							"trim_trailing_white_space_on_save": true
@@ -1285,16 +1444,16 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 12,
+					"stack_index": 1,
 					"type": "text"
 				},
 				{
-					"buffer": 2,
-					"file": "client/index.html",
-					"semi_transient": false,
+					"buffer": 7,
+					"file": "client/app/layout/customizer.html",
+					"semi_transient": true,
 					"settings":
 					{
-						"buffer_size": 9623,
+						"buffer_size": 2812,
 						"regions":
 						{
 						},
@@ -1311,6 +1470,7 @@
 							"editorconfig": true,
 							"ensure_newline_at_eof_on_save": true,
 							"incomplete_sync": null,
+							"origin_encoding": "ASCII",
 							"remote_loading": false,
 							"synced": false,
 							"syntax": "Packages/HTML/HTML.sublime-syntax",
@@ -1319,27 +1479,27 @@
 							"trim_trailing_white_space_on_save": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 560.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 11,
+					"stack_index": 0,
 					"type": "text"
 				},
 				{
-					"buffer": 3,
-					"file": "bower.json",
+					"buffer": 8,
+					"file": "client/app/api-support/api-support.ctrl.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 910,
+						"buffer_size": 239,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								41,
-								41
+								224,
+								224
 							]
 						],
 						"settings":
@@ -1351,33 +1511,33 @@
 							"origin_encoding": "ASCII",
 							"remote_loading": false,
 							"synced": false,
-							"syntax": "Packages/JavaScriptNext - ES6 Syntax/JSON (JavaScriptNext).tmLanguage",
+							"syntax": "Packages/JavaScriptNext - ES6 Syntax/JavaScriptNext.tmLanguage",
 							"tab_size": 4,
 							"translate_tabs_to_spaces": true,
 							"trim_trailing_white_space_on_save": true
 						},
-						"translation.x": 0.0,
+						"translation.x": 20.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 10,
+					"stack_index": 8,
 					"type": "text"
 				},
 				{
-					"buffer": 4,
-					"file": "client/app/ui/icons.html",
+					"buffer": 9,
+					"file": "client/app/complaints/complaints.ctrl.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 35485,
+						"buffer_size": 422,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1738,
-								1776
+								358,
+								369
 							]
 						],
 						"settings":
@@ -1386,9 +1546,124 @@
 							"editorconfig": true,
 							"ensure_newline_at_eof_on_save": true,
 							"incomplete_sync": null,
+							"open_with_edit": true,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/JavaScriptNext - ES6 Syntax/JavaScriptNext.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true,
+							"trim_trailing_white_space_on_save": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 612,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/glacier.tmTheme",
+							"editorconfig": true,
+							"ensure_newline_at_eof_on_save": true,
+							"incomplete_sync": null,
+							"origin_encoding": "ASCII",
 							"remote_loading": false,
 							"synced": false,
 							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true,
+							"trim_trailing_white_space_on_save": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 11,
+					"file": "client/main.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1939,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								479,
+								479
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/glacier.tmTheme",
+							"editorconfig": true,
+							"ensure_newline_at_eof_on_save": true,
+							"incomplete_sync": null,
+							"origin_encoding": "ASCII",
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/JavaScriptNext - ES6 Syntax/JavaScriptNext.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true,
+							"trim_trailing_white_space_on_save": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 19,
+					"type": "text"
+				},
+				{
+					"buffer": 12,
+					"file": "client/init.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 222,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/glacier.tmTheme",
+							"editorconfig": true,
+							"ensure_newline_at_eof_on_save": true,
+							"incomplete_sync": null,
+							"origin_encoding": "ASCII",
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/JavaScriptNext - ES6 Syntax/JavaScriptNext.tmLanguage",
 							"tab_size": 4,
 							"translate_tabs_to_spaces": true,
 							"trim_trailing_white_space_on_save": true
@@ -1401,20 +1676,20 @@
 					"type": "text"
 				},
 				{
-					"buffer": 5,
-					"file": "client/app/product/quanguo.html",
+					"buffer": 13,
+					"file": "client/index.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 7470,
+						"buffer_size": 9819,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								5592,
-								5592
+								5272,
+								5272
 							]
 						],
 						"settings":
@@ -1423,7 +1698,6 @@
 							"editorconfig": true,
 							"ensure_newline_at_eof_on_save": true,
 							"incomplete_sync": null,
-							"open_with_edit": true,
 							"remote_loading": false,
 							"synced": false,
 							"syntax": "Packages/HTML/HTML.sublime-syntax",
@@ -1432,27 +1706,27 @@
 							"trim_trailing_white_space_on_save": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 1194.0,
+						"translation.y": 2760.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 6,
 					"type": "text"
 				},
 				{
-					"buffer": 6,
-					"file": "client/app/ui/components.html",
+					"buffer": 14,
+					"file": "gulp.config.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 47386,
+						"buffer_size": 2336,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1791,
-								1791
+								877,
+								877
 							]
 						],
 						"settings":
@@ -1464,83 +1738,7 @@
 							"origin_encoding": "ASCII",
 							"remote_loading": false,
 							"synced": false,
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true,
-							"trim_trailing_white_space_on_save": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 408.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 14,
-					"type": "text"
-				},
-				{
-					"buffer": 7,
-					"file": "client/app/ui/buttons.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 12947,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								10186,
-								10304
-							]
-						],
-						"settings":
-						{
-							"color_scheme": "Packages/User/Color Highlighter/themes/glacier.tmTheme",
-							"editorconfig": true,
-							"ensure_newline_at_eof_on_save": true,
-							"incomplete_sync": null,
-							"origin_encoding": "ASCII",
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true,
-							"trim_trailing_white_space_on_save": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 2846.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 17,
-					"type": "text"
-				},
-				{
-					"buffer": 8,
-					"file": "client/app/ui/lists.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 14779,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								594,
-								594
-							]
-						],
-						"settings":
-						{
-							"color_scheme": "Packages/User/Color Highlighter/themes/glacier.tmTheme",
-							"editorconfig": true,
-							"ensure_newline_at_eof_on_save": true,
-							"incomplete_sync": null,
-							"origin_encoding": "ASCII",
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"syntax": "Packages/JavaScriptNext - ES6 Syntax/JavaScriptNext.tmLanguage",
 							"tab_size": 4,
 							"translate_tabs_to_spaces": true,
 							"trim_trailing_white_space_on_save": true
@@ -1549,24 +1747,24 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 19,
+					"stack_index": 5,
 					"type": "text"
 				},
 				{
-					"buffer": 9,
-					"file": "client/app/ui/typography.html",
+					"buffer": 15,
+					"file": "client/app/app.module.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 24709,
+						"buffer_size": 382,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								23572,
-								24499
+								130,
+								130
 							]
 						],
 						"settings":
@@ -1578,102 +1776,25 @@
 							"origin_encoding": "ASCII",
 							"remote_loading": false,
 							"synced": false,
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true,
-							"trim_trailing_white_space_on_save": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 6028.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 27,
-					"type": "text"
-				},
-				{
-					"buffer": 10,
-					"file": "client/app/product/details.controller.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2376,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2020,
-								2121
-							]
-						],
-						"settings":
-						{
-							"color_scheme": "Packages/User/Color Highlighter/themes/glacier.tmTheme",
-							"editorconfig": true,
-							"ensure_newline_at_eof_on_save": true,
-							"incomplete_sync": null,
-							"is_init_dirty_state": false,
-							"origin_encoding": "ASCII",
-							"remote_loading": false,
-							"synced": false,
 							"syntax": "Packages/JavaScriptNext - ES6 Syntax/JavaScriptNext.tmLanguage",
 							"tab_size": 4,
 							"translate_tabs_to_spaces": true,
 							"trim_trailing_white_space_on_save": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 170.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 17,
 					"type": "text"
 				},
 				{
-					"buffer": 11,
-					"file": "client/app/product/quanguo.controller.js",
+					"buffer": 16,
+					"file": "client/app/dashboard/dashboard.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 3759,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2822,
-								2822
-							]
-						],
-						"settings":
-						{
-							"color_scheme": "Packages/User/Color Highlighter/themes/glacier.tmTheme",
-							"editorconfig": true,
-							"ensure_newline_at_eof_on_save": true,
-							"incomplete_sync": null,
-							"open_with_edit": true,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/JavaScriptNext - ES6 Syntax/JavaScriptNext.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true,
-							"trim_trailing_white_space_on_save": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 873.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 12,
-					"file": "client/app/table/responsive.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 10124,
+						"buffer_size": 4616,
 						"regions":
 						{
 						},
@@ -1681,7 +1802,7 @@
 						[
 							[
 								0,
-								0
+								68
 							]
 						],
 						"settings":
@@ -1690,7 +1811,6 @@
 							"editorconfig": true,
 							"ensure_newline_at_eof_on_save": true,
 							"incomplete_sync": null,
-							"origin_encoding": "ASCII",
 							"remote_loading": false,
 							"synced": false,
 							"syntax": "Packages/HTML/HTML.sublime-syntax",
@@ -1702,87 +1822,48 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
+					"stack_index": 13,
+					"type": "text"
+				},
+				{
+					"buffer": 17,
+					"file": "client/app/dashboard/dialog/dialog.template.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2932,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1882,
+								1937
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/glacier.tmTheme",
+							"editorconfig": true,
+							"ensure_newline_at_eof_on_save": true,
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true,
+							"trim_trailing_white_space_on_save": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 189.0,
+						"zoom_level": 1.0
+					},
 					"stack_index": 26,
 					"type": "text"
 				},
 				{
-					"buffer": 13,
-					"file": "client/app/table/static.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 19294,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								6518,
-								6523
-							]
-						],
-						"settings":
-						{
-							"color_scheme": "Packages/User/Color Highlighter/themes/glacier.tmTheme",
-							"editorconfig": true,
-							"ensure_newline_at_eof_on_save": true,
-							"incomplete_sync": null,
-							"origin_encoding": "ASCII",
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true,
-							"trim_trailing_white_space_on_save": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 2117.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 24,
-					"type": "text"
-				},
-				{
-					"buffer": 14,
-					"file": "client/app/table/data.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 6001,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2811,
-								2811
-							]
-						],
-						"settings":
-						{
-							"color_scheme": "Packages/User/Color Highlighter/themes/glacier.tmTheme",
-							"editorconfig": true,
-							"ensure_newline_at_eof_on_save": true,
-							"incomplete_sync": null,
-							"origin_encoding": "ASCII",
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true,
-							"trim_trailing_white_space_on_save": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 1328.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 25,
-					"type": "text"
-				},
-				{
-					"buffer": 15,
+					"buffer": 18,
 					"file": "client/libs/products.all.feild.alias.js",
 					"semi_transient": false,
 					"settings":
@@ -1812,65 +1893,27 @@
 							"trim_trailing_white_space_on_save": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 5.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 20,
+					"stack_index": 31,
 					"type": "text"
 				},
 				{
-					"buffer": 16,
-					"file": "client/app/ui/cards.html",
+					"buffer": 19,
+					"file": "client/app/product/details.controller.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 6562,
+						"buffer_size": 3511,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								5403,
-								6457
-							]
-						],
-						"settings":
-						{
-							"color_scheme": "Packages/User/Color Highlighter/themes/glacier.tmTheme",
-							"editorconfig": true,
-							"ensure_newline_at_eof_on_save": true,
-							"incomplete_sync": null,
-							"origin_encoding": "ASCII",
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true,
-							"trim_trailing_white_space_on_save": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 1765.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 29,
-					"type": "text"
-				},
-				{
-					"buffer": 17,
-					"file": "client/app/core/app.config.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2951,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1610,
-								1617
+								3072,
+								3068
 							]
 						],
 						"settings":
@@ -1887,27 +1930,27 @@
 							"trim_trailing_white_space_on_save": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 291.0,
+						"translation.y": 773.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 23,
+					"stack_index": 20,
 					"type": "text"
 				},
 				{
-					"buffer": 18,
-					"file": "client/styles/pages/_product.scss",
+					"buffer": 20,
+					"file": "client/libs/products.all.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 484,
+						"buffer_size": 19037,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								101,
-								101
+								10741,
+								10741
 							]
 						],
 						"settings":
@@ -1916,10 +1959,47 @@
 							"editorconfig": true,
 							"ensure_newline_at_eof_on_save": true,
 							"incomplete_sync": null,
-							"open_with_edit": true,
 							"remote_loading": false,
 							"synced": false,
-							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"syntax": "Packages/JavaScriptNext - ES6 Syntax/JavaScriptNext.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true,
+							"trim_trailing_white_space_on_save": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 7048.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 28,
+					"type": "text"
+				},
+				{
+					"buffer": 21,
+					"file": "client/app/core/config.route.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5075,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3144,
+								3144
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/glacier.tmTheme",
+							"editorconfig": true,
+							"ensure_newline_at_eof_on_save": true,
+							"incomplete_sync": null,
+							"origin_encoding": "ASCII",
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/JavaScriptNext - ES6 Syntax/JavaScriptNext.tmLanguage",
 							"tab_size": 4,
 							"translate_tabs_to_spaces": true,
 							"trim_trailing_white_space_on_save": true
@@ -1932,95 +2012,20 @@
 					"type": "text"
 				},
 				{
-					"buffer": 19,
-					"file": "client/app/dashboard/dashboard.html",
+					"buffer": 22,
+					"file": "client/app/product/quanguo.controller.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 4270,
+						"buffer_size": 6610,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								382,
-								401
-							]
-						],
-						"settings":
-						{
-							"color_scheme": "Packages/User/Color Highlighter/themes/glacier.tmTheme",
-							"editorconfig": true,
-							"ensure_newline_at_eof_on_save": true,
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true,
-							"trim_trailing_white_space_on_save": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 27.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 5,
-					"type": "text"
-				},
-				{
-					"buffer": 20,
-					"file": "client/app/page/profile.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 6617,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								3021,
-								3091
-							]
-						],
-						"settings":
-						{
-							"color_scheme": "Packages/User/Color Highlighter/themes/glacier.tmTheme",
-							"editorconfig": true,
-							"ensure_newline_at_eof_on_save": true,
-							"incomplete_sync": null,
-							"origin_encoding": "ASCII",
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true,
-							"trim_trailing_white_space_on_save": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 1179.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 28,
-					"type": "text"
-				},
-				{
-					"buffer": 21,
-					"file": "client/app/dashboard/dashboard.controller.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 18779,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								6470,
-								6478
+								637,
+								641
 							]
 						],
 						"settings":
@@ -2032,43 +2037,6 @@
 							"remote_loading": false,
 							"synced": false,
 							"syntax": "Packages/JavaScriptNext - ES6 Syntax/JavaScriptNext.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true,
-							"trim_trailing_white_space_on_save": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 3413.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 4,
-					"type": "text"
-				},
-				{
-					"buffer": 22,
-					"file": "client/app/page/signin.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2056,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								23,
-								12
-							]
-						],
-						"settings":
-						{
-							"color_scheme": "Packages/User/Color Highlighter/themes/glacier.tmTheme",
-							"editorconfig": true,
-							"ensure_newline_at_eof_on_save": true,
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
 							"tab_size": 4,
 							"translate_tabs_to_spaces": true,
 							"trim_trailing_white_space_on_save": true
@@ -2077,24 +2045,24 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 9,
+					"stack_index": 25,
 					"type": "text"
 				},
 				{
 					"buffer": 23,
-					"file": "client/app/page/page.controller.js",
+					"file": "client/app/product/quanguo.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1869,
+						"buffer_size": 8026,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1260,
-								1260
+								5462,
+								5462
 							]
 						],
 						"settings":
@@ -2103,19 +2071,18 @@
 							"editorconfig": true,
 							"ensure_newline_at_eof_on_save": true,
 							"incomplete_sync": null,
-							"origin_encoding": "ASCII",
 							"remote_loading": false,
 							"synced": false,
-							"syntax": "Packages/JavaScriptNext - ES6 Syntax/JavaScriptNext.tmLanguage",
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
 							"tab_size": 4,
 							"translate_tabs_to_spaces": true,
 							"trim_trailing_white_space_on_save": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 79.0,
+						"translation.y": 1704.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 8,
+					"stack_index": 24,
 					"type": "text"
 				},
 				{
@@ -2124,15 +2091,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2138,
+						"buffer_size": 2171,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								487,
-								487
+								1099,
+								1107
 							]
 						],
 						"settings":
@@ -2141,50 +2108,9 @@
 							"editorconfig": true,
 							"ensure_newline_at_eof_on_save": true,
 							"incomplete_sync": null,
-							"is_init_dirty_state": false,
-							"origin_encoding": "UTF-8",
 							"remote_loading": false,
 							"synced": false,
 							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true,
-							"trim_trailing_white_space_on_save": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 16,
-					"type": "text"
-				},
-				{
-					"buffer": 25,
-					"file": "client/app/core/config.route.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 4107,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1336,
-								1336
-							]
-						],
-						"settings":
-						{
-							"color_scheme": "Packages/User/Color Highlighter/themes/glacier.tmTheme",
-							"editorconfig": true,
-							"ensure_newline_at_eof_on_save": true,
-							"incomplete_sync": null,
-							"is_init_dirty_state": false,
-							"origin_encoding": "ASCII",
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/JavaScriptNext - ES6 Syntax/JavaScriptNext.tmLanguage",
 							"tab_size": 4,
 							"translate_tabs_to_spaces": true,
 							"trim_trailing_white_space_on_save": true
@@ -2197,20 +2123,57 @@
 					"type": "text"
 				},
 				{
+					"buffer": 25,
+					"file": "client/app/analysis/analysis.ctrl.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 573,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								284,
+								284
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/glacier.tmTheme",
+							"editorconfig": true,
+							"ensure_newline_at_eof_on_save": true,
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/JavaScriptNext - ES6 Syntax/JavaScriptNext.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true,
+							"trim_trailing_white_space_on_save": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 14,
+					"type": "text"
+				},
+				{
 					"buffer": 26,
-					"file": "client/app/dashboard/dialog/dialog.template.html",
+					"file": "client/app/analysis/analysis.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2927,
+						"buffer_size": 162,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2254,
-								2254
+								91,
+								84
 							]
 						],
 						"settings":
@@ -2219,328 +2182,10 @@
 							"editorconfig": true,
 							"ensure_newline_at_eof_on_save": true,
 							"incomplete_sync": null,
+							"origin_encoding": "ASCII",
 							"remote_loading": false,
 							"synced": false,
 							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true,
-							"trim_trailing_white_space_on_save": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 7,
-					"type": "text"
-				},
-				{
-					"buffer": 27,
-					"file": "client/app/dashboard/dialog/warning.template.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2852,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2037,
-								2037
-							],
-							[
-								2108,
-								2108
-							],
-							[
-								2179,
-								2179
-							]
-						],
-						"settings":
-						{
-							"color_scheme": "Packages/User/Color Highlighter/themes/glacier.tmTheme",
-							"editorconfig": true,
-							"ensure_newline_at_eof_on_save": true,
-							"incomplete_sync": null,
-							"open_with_edit": true,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true,
-							"trim_trailing_white_space_on_save": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 227.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 6,
-					"type": "text"
-				},
-				{
-					"buffer": 28,
-					"file": "client/styles/ui.scss",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 110,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"color_scheme": "Packages/User/Color Highlighter/themes/glacier.tmTheme",
-							"editorconfig": true,
-							"ensure_newline_at_eof_on_save": true,
-							"incomplete_sync": null,
-							"origin_encoding": "ASCII",
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true,
-							"trim_trailing_white_space_on_save": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 34,
-					"type": "text"
-				},
-				{
-					"buffer": 29,
-					"file": "client/styles/global/_shared.scss",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 688,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								685,
-								685
-							]
-						],
-						"settings":
-						{
-							"color_scheme": "Packages/User/Color Highlighter/themes/glacier.tmTheme",
-							"editorconfig": true,
-							"ensure_newline_at_eof_on_save": true,
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true,
-							"trim_trailing_white_space_on_save": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 33,
-					"type": "text"
-				}
-			]
-		},
-		{
-			"selected": 0,
-			"sheets":
-			[
-				{
-					"buffer": 30,
-					"file": "client/libs/products.all.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 15772,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								7892,
-								7892
-							]
-						],
-						"settings":
-						{
-							"color_scheme": "Packages/User/Color Highlighter/themes/glacier.tmTheme",
-							"editorconfig": true,
-							"ensure_newline_at_eof_on_save": true,
-							"incomplete_sync": null,
-							"is_init_dirty_state": false,
-							"origin_encoding": "UTF-8",
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/JavaScriptNext - ES6 Syntax/JavaScriptNext.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true,
-							"trim_trailing_white_space_on_save": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 9078.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 13,
-					"type": "text"
-				},
-				{
-					"buffer": 31,
-					"file": "client/libs/details.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 594,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								497,
-								497
-							]
-						],
-						"settings":
-						{
-							"color_scheme": "Packages/User/Color Highlighter/themes/glacier.tmTheme",
-							"editorconfig": true,
-							"ensure_newline_at_eof_on_save": true,
-							"incomplete_sync": null,
-							"open_with_edit": true,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/JavaScriptNext - ES6 Syntax/JavaScriptNext.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true,
-							"trim_trailing_white_space_on_save": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 30,
-					"type": "text"
-				},
-				{
-					"buffer": 32,
-					"file": "client/libs/bid-info.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 707,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								516,
-								516
-							]
-						],
-						"settings":
-						{
-							"color_scheme": "Packages/User/Color Highlighter/themes/glacier.tmTheme",
-							"editorconfig": true,
-							"ensure_newline_at_eof_on_save": true,
-							"incomplete_sync": null,
-							"open_with_edit": true,
-							"origin_encoding": "ASCII",
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/JavaScriptNext - ES6 Syntax/JavaScriptNext.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true,
-							"trim_trailing_white_space_on_save": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 32,
-					"type": "text"
-				},
-				{
-					"buffer": 33,
-					"file": "client/libs/img.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 708,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								578,
-								578
-							]
-						],
-						"settings":
-						{
-							"color_scheme": "Packages/User/Color Highlighter/themes/glacier.tmTheme",
-							"editorconfig": true,
-							"ensure_newline_at_eof_on_save": true,
-							"incomplete_sync": null,
-							"open_with_edit": true,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/JavaScriptNext - ES6 Syntax/JavaScriptNext.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true,
-							"trim_trailing_white_space_on_save": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 31,
-					"type": "text"
-				},
-				{
-					"buffer": 34,
-					"file": "client/libs/excel-db.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 946,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								946,
-								946
-							]
-						],
-						"settings":
-						{
-							"color_scheme": "Packages/User/Color Highlighter/themes/glacier.tmTheme",
-							"editorconfig": true,
-							"ensure_newline_at_eof_on_save": true,
-							"incomplete_sync": null,
-							"origin_encoding": "ASCII",
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/JavaScriptNext - ES6 Syntax/JavaScriptNext.tmLanguage",
 							"tab_size": 4,
 							"translate_tabs_to_spaces": true,
 							"trim_trailing_white_space_on_save": true
@@ -2553,73 +2198,235 @@
 					"type": "text"
 				},
 				{
-					"buffer": 35,
+					"buffer": 27,
+					"file": "client/app/product/details-originpage.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 899,
+						"buffer_size": 1990,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								141,
-								141
+								768,
+								768
 							]
 						],
 						"settings":
 						{
-							"auto_name": "(",
 							"color_scheme": "Packages/User/Color Highlighter/themes/glacier.tmTheme",
-							"default_dir": "/Users/colin/Projects/Outsource/MagicWindow/zgc/demo",
+							"editorconfig": true,
+							"ensure_newline_at_eof_on_save": true,
 							"incomplete_sync": null,
-							"is_init_dirty_state": true,
+							"open_with_edit": true,
 							"remote_loading": false,
 							"synced": false,
-							"syntax": "Packages/Text/Plain text.tmLanguage",
-							"translate_tabs_to_spaces": false
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true,
+							"trim_trailing_white_space_on_save": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 36,
+					"stack_index": 27,
 					"type": "text"
 				},
 				{
-					"buffer": 36,
+					"buffer": 28,
+					"file": "client/app/dashboard/dashboard.controller.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 899,
+						"buffer_size": 18501,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								225,
-								225
+								38,
+								283
 							]
 						],
 						"settings":
 						{
-							"auto_name": "(",
 							"color_scheme": "Packages/User/Color Highlighter/themes/glacier.tmTheme",
-							"default_dir": "/Users/colin/Projects/Outsource/MagicWindow/zgc/demo",
+							"editorconfig": true,
+							"ensure_newline_at_eof_on_save": true,
 							"incomplete_sync": null,
-							"is_init_dirty_state": true,
 							"remote_loading": false,
 							"synced": false,
-							"syntax": "Packages/Text/Plain text.tmLanguage",
-							"translate_tabs_to_spaces": false
+							"syntax": "Packages/JavaScriptNext - ES6 Syntax/JavaScriptNext.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true,
+							"trim_trailing_white_space_on_save": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 35,
+					"stack_index": 16,
+					"type": "text"
+				},
+				{
+					"buffer": 29,
+					"file": "client/app/ui/buttons.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 12947,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1733,
+								1789
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/glacier.tmTheme",
+							"editorconfig": true,
+							"ensure_newline_at_eof_on_save": true,
+							"incomplete_sync": null,
+							"origin_encoding": "ASCII",
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true,
+							"trim_trailing_white_space_on_save": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 160.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 32,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 30,
+					"file": "client/styles/pages/_product.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 836,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								833,
+								833
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/glacier.tmTheme",
+							"editorconfig": true,
+							"ensure_newline_at_eof_on_save": true,
+							"incomplete_sync": null,
+							"origin_encoding": "ASCII",
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true,
+							"trim_trailing_white_space_on_save": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 29,
+					"type": "text"
+				},
+				{
+					"buffer": 31,
+					"file": "client/styles/global/_shared.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1540,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								473,
+								473
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/glacier.tmTheme",
+							"editorconfig": true,
+							"ensure_newline_at_eof_on_save": true,
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true,
+							"trim_trailing_white_space_on_save": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 24.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 32,
+					"file": "client/styles/global/_var.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 32423,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1232,
+								1219
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/glacier.tmTheme",
+							"editorconfig": true,
+							"ensure_newline_at_eof_on_save": true,
+							"incomplete_sync": null,
+							"origin_encoding": "ASCII",
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true,
+							"trim_trailing_white_space_on_save": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 77.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 30,
 					"type": "text"
 				}
 			]
@@ -2627,7 +2434,7 @@
 	],
 	"incremental_find":
 	{
-		"height": 27.0
+		"height": 38.0
 	},
 	"input":
 	{
@@ -2653,7 +2460,7 @@
 		"cols":
 		[
 			0.0,
-			0.876665749802,
+			0.759088607811,
 			1.0
 		],
 		"rows":
@@ -2692,6 +2499,18 @@
 		"last_filter": "",
 		"selected_items":
 		[
+			[
+				"dashb.hm",
+				"client/app/dashboard/dashboard.html"
+			],
+			[
+				"dashb.js",
+				"client/app/dashboard/dashboard.controller.js"
+			],
+			[
+				"det.h",
+				"client/app/product/details.html"
+			],
 			[
 				"list.html",
 				"client/app/ui/lists.html"
@@ -2761,7 +2580,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 314.0,
+	"side_bar_width": 378.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{
