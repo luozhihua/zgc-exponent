@@ -142,10 +142,34 @@ module.exports = class PruductsAll extends ExcelDb {
     }
 
     /**
-     * 电商加权平均报价
-     * @return {Number} [description]
+     * 产品平均价
+     * @param  {[type]} id [description]
+     * @return {[type]}           [description]
      */
-    avergeEcQuanzhong (product) {
+    getProductAverge(id) {
+        return this.zscxj(id);
+    }
+
+    /**
+     * 实体市场产品平均价
+     * @param  {[type]} id [description]
+     * @return {[type]}           [description]
+     */
+    getMarketProductAvergeByWeight(id) {
+        let product = this.getProductById(id);
+        let localPrice = product.gov_sichuan_productPrice;
+        let marketPrice = product.marketPrice;
+
+        return (localPrice + marketPrice) / 2;
+    }
+
+    /**
+     * 电商单品加权平均价
+     * @param  {[type]} id [description]
+     * @return {[type]}           [description]
+     */
+    avergeEcQuanzhong(id) { return this.avergeEcProductByWeight(id); }
+    avergeEcProductByWeight (product) {
         product = this.getProductById(product);
         let cache = this.cache.avergeEc = this.cache.avergeEc || {};
         let id = product.id;
@@ -175,11 +199,10 @@ module.exports = class PruductsAll extends ExcelDb {
      * 政府单品加权平均采购价
      * @return {Number} [description]
      */
-    avergeGovQuanzhong (product) {
-        product = this.getProductById(product);
-
+    avergeGovQuanzhong (id) { return this.avergeGovProductByWeight(id); }
+    avergeGovProductByWeight (id) {
+        let product = this.getProductById(id);
         let cache = this.cache.avergeGov = this.cache.avergeGov || {};
-        let id = product.id;
 
         if (cache[id]) {
             return cache[id];
@@ -214,13 +237,34 @@ module.exports = class PruductsAll extends ExcelDb {
             return cache[id];
         }
 
-        let govAverge = this.avergeGovQuanzhong(product);
-        let ecAverge = this.avergeEcQuanzhong(product);
+        let govAverge = this.avergeGovProductByWeight(product);
+        let ecAverge = this.avergeEcProductByWeight(product);
         let market = product.market_productPrice;
 
         cache[id] = (market * 0.7) + (ecAverge * 0.2) + (govAverge * 0.1);
 
-        return parseFloat(cache[id].toFixed(2));
+        return parseFloat(cache[id].toFixed(4));
+    }
+
+    /**
+     * 本地商品偏离度
+     * @return {[type]} [description]
+     */
+    localOffset (id, govAlias) {
+        let product = this.getProductById(id);
+        let cacheKey = id + govAlias;
+        let cache = this.cache.localOffset = this.cache.localOffset || {};
+        if (cache[cacheKey]) {
+            return cache[cacheKey];
+        }
+
+        let productKey = 'gov_' + govAlias + '_productPrice';
+        let localPrice = product[productKey];
+        let zscxj = this.zscxj(id);
+
+        cache[cacheKey] = parseFloat(((localPrice-zscxj) / zscxj).toFixed(4));
+
+        return cache[cacheKey];
     }
 
     /**
@@ -235,12 +279,12 @@ module.exports = class PruductsAll extends ExcelDb {
             return cache[id];
         }
 
-        let govAverge = this.avergeGovQuanzhong(product);
+        let govAverge = this.avergeGovProductByWeight(product);
         let zscxj = this.zscxj(product);
 
-        cache[id] = (govAverge-zscxj) / zscxj;
+        cache[id] = parseFloat(((govAverge-zscxj) / zscxj).toFixed(4));
 
-        return parseFloat(cache[id].toFixed(2));
+        return cache[id];
     }
 
     /**
@@ -255,12 +299,12 @@ module.exports = class PruductsAll extends ExcelDb {
             return cache[id];
         }
 
-        let ecAverge = this.avergeEcQuanzhong(product);
+        let ecAverge = this.avergeEcProductByWeight(product);
         let zscxj = this.zscxj(product);
 
-        cache[id] = (ecAverge-zscxj) / zscxj;
+        cache[id] = parseFloat(((ecAverge-zscxj) / zscxj).toFixed(4));
 
-        return parseFloat(cache[id].toFixed(2));
+        return cache[id];
     }
 
     /**
@@ -280,9 +324,9 @@ module.exports = class PruductsAll extends ExcelDb {
         let market = product.market_productPrice;
         let zscxj = this.zscxj(product);
 
-        cache[id] = (market-zscxj) / zscxj;
+        cache[id] = parseFloat(((market-zscxj) / zscxj).toFixed(4));
 
-        return parseFloat(cache[id].toFixed(2));
+        return cache[id];
     }
 
     /**
@@ -345,7 +389,7 @@ module.exports = class PruductsAll extends ExcelDb {
         let totalPrice = 0;
 
         prodsOfModel.forEach((prod) => {
-            totalPrice += parseFloat(this.avergeEcQuanzhong(prod));
+            totalPrice += parseFloat(this.avergeEcProductByWeight(prod));
         });
 
         return cache[modelName] = parseFloat((totalPrice/prodsOfModel.length).toFixed(2));
@@ -367,7 +411,7 @@ module.exports = class PruductsAll extends ExcelDb {
         let totalPrice = 0;
 
         prodsOfModel.forEach((prod) => {
-            totalPrice += parseFloat(this.avergeEcQuanzhong(prod));
+            totalPrice += parseFloat(this.avergeGovProductByWeight(prod));
         });
 
         return cache[modelName] = parseFloat((totalPrice/prodsOfModel.length).toFixed(2));
@@ -411,6 +455,56 @@ module.exports = class PruductsAll extends ExcelDb {
      * @return {[type]}           [description]
      */
     getModelOffsetOfGov(modelName) {
+        let cache = this.cache.govOffsetOfModel = this.cache.govOffsetOfModel || {};
+
+        if (cache[modelName]) { return cache[modelName]; }
+
+        let avergeModal = this.getModelAverge(modelName);
+        let avergeModalOfGov = this.getModelAvergeOfGov(modelName);
+
+        return cache[modelName] = parseFloat(((avergeModalOfGov - avergeModal) / avergeModal).toFixed(2));
+    }
+
+    /**
+     * 实体市场单品偏离度
+     * @param  {[type]} modelName [description]
+     * @return {[type]}           [description]
+     */
+    getProductOffsetOfMarket(id, govAlias) {
+        let cacheKey = id+govPriceKey;
+        let cache = this.cache.marketOffsetOfModel = this.cache.marketOffsetOfModel || {};
+        if (cache[cacheKey]) { return cache[cacheKey]; }
+
+        let product = this.getProductById(id);
+        let govPriceKey = 'gov_' + govAlias + '_productPrice';
+        let govPrice = product[govPriceKey];
+        let marketPrice = product.market_productPrice;
+
+        return cache[cacheKey] = parseFloat(((govPrice - marketPrice) / marketPrice).toFixed(2));
+    }
+
+    /**
+     * 电商单品偏离度
+     * @param  {[type]} modelName [description]
+     * @return {[type]}           [description]
+     */
+    getProductOffsetOfEc(id, govAlias) {
+        let cache = this.cache.ecOffsetOfModel = this.cache.ecOffsetOfModel || {};
+
+        if (cache[modelName]) { return cache[modelName]; }
+
+        let avergeModal = this.getModelAverge(modelName);
+        let avergeModalOfEc = this.getModelAvergeOfEc(modelName);
+
+        return cache[modelName] = parseFloat(((avergeModalOfEc - avergeModal) / avergeModal).toFixed(2));
+    }
+
+    /**
+     * 政采单品偏离度
+     * @param  {[type]} modelName [description]
+     * @return {[type]}           [description]
+     */
+    getProductOffsetOfGov(id, govAlias) {
         let cache = this.cache.govOffsetOfModel = this.cache.govOffsetOfModel || {};
 
         if (cache[modelName]) { return cache[modelName]; }

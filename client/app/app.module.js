@@ -4,7 +4,8 @@
     angular.module('app', [
         // Core modules
          'app.core'
-        
+        // ,'ngSanitize'
+
         // Custom Feature modules
         ,'app.chart'
         ,'app.ui'
@@ -12,7 +13,7 @@
         ,'app.ui.form.validation'
         ,'app.page'
         ,'app.table'
-        
+
         // 3rd party feature modules
         ,'md.data.table'
     ]);

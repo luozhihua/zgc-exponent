@@ -1,127 +1,135 @@
 <div class="page page-product-details" data-ng-controller="quanguoController">
     <div class="panel bg-none">
         <div class="panel-body">
-            <div layout="row">
-                <div flex="40" class="text-center bg-danger">
-                    <h4 class="card-title">中电指数EPI</h4>
-                    <p>2017-01-22 至 2017-03-14</p>
+            <div layout="row" class="header-epi">
+                <div flex="40" class="text-center bg-info">
+                    <h2 class="card-title">中电指数EPI</h2>
+                    <p>{{ currentDate }}</p>
                 </div>
                 <div flex="10" class="text-center">
-                    <span class="btn-icon btn-icon-round btn-icon-md-alt bg-danger">
-                    <span class="size-h2">
-                        <i class="material-icons">trending_up</i>
-                    </span>
+                    <span class="btn-icon btn-icon-round btn-icon-lg-alt bg-info">
+                        <span class="size-h4">85.64</span>
                     </span>
                     <div class="text-center">
-                        <div class="size-h5">{{zhishu}}</div>
-                        <small>指数畅销价</small>
+                        <small>指数</small>
+                    </div>
+                </div>
+
+                <div flex></div>
+
+                <div flex="10" class="text-center">
+                    <span ng-if="marketOffset>0" class="btn-icon btn-icon-round btn-icon-lg-alt bg-danger">
+                        <span class="size-h4">{{ (marketOffset*100).toFixed(2) }}%</span>
+                    </span>
+                    <span ng-if="marketOffset<=0" class="btn-icon btn-icon-round btn-icon-lg-alt bg-success">
+                        <span class="size-h4">{{ (marketOffset*100).toFixed(2) }}%</span>
+                    </span>
+                    <div class="text-center">
+                        <small>市场偏离度</small>
+                        <i ng-if="marketOffset>0" class="fa epi fa-long-arrow-up"></i>
+                        <i ng-if="marketOffset<=0" class="fa epi fa-long-arrow-down"></i>
                     </div>
                 </div>
                 <div flex="10" class="text-center">
-                    <span class="btn-icon btn-icon-round btn-icon-md-alt bg-warning">
-                    <span class="size-h5">
-                        <i ng-if="ecOffset>0" class="material-icons">vertical_align_top</i>
-                        <i ng-if="ecOffset==0" class="material-icons">vertical_align_center</i>
-                        <i ng-if="ecOffset<0" class="material-icons">vertical_align_bottom</i>
+                    <span ng-if="ecOffset>0" class="btn-icon btn-icon-round btn-icon-lg-alt bg-danger">
+                        <span class="size-h4">{{ (ecOffset*100).toFixed(2) }}%</span>
                     </span>
+                    <span ng-if="ecOffset<=0" class="btn-icon btn-icon-round btn-icon-lg-alt bg-success">
+                        <span class="size-h4">{{ (ecOffset*100).toFixed(2) }}%</span>
                     </span>
                     <div class="text-center">
-                        <div class="size-h5">{{ecOffset}}</div>
-                        <small>电商平均价</small>
+                        <small>电商偏离度</small>
+                        <i ng-if="ecOffset>0" class="fa epi fa-long-arrow-up"></i>
+                        <i ng-if="ecOffset<=0" class="fa epi fa-long-arrow-down"></i>
                     </div>
                 </div>
                 <div flex="10" class="text-center">
-                    <span class="btn-icon btn-icon-round btn-icon-md-alt bg-primary">
-                    <span class="size-h5">
-                        <i ng-if="marketOffset>0" class="material-icons">vertical_align_top</i>
-                        <i ng-if="marketOffset==0" class="material-icons">vertical_align_center</i>
-                        <i ng-if="marketOffset<0" class="material-icons">vertical_align_bottom</i>
+                    <span ng-if="govOffset>0" class="btn-icon btn-icon-round btn-icon-lg-alt bg-danger">
+                        <span class="size-h4">{{ (govOffset*100).toFixed(2) }}%</span>
                     </span>
-                    </span>
-                    <div class="text-center">
-                        <div class="size-h5">{{marketOffset}}</div>
-                        <small>市场平均价</small>
-                    </div>
-                </div>
-                <div flex="10" class="text-center">
-                    <span class="btn-icon btn-icon-round btn-icon-md-alt bg-success">
-                    <span class="size-h5">
-                        <i ng-if="govOffset>0" class="material-icons">vertical_align_top</i>
-                        <i ng-if="govOffset==0" class="material-icons">vertical_align_center</i>
-                        <i ng-if="govOffset<0" class="material-icons">vertical_align_bottom</i>
-                    </span>
+                    <span ng-if="govOffset<=0" class="btn-icon btn-icon-round btn-icon-lg-alt bg-success">
+                        <span class="size-h4">{{ (govOffset*100).toFixed(2) }}%</span>
                     </span>
                     <div class="text-center">
-                        <div class="size-h5">{{govOffset}}</div>
-                        <small>政采平均价</small>
+                        <small>政采偏离度</small>
+                        <i ng-if="govOffset>0" class="fa epi fa-long-arrow-up"></i>
+                        <i ng-if="govOffset<=0" class="fa epi fa-long-arrow-down"></i>
                     </div>
                 </div>
             </div>
-            <div class="divider"></div>
         </div>
     </div>
+
     <div class="panel panel-default">
         <div class="panel-body">
             <div class="row">
                 <div class="col col-sm-4 col-md-4 col-lg-3">
+
+                    <!-- 类别菜单 -->
                     <div class="panel panel-default no-margin">
                         <md-subheader class="md-no-sticky">类别</md-subheader>
                         <div class="list-group no-margin" style="max-height: 600px; overflow: auto; ">
-                            <a ui-wave href="javascript:;" ng-click="update(tr)" ng-repeat="tr in tree" class="list-group-item ui-wave"> <span ng-if="tr.type=='model'">- &nbsp;&nbsp;&nbsp;&nbsp;</span>{{ tr.name }} </a>
+                            <a ui-wave href="javascript:;" ng-hide="tr.type==='model' && AREA==='local'" ng-click="update(tr)" ng-repeat="tr in tree" class="list-group-item ui-wave"> <span ng-if="tr.type=='model'">- &nbsp;&nbsp;&nbsp;&nbsp;</span>{{ tr.name }} </a>
                         </div>
                     </div>
                 </div>
                 <div class="col col-sm-8 col-md-8 col-lg-9">
-                    <div class="panel panel-default no-margin" ng-repeat="product in productList">
-                        <md-subheader class="md-no-sticky"><a ng-href="#!/product/details/{{product.id}}">{{product.name}}</a></md-subheader>
+
+
+                    <div class="panel panel-default no-margin" ng-repeat="product in productList | limitTo: query.limit : (query.page -1) * query.limit" style="margin-bottom: 10px !important;">
+                        <md-subheader class="md-no-sticky"><a ng-href="#!/product/details/{{product.id}}/{{AREA}}"><b>{{product.name}}</b></a></md-subheader>
                         <div class="row">
                             <div class="col-sm-4 col-md-3 col-lg-2">
                                 <div class="card bg-white text-center" style="box-shadow: none;">
-                                    <div class="card-image">
-                                        <img ng-src="{{product.img}}">
+                                    <div class="card-image text-center">
+                                        <a ng-href="#!/product/details/{{product.id}}/{{AREA}}"><img ng-src="{{product.img}}"></a>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-sm-4">
+                            <div class="col-sm-3">
                                 <div class="divider"></div>
                                 <dl class="dl-horizontal">
-                                    <dt>指数畅销价</dt>
-                                    <dd>{{product.zhishuDetails.zhishu}}</dd>
-                                    <dt>实体市场价</dt>
-                                    <dd>{{product.market_productPrice}}</dd>
-                                    <dt>电商平均价</dt>
-                                    <dd>{{product.zhishuDetails.avergeEc}}</dd>
-                                    <dt>政采平均价</dt>
-                                    <dd>{{product.zhishuDetails.avergeGov}}</dd>
-                                    <dt>增值服务</dt>
-                                    <dd>{{}}</dd>
+
+                                    <!-- Start 本地商品信息 -->
+                                    <div ng-if="AREA=='local'">
+                                        <dt style="width:100px;">四川政采价格</dt>
+                                        <dd><span class="badge badge-info">￥{{product.gov_sichuan_productPrice.toFixed(2)}}</span></dd>
+                                    </div>
+                                    <!-- End 本地商品信息 -->
+
+                                    <dt style="width:100px;">指数畅销价</dt>
+                                    <dd><span class="badge badge-info">￥{{product.zhishuDetails.zhishu.toFixed(2)}}</span></dd>
+                                    <div class="divider"></div>
+
+                                    <dt style="font-weight: 300; width:100px;">实体市场价</dt>
+                                    <dd>￥{{product.market_productPrice.toFixed(2)}}</dd>
+                                    <dt style="font-weight: 300; width:100px;">电商平均价</dt>
+                                    <dd>￥{{product.zhishuDetails.avergeEc}}</dd>
+                                    <dt style="font-weight: 300; width:100px;">政采平均价</dt>
+                                    <dd>￥{{product.zhishuDetails.avergeGov}}</dd>
                                 </dl>
                             </div>
+                            <div class="col-sm-1 col-md-2 col-lg-3 "></div>
                             <div class="col-sm-4">
+
                                 <div class="divider"></div>
-                                <div class="panel panel-default no-margin" ng-show="showOtherPrice!='gov'">
-                                    <md-subheader class="md-no-sticky">电商单品价格</md-subheader>
-                                    <md-list class="ui-material-list" style="height: 100px; overflow: auto; ">
-                                        <md-list-item ng-click="navigateTo(ec, $event)" ng-repeat="ec in product.ecList">
+                                <div class="panel panel-default no-margin">
+                                    <md-list class="ui-material-list no-padding" style="height: 100px; overflow: auto; ">
+                                        <md-list-item ng-click="navigateTo(ec, $event)" ng-repeat="ec in product.zhishuDetails.ecList">
                                             <!-- <md-icon class="material-icons">{{ec.icon}}</md-icon> -->
-                                            <p> {{ ec.ecName }} </p>
-                                            <span class="badge badge-warning">{{ec.price}}</span>
+                                            <p> {{ ec.ecName }} <span class="badge badge-info">￥{{ec.price}}</span></p>
+
+                                            <md-button ng-click="showScreen(ec)" class="btn-w-xs md-accent"><i class="fa fa-image"></i>截图</md-button>
                                         </md-list-item>
                                     </md-list>
                                 </div>
-                                <div class="panel panel-default no-margin" ng-show="showOtherPrice=='gov'">
-                                    <md-subheader class="md-no-sticky">全国政采单品价格</md-subheader>
-                                    <md-list class="ui-material-list" style="height: 140px; overflow: auto; ">
-                                        <md-list-item ng-click="navigateTo(gov, $event)" ng-repeat="gov in product.govList">
-                                            <!-- <md-icon class="material-icons">{{gov.icon}}</md-icon> -->
-                                            <p> {{ gov.govName }} </p>
-                                            <span class="badge badge-warning">{{gov.price}}</span>
-                                        </md-list-item>
-                                    </md-list>
-                                </div>
+                                <div class="divider"></div>
+
                             </div>
                         </div>
                     </div>
+
+                    <md-table-pagination md-label="{{pgLabel}}" md-limit="query.limit" md-limit-options="limitOptions" md-page="query.page" md-total="{{productList.length}}" md-page-select="options.pageSelect" md-boundary-links="options.boundaryLinks" md-on-paginate="logPagination"></md-table-pagination>
                 </div>
             </div>
         </div>

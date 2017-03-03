@@ -13,13 +13,14 @@ function createWindow () {
     center: true,
     maximize: true,
     // resizable: false,
-    // width: 500,
+    minWidth: 900,
+    minHeight: 500,
     // transparent: true,
     // frame: false,
     // height: 480
   })
 
-  // win.maximize()
+  win.maximize()
 
   // and load the index.html of the app.
   win.loadURL(url.format({

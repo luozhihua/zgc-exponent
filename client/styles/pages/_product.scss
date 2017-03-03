@@ -23,7 +23,6 @@
     }
 }
 
-
 .page-dashboard {
 
     .panel-heading {
@@ -31,4 +30,22 @@
         font-weight: 600;
 
     }
+}
+
+@media (min-width: 768px) {
+    .dl-horizontal dd {
+        margin-left: 120px;
+    }
+
+    .dl-horizontal dt {
+        width: 100px;
+    }
+}
+
+.epi.fa-long-arrow-up {
+    color: $brand-danger;
+}
+
+.epi.fa-long-arrow-down {
+    color: $brand-success;
 }

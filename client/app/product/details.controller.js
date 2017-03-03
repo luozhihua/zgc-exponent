@@ -15,8 +15,13 @@
     function detailsController($mdDialog, $root, $scope, $stateParams) {
 
         let product;
-        let id = $stateParams.id;
         let nationwide = window.db = new ProductsNationwide() || window.db;
+
+        const id = $stateParams.id;
+        const LOCAL = $stateParams.local == 'local';
+
+        $scope.id = id;
+        $scope.LOCAL = LOCAL;
 
         nationwide.open().then(function() {
 
@@ -42,6 +47,8 @@
 
             $scope.ecList = _.filter(nationwide.getProductsOfAllEcoms(id), function(o){return o.price!==0; });
             $scope.govList = _.filter(nationwide.getProductsOfAllGovs(id), function(o){return o.price!==0; });
+
+            $scope.localOffset = nationwide.localOffset(id, LOCAL_GOV);
         });
 
         // 读取商品图片
@@ -58,6 +65,34 @@
         getDetails().then(function(details) {
             $scope.productDetails = details[id];
         });
+
+        $scope.showScreen = function(product) {
+
+            let originName = product.ecName || product.govName;
+            let imgUrl = 'assets/products/'+ product.category +'/' + product.id + '-' + originName + '.jpg';
+            let link = product.link;
+
+            $mdDialog.show({
+              templateUrl: 'app/product/details-originpage.html',
+              parent: angular.element(document.body),
+              // targetEvent: ev,
+              clickOutsideToClose:true,
+              controller: ['$scope', '$sce', function($dscope, $sce) {
+
+
+                $dscope.link = link;
+                $dscope.imgUrl = imgUrl;
+                $dscope.originName = originName;
+
+                $dscope.getLink = function() {
+                    return $sce.trustAsResourceUrl(link);
+                }
+                $dscope.hide = function() {
+                    $mdDialog.hide();
+                }
+              }]
+            });
+        }
 
     }
 

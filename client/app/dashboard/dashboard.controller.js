@@ -385,6 +385,25 @@
                       $mdDialog.hide(answer);
                     };
 
+
+                    ev.childred.map(function(dessert) {
+
+                        var price = dessert['gov_'+LOCAL_GOV+'_productPrice'];
+                        var zscxj = nationwide.zscxj(dessert);
+
+                        dessert.localPrice = price;
+                        dessert.price2 = zscxj;
+                        dessert.chajia = Math.ceil((price-zscxj)/zscxj * 100);
+                        return dessert;
+                    });
+
+                    $dialogScope.desserts = {
+                        "count": 9,
+                        "data": ev.childred
+                    };
+
+
+
                     /**
                      *  表格
                      */
@@ -412,24 +431,6 @@
                         limit: 5,
                         page: 1
                     };
-
-
-                    ev.childred.map(function(dessert) {
-
-                        var price = dessert['gov_'+LOCAL_GOV+'_productPrice'];
-                        var zscxj = nationwide.zscxj(dessert);
-
-                        dessert.localPrice = price;
-                        dessert.price2 = zscxj;
-                        dessert.chajia = Math.ceil((price-zscxj)/zscxj * 100);
-                        return dessert;
-                    });
-
-                    $dialogScope.desserts = {
-                        "count": 9,
-                        "data": ev.childred
-                    };
-
 
                     $dialogScope.toggleLimitOptions = function () {
                         $dialogScope.limitOptions = $dialogScope.limitOptions ? undefined : [5, 10, 15];

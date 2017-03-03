@@ -1,0 +1,55 @@
+<md-dialog aria-label="Mango (Fruit)">
+  <form ng-cloak>
+
+    <md-dialog-content>
+      <div class="md-dialog-content">
+        <md-toolbar class="md-table-toolbar md-default" ng-hide="options.rowSelection && selected.length">
+            <div class="md-toolbar-tools">
+                <span>价格高于指数价50%的商品</span>
+                <div flex></div>
+                <md-button class="md-icon-button" ng-click="hide()">
+                    <md-icon>close</md-icon>
+                </md-button>
+            </div>
+        </md-toolbar>
+
+        <md-toolbar class="md-table-toolbar alternate" ng-show="options.rowSelection && selected.length">
+            <div class="md-toolbar-tools">
+                <span>{{selected.length}} {{selected.length > 1 ? '项' : '项'}} 被选中</span>
+            </div>
+        </md-toolbar>
+
+        <md-table-container>
+            <table md-table ng-model="selected" md-progress="promise">
+                <thead ng-if="!options.decapitate" md-head md-order="query.order" md-on-reorder="logOrder">
+                    <tr md-row>
+                        <th md-column md-order-by="name"><span>商品名称</span></th>
+                        <th md-column md-order-by="localPrice"><span>四川政采价（￥）</span></th>
+                        <th md-column md-numeric md-order-by="price2" md-desc><span>指数畅销价（￥）</span></th>
+                        <th md-column md-numeric md-order-by="chajia"><span>价格偏离度（%）</span></th>
+                        <th md-column md-order-by="comment"></th>
+                    </tr>
+                </thead>
+                <tbody md-body>
+                    <tr md-row md-select="dessert" md-on-select="logItem" md-auto-select="options.autoSelect" ng-disabled="dessert.calories.value > 400" ng-repeat="dessert in desserts.data | filter: filter.search | orderBy: query.order | limitTo: query.limit : (query.page -1) * query.limit">
+                        <td md-cell><a ng-href="#!/product/details/{{dessert.id}}">{{dessert.name}} </a></td>
+                        <td md-cell>{{dessert.localPrice.toFixed(2)}}</td>
+                        <td md-cell>{{dessert.price2.toFixed(2)}}</td>
+                        <td md-cell> {{dessert.chajia.toFixed(2)}}%</td>
+                        <td md-cell></td>
+                    </tr>
+                </tbody>
+            </table>
+        </md-table-container>
+
+        <md-table-pagination md-label="{{pgLabel}}" md-limit="query.limit" md-limit-options="limitOptions" md-page="query.page" md-total="{{desserts.count}}" md-page-select="options.pageSelect" md-boundary-links="options.boundaryLinks" md-on-paginate="logPagination"></md-table-pagination>
+      </div>
+    </md-dialog-content>
+
+    <md-dialog-actions layout="row">
+      <md-button ng-click="answer('useful')" class="md-raised md-primary">
+        关闭
+      </md-button>
+    </md-dialog-actions>
+  </form>
+</md-dialog>

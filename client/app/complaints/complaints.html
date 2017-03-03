@@ -1,0 +1,60 @@
+<div class="page page-dashboard" data-ng-controller="ComplaintsCtrl">
+
+
+    <div class="card bg-white" style="width: 640px; margin: 5em auto;">
+        <div class="card-image">
+            <img src="assets/images/complaints-banner.png" alt="">
+        </div>
+        <div class="card-content">
+            <h3 class="card-title">投诉处理</h3>
+            <p>
+                消费护航，是中电指数接受政府集中采购机构、监管机构或采购人的委托，利用价格指数工具对政府采购过程中价格不明或价格有争议的商品进行价格评估，为处理买卖双方的价格纠纷提供指数价格参考的专项服务。
+            </p>
+            <div class="divider divider-md"></div>
+            <p>
+                价格指数的评估工作最早从电子产品开始， 逐步延展到  、 、 等。目前覆盖 等  大类产品，共近万种产品。
+            </p>
+            <div class="divider divider-md"></div>
+
+
+            <div style="color: #666; ">
+                <ul class="list-group no-margin">
+                    <li class="list-group-item"><a download="指数价格评估申请表.xlsx" href="assets/downloads/指数价格评估申请表.xlsx">下载：价格评估申请表模版</a></li>
+                    <li class="list-group-item"><a href="">上传：价格评估申请表</a></li>
+                </ul>
+
+                <div class="divider divider-md"></div>
+
+            <h3 class="card-title">生成评估结果</h3>
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>日期</th>
+                            <th>文件名</th>
+                            <th>下载</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>{{ currentTime }}</td>
+                            <td>价格评估结果</td>
+                            <td>
+                                <a href="assets/downloads/指数价格评估结果.xlsx" download=""><i class="fa fa-download"></i> 下载</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!--
+        <div class="card-action">
+            <a href="javascript:;">A link</a>
+            <a href="javascript:;">A link</a>
+        </div>
+        -->
+
+
+    </div>
+
+</div>

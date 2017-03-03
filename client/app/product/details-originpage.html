@@ -1,0 +1,50 @@
+<md-dialog aria-label="{{originName}} 的价格">
+  <form>
+    <md-toolbar>
+      <div class="md-toolbar-tools bg-primary">
+        <h2>{{originName}} 的价格</h2>
+        <span flex></span>
+        <md-button class="md-icon-button" ng-click="hide()">
+            <md-icon> close</md-icon>
+        </md-button>
+      </div>
+    </md-toolbar>
+    <md-dialog-content style="max-height: 640px;  ">
+      <md-tabs md-dynamic-height md-border-bottom class="productScreenTabHeader">
+        <md-tab label="截图">
+          <md-content>
+
+            <div class="md-padding text-center" style="display:inline-flex; width:1000px; height:500px">
+              <div class="card-image">
+                  <img style="max-width: 100%;" src="{{imgUrl}}">
+              </div>
+            </div>
+          </md-content>
+        </md-tab>
+        <md-tab label="来源链接">
+          <md-content>
+            <div ng-if="!link" class="md-padding" style="display:inline-flex; width:1000px; height:640px">
+              <div class="divider divider-lg"></div>
+              <div class="callout callout-info">此商品 <b>{{originName}}</b> 的页面地址暂未收录</div>
+              <div class="divider divider-lg"></div>
+            </div>
+            <webview ng-if="link" id="foo" ng-src="{{getLink()}}" style="display:inline-flex; width:1000px; height:640px"></webview>
+          </md-content>
+        </md-tab>
+      </md-tabs>
+    </md-dialog-content>
+
+    <md-dialog-actions layout="row">
+      <md-button ng-if="!link" ng-disabled="!link" class="md-primary" ng-href="{{link}}" target="originPage">
+        <i class="fa fa-link"></i> 暂无 <b> {{originName}} </b> 的链接
+      </md-button>
+      <md-button ng-if="link" class="md-primary" ng-href="{{link}}" target="originPage">
+        <i class="fa fa-link"></i> 打开 <b> {{originName}} </b> 的链接
+      </md-button>
+      <span flex></span>
+      <md-button ng-click="hide()" md-autofocus style="margin-right:20px;" >
+        关闭
+      </md-button>
+    </md-dialog-actions>
+  </form>
+</md-dialog>

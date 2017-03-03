@@ -40,16 +40,40 @@
                         templateUrl: 'app/product/details.html',
                         controller: 'detailsController'
                     })
+                    .state('product/details/local', {
+                        url: '/product/details/:id/:local',
+                        templateUrl: 'app/product/details.html',
+                        controller: 'detailsController'
+                    })
                     .state('product/quanguo', {
-                        url: '/product/quanguo',
+                        url: '/product/list/:area',
                         templateUrl: 'app/product/quanguo.html',
                         controller: 'quanguoController'
                     })
                     .state('product/local', {
-                        url: '/product/local/:gov',
+                        url: '/product/list/:area/:gov',
                         templateUrl: 'app/product/quanguo.html',
                         controller: 'quanguoController'
                     })
+                    .state('complaints', {
+                        url: '/complaints',
+                        templateUrl: 'app/complaints/complaints.html',
+                        controller: 'ComplaintsCtrl'
+                    })
+                    .state('api-support', {
+                        url: '/api-support',
+                        templateUrl: 'app/api-support/api-support.html',
+                        controller: 'ApiSupportCtrl'
+                    })
+                    .state('analysis', {
+                        url: '/analysis',
+                        templateUrl: 'app/analysis/analysis.html',
+                        controller: 'ApiSupportCtrl'
+                    })
+
+
+
+
                     .state('form/editor', {
                         url: '/form/editor',
                         templateUrl: "app/form/editor.html",
